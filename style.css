@@ -1,0 +1,56 @@
+*,
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Barre de Navigation */
+
+nav {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 8vh;
+    padding: 0.2em 2em 0 1em;
+    font-size: 0.8em;
+    z-index: 1;
+}
+
+nav a {
+    color: black;
+}
+
+nav div {
+    width: 30%;
+}
+
+nav div img {
+    width: 20%;
+    height: auto;
+    padding: 0.2em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
