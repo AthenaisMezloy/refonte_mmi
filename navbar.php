@@ -11,3 +11,39 @@
         <li><a href="">À propos</a></li>
     </ul>
 </nav>
+<style>
+
+    nav {
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    padding: 0.2em 2em 0 1em;
+    font-size: 0.8em;
+    z-index: 2;
+    }
+
+    nav a {
+        color: black;
+    }
+
+    nav div {
+        width: 30%;
+    }
+
+    nav div img {
+        width: 25%;
+        height: auto;
+        padding: 0.2em;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+    }
+    
+</style>

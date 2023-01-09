@@ -4,10 +4,28 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
 body {
     margin: 0;
     z-index: 0;
     background-color: #FFFCF6;
+}
+
+h1,h2,h3 {
+    margin: 0;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+
+}
+
+p {
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
 ul {
@@ -17,54 +35,19 @@ ul {
 
 li {
     list-style: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 a {
     text-decoration: none;
-}
-
-h1,h2,p {
-    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
 section {
+    border: 1px solid red;
     width: 100%;
     height: 100vh;
-}
-
-/* Barre de Navigation */
-
-nav {
-    position: absolute;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 8vh;
-    padding: 0.2em 2em 0 1em;
-    font-size: 0.8em;
-    z-index: 2;
-}
-
-nav a {
-    color: black;
-}
-
-nav div {
-    width: 30%;
-}
-
-nav div img {
-    width: 20%;
-    height: auto;
-    padding: 0.2em;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
 }
 
 /* *** */
@@ -78,6 +61,10 @@ nav ul {
     z-index: 4;
 }
 
+.btn-section ul {
+    padding: 0 1vw 0 0;
+}
+
 .btn-section li {
     display: block;
     width: 30px;
@@ -87,7 +74,7 @@ nav ul {
 }
 
 /* *** */
-/* 1ère page */
+/* 1ère page accueil  */
 
 #home {
     display: flex;
@@ -112,7 +99,6 @@ nav ul {
 }
 
 #home .title {
-    font-family: 'Abril Fatface', cursive;
     position: relative;
     z-index: 3;
     right: 24.5%;
@@ -125,19 +111,140 @@ nav ul {
 
 #home h1 {
     font-size: 6em;
-    font-weight: 400;
-
 }
 
 #home p {
-    font-size: 1.6em;
-    font-weight: 400;
-
-}
-
-/* Partie Intro */
-#intro h2 {
     font-family: 'Abril Fatface', cursive;
+    font-size: 1.6em;
+}
+
+/* Titre Qu'est-ce que MMI ? */
+
+.intro-title h2 {
+    position: absolute;
+    font-size: 3.5em;
+    padding: 0 0 0 0.5em;
+    margin: 0.5em 0 0 0;
+    left: 5%;
+}
+
+/* Partie Introduction  */
+
+section:not(#home) {
+    display: flex;
+}
+
+section:not(#home) .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+section:not(#home) .content p {
+    font-size: 1.2em;
+    width: 65%;
+    text-align: center;
+    margin: 0 0 1em 0;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 50%;
+    height: 100%;
+}
+
+.img-container img {
+    width: 60%;
+    height: 60%;
+    border: 1px solid black;
+
+}
+
+section .content a {
+    color: black;
+    border: 1px solid black;
+    padding: 1em;
+    border-radius: 5em;
+}
+
+h3 {
+    position: relative;
     font-size: 5em;
+    left: -30%;
+    top: 5.5%;
+    color: rgba(0, 0, 0, 0.33);
+}
+
+
+/* Choix de parcours */
+
+#course-choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 1.5em 0;
+}
+
+.choice-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+#course-choice .title {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    left: 15%;
+    top: -2.5%;
+}
+
+#course-choice .title p {
+    font-size: 2em;
+    font-family: 'Abril Fatface', cursive;
     font-weight: 400;
 }
+
+#course-choice .title h3 {
+    position: relative;
+    left: 0.1%;
+    top: 12.5%;
+}
+
+.choice-container div {
+    background-color: #D9D9D9;
+    width: 25%;
+    height: 90%;
+}
+
+.crea-course {
+    border-bottom: 0.5em solid #970009 ;
+}
+
+.dev-course {
+    border-bottom: 0.5em solid#B2DAFF ;
+}
+
+@media screen and (max-width: 710px) { 
+    section:not(#home){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section:not(#home) .content p {
+        width: 100%;
+    }
+
+    nav {
+        display: none;
+    }
+ }

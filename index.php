@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>BUT MMI Champs-sur-Marne</title>
 </head>
@@ -16,12 +16,24 @@
 
     <div class="btn-section">
         <ul>
-            <a href="#home"><li></li></a>
-            <a href="#intro"><li></li></a>
-            <a href=""><li></li></a>
-            <a href=""><li></li></a>
-            <a href=""><li></li></a>
-            <a href=""><li></li></a>
+            <a href="#home">
+                <li></li>
+            </a>
+            <a href="#courses">
+                <li></li>
+            </a>
+            <a href="#projects">
+                <li></li>
+            </a>
+            <a href="#after-mmi">
+                <li></li>
+            </a>
+            <a href="#course-choice">
+                <li></li>
+            </a>
+            <a href="">
+                <li></li>
+            </a>
         </ul>
     </div>
 
@@ -37,14 +49,29 @@
         </div>
     </section>
 
-    <section id="intro">
+    <?php 
+        include("./intro.php")
+    ?>
+
+    <section id="course-choice">
         <div class="title">
-            <h2>Qu'est-ce que <br> MMI?</h2>
+            <h3>04</h3>
+            <p>Parcours</p>
         </div>
-        <div class="content1">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="choice-container">
+            <div class="dev-course"></div>
+            <div class="crea-course"></div>
         </div>
+
     </section>
+
+    <section>
+
+    </section>
+
+    <?php 
+        include("./footer.php")
+    ?>
 
 </body>
 
