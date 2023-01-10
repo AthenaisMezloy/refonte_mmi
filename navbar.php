@@ -13,18 +13,18 @@
 </nav>
 <style>
     nav {
-    color: white;
-    position: absolute;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 8vh;
-    padding: 0.2em 2em 0 1em;
-    font-size: 0.8em;
-    z-index: 2;
-    mix-blend-mode: difference;
+        color: white;
+        position: absolute;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 8vh;
+        padding: 0.2em 2em 0 1em;
+        font-size: 0.8em;
+        z-index: 2;
+        mix-blend-mode: difference;
     }
 
     nav a {
