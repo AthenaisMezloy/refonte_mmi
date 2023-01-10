@@ -11,15 +11,41 @@
     <title>But MMI Champs - Projets</title>
 </head>
 <body>
-    <section>
         <?php 
             include("./navbar.php")
         ?>
+    <section id="home">
         <div class="title">
             <h1>Projets étudiants</h1>
             <p>Citation - Des projets professionnalisants, une porte ouverte sur l’avenir.</p>
         </div>
+        <div class="filter">
+            <h2>Filtrer par domaine :</h2>
+            <ul>
+                <li>Tous les projets</li>
+                <li>Développement web</li>
+                <li>Design</li>
+                <li>Audiovisuel</li>
+                <li>Communication</li>
+            </ul>
+        </div>
+
     </section>
+
+    <section id="project-list">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+
 
     <?php 
         include("./footer.php")
