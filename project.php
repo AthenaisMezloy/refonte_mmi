@@ -34,7 +34,7 @@
 
     <section id="project-list">
         <ul>
-            <li></li>
+            <li><a href="./detail-project.php">test</a></li>
             <li></li>
             <li></li>
             <li></li>
