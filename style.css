@@ -15,7 +15,7 @@ body {
     background-color: #FFFCF6;
 }
 
-h1,h2,h3 {
+h1,h2,h3,h4 {
     margin: 0;
     font-family: 'Abril Fatface', cursive;
     font-weight: 400;
@@ -45,12 +45,101 @@ a {
 }
 
 section {
-    border: 1px solid red;
     width: 100%;
     height: 100vh;
 }
 
+/* Navigation */
+
+nav {
+    color: white;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    padding: 0.2em 2em 0 1em;
+    font-size: 0.8em;
+    z-index: 2;
+    mix-blend-mode: difference;
+    }
+
+    nav a {
+        color: white;
+    }
+
+    nav div {
+        width: 30%;
+    }
+
+    nav div img {
+        width: 25%;
+        height: auto;
+        padding: 0.2em;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+    }
+
 /* *** */
+
+/* Footer */
+footer {
+    background-color: white;
+    width: 100%;
+    height: 40vh;
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+.info-container {
+    display: flex;
+    width: 100%;
+    height: 80%;
+}
+
+.info-container div {
+    width: 50%;
+}
+
+.info-container div h2 {
+    text-align: center;
+}
+
+.info-container ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 70%;
+}
+
+.map-content {
+    padding: 0 0 0 1em;
+}
+
+.law-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+}
+
+.law-content h2 {
+    font-size: 1.5em;
+}
+
+.law-content a {
+    color: black;
+}
+
 /* Boutons sections */
 
 .btn-section {
@@ -154,7 +243,6 @@ section:not(#home) .content p {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
     width: 50%;
     height: 100%;
 }
@@ -211,6 +299,7 @@ h3 {
     font-size: 2em;
     font-family: 'Abril Fatface', cursive;
     font-weight: 400;
+    color: #EAC083;
 }
 
 #course-choice .title h3 {
@@ -219,10 +308,36 @@ h3 {
     top: 12.5%;
 }
 
+#course-choice .title svg {
+    position: absolute;
+    left: 20.5%;
+    bottom: 15%;
+}
+
 .choice-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     background-color: #D9D9D9;
     width: 25%;
     height: 90%;
+    padding: 0 1em 0 1em;
+}
+
+.choice-container h4 {
+    display: flex;
+    align-items: flex-end;
+    font-size: 2.2em;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 1em 0;
+
+}
+
+.choice-container a {
+    color: black;
+    padding: 0.5em 1.5em 0.5em 1.5em ;
 }
 
 .crea-course {
@@ -233,6 +348,17 @@ h3 {
     border-bottom: 0.5em solid#B2DAFF ;
 }
 
+.dev-course a{
+    background-color: #B2DAFF;
+}
+
+.crea-course a {    
+    background-color: #970009;
+}
+
+.dev-course div, .crea-course div {
+    width: 100%;
+}
 /* Vie Étudiante */
 
 #school-life {
@@ -249,18 +375,94 @@ h3 {
     height: 30%;
 }
 
+#school-life .title h2 {
+    font-size: 3em;
+}
+
+#school-life .title p {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.2em;
+}
+
+#school-life svg {
+    margin: 1em 0 1em 0;
+}
+
 #school-life .school-container {
     display: flex;
     width: 100%;
     height: 70%;
 }
 
-#school-life .school-content {
-    width: 40%;
+#school-life .school-container p {
+    width: 80%;
+    padding: 0 0 0 1em;
 }
 
-#school-life .img {
-    width: 40%;
+#school-life .school-content {
+    width: 50%;
+}
+
+#school-life .img-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+#school-life img {
+    width: 80%;
+    height: 80%;
+}
+
+/* Partie Actualités */
+
+#news {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#news .title {
+    position: relative;
+    text-align: center;
+}
+
+#news .title h2 {
+    font-size: 2.5em;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+#news ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#news li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    padding: 1.5em 3em 1.5em 3em;
+    margin: 1.5em 0 1.5em 0;
+    width: 90%;
+    text-align: center;
+}
+
+#news svg {
+    margin: 1em 0 0.2em 0;
+}
+
+#news a {
+    font-size: 0.9em;
+    color: black;
+    text-decoration: underline;
 }
 
 

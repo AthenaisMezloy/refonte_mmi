@@ -56,11 +56,24 @@
     <section id="course-choice">
         <div class="title">
             <h3>04</h3>
+            <svg width="23" height="1.5">
+                    <rect width="100%" height="100%" fill="#EAC083" />
+            </svg>
             <p>Parcours</p>
         </div>
         <div class="choice-container">
-            <div class="dev-course"></div>
-            <div class="crea-course"></div>
+            <div class="dev-course">
+                <div>
+                    <h4>Développement Web</h4>
+                    <a href="#">Voir plus</a>
+                </div>
+            </div>
+            <div class="crea-course">
+                <div>
+                    <h4>Création Numérique</h4>
+                    <a href="#">Voir plus</a>
+                </div>
+            </div>
         </div>
 
     </section>
@@ -68,7 +81,10 @@
     <section id="school-life">
         <div class="title">
             <h2>Vie étudiante</h2>
-            <p>*Citation*</p>
+            <svg width="80" height="2">
+                    <rect width="100%" height="100%" fill="#EAC083" />
+            </svg>
+            <p>"Citation"</p>
         </div>
         <div class="school-container">
             <div class="img-container">
@@ -82,6 +98,39 @@
         </div>
 
 
+    </section>
+
+    <section id="news">
+        <div class="title">
+            <h2>Dernières actualités</h2>
+            <svg width="80" height="2">
+                    <rect width="100%" height="100%" fill="#EAC083" />
+            </svg>
+        </div>
+        <div class="news-container">
+            <ul>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    <svg width="280" height="3">
+                    <rect width="100%" height="100%" fill="#FFD584" />
+                    </svg>
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    <svg width="280" height="3">
+                    <rect width="100%" height="100%" fill="#970009" />
+                    </svg>
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    <svg width="280" height="3">
+                    <rect width="100%" height="100%" fill="#FFD584" />
+                    </svg>
+                </li>
+
+            </ul>
+            <a href="#">Voir plus -></a>
+        </div>
     </section>
 
     <?php 
