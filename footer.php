@@ -43,7 +43,7 @@
                 Copyright La TABL Team
             </li>
             <li>
-                Mentions légales
+                <a href="./legal-notice.php">Mentions légales</a>
             </li>
             <li>
                 <a href="#home">HAUT DE PAGE</a>
