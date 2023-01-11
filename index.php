@@ -52,16 +52,16 @@
     </section>
 
     <div class="intro-title">
-        <h2>Qu'est-ce que <br> MMI?</h2>
+        <h2>Qu'est-ce que MMI Champs ?</h2>
     </div>
 
     <section id="courses">
 
         <div class="content">
             <h3 class="pink">01</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.</p>
+            <p>Le BUT MMI est une formation bac+3. Elle est accessible à de nombreux profils, notamment technologiques, et vous formera aux métiers du web, du développement back-end, à l’UX Design, en passant par le Webmarketing ou la réalisation de produits audiovisuels.
+Le BUT MMI compte 2600 heures d’enseignement partagées entre la communication, les langues, l’informatique, la culture graphique, la culture scientifique et les réseaux.
+</p>
 
             <a href="#">Découvrir la formation</a>
 
@@ -81,9 +81,7 @@
 
         <div class="content">
             <h3 class="yellow">02</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.</p>
+            <p>Le BUT MMI est une formation théorique mais surtout pratique ! De nombreux projets seront à réaliser dans de multiples domaines tout au long de ces 3 années de formations. Apprenez à vous organiser tout en exploitant les diverses compétences que vous allez acquérir et perfectionner afin de laisser cours à votre créativité ! Découvrez à travers ce site différents projets réalisés par d’anciens étudiants de la formation.</p>
 
             <a href="#">Projets étudiants</a>
 
@@ -95,9 +93,8 @@
     <section id="after-mmi">
         <div class="content">
             <h3 class="blue">03</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.</p>
+            <p>Cette formation vous permet d’acquérir un bagage suffisant pour entrer dans le monde professionnel ou poursuivre vos études en master.
+Le BUT MMI vous ouvre la voie vers de nombreuses perspectives.</p>
 
             <a href="#">Après MMI ?</a>
 
@@ -133,32 +130,6 @@
 
     </section>
 
-    <section id="school-life">
-        <div class="title">
-            <h2>Vie étudiante</h2>
-            <svg width="80" height="2">
-                <rect width="100%" height="100%" fill="#EAC083" />
-            </svg>
-            <p>"Citation"</p>
-        </div>
-        <div class="school-container">
-            <div class="img-container">
-                <img src="#" alt="">
-            </div>
-            <div class="school-content">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-        </div>
-
-
-    </section>
-
     <section id="news">
         <div class="title">
             <h2>Dernières actualités</h2>
@@ -166,33 +137,41 @@
                 <rect width="100%" height="100%" fill="#EAC083" />
             </svg>
         </div>
-        <div class="news-container">
+        <div class="news-list">
             <ul>
                 <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua
-                    <svg width="280" height="3">
-                        <rect width="100%" height="100%" fill="#FFD584" />
-                    </svg>
+                    <div class="img-container">
+                        <img src="#" alt="">
+                    </div>
+                    <div class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
                 </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua
-                    <svg width="280" height="3">
-                        <rect width="100%" height="100%" fill="#970009" />
-                    </svg>
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua
-                    <svg width="280" height="3">
-                        <rect width="100%" height="100%" fill="#FFD584" />
-                    </svg>
-                </li>
-
             </ul>
-            <a href="./news.php">Voir plus -></a>
+            <ul>
+                <li>
+                    <div class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                    <div class="img-container">
+                        <img src="#" alt="">
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <div class="img-container">
+                        <img src="#" alt="">
+                    </div>
+                    <div class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                </li>
+            </ul>
         </div>
+            
+            <a href="./news.php">Voir plus -></a>
+
     </section>
 
     <?php 

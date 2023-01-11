@@ -82,6 +82,7 @@ section {
     background-image: url(./img/home/bg-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    margin: 0 0 2em 0;
 }
 
 .block {
@@ -124,7 +125,7 @@ section {
     position: absolute;
     font-size: 3.5em;
     padding: 0 0 0 0.5em;
-    margin: 0.5em 0 0 0;
+    margin: 0.1em 0 0 0;
     left: 5%;
 }
 
@@ -145,7 +146,7 @@ section:not(#home) .content {
 
 section:not(#home) .content p {
     position: relative;
-    font-size: 1.2em;
+    font-size: 1em;
     width: 65%;
     text-align: center;
     margin: 0 0 1em 0;
@@ -331,6 +332,7 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 3em 0 3em 0;
 }
 
 #news .title {
@@ -342,28 +344,30 @@ h3 {
     font-size: 2.5em;
 }
 
-.news-container {
+.news-list ul {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
-}
-
-#news ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-#news li{
+.news-list li {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid black;
-    padding: 1.5em 3em 1.5em 3em;
     margin: 1.5em 0 1.5em 0;
-    width: 90%;
-    text-align: center;
+    width: 75%;
+}
+
+.news-list li div {
+    width: 50%;
+}
+
+.news-list li .img-container {
+    background-color: gray;
+}
+
+.news-list li .text {
+    padding: 2em 1em 2em 1em;
+    border: 2px solid black;
 }
 
 #news svg {
