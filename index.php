@@ -33,6 +33,9 @@
             <a href="#school-life">
                 <li></li>
             </a>
+            <a href="#news">
+                <li></li>
+            </a>
         </ul>
     </div>
 

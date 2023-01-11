@@ -12,11 +12,10 @@ nav {
     padding: 0.2em 2em 0 1em;
     font-size: 0.8em;
     z-index: 2;
-    mix-blend-mode: difference;
 }
 
 nav a {
-    color: white;
+    color: black;
 }
 
 nav div {
@@ -34,7 +33,6 @@ nav ul {
     justify-content: space-between;
     width: 60%;
 }
-
 /* Footer */
 
 footer {

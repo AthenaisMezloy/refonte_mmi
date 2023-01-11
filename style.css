@@ -252,7 +252,7 @@ h3 {
 }
 
 .crea-course {
-    border-bottom: 0.5em solid #970009 ;
+    border-bottom: 0.5em solid #FFA4F0 ;
 }
 
 .dev-course {
@@ -264,7 +264,7 @@ h3 {
 }
 
 .crea-course a {    
-    background-color: #970009;
+    background-color: #FFA4F0;
 }
 
 .dev-course div, .crea-course div {

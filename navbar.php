@@ -3,7 +3,7 @@
     <div>
         <img src="./img/assets/logo_img.svg" alt="">
     </div>
-    <ul>
+    <ul class="list">
         <li><a href="./index.php">Accueil</a></li>
         <li><a href="">La Formation</a></li>
         <li><a href="./project.php">Projets</a></li>
