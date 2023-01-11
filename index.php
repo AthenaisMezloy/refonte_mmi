@@ -129,7 +129,7 @@
                 </li>
 
             </ul>
-            <a href="#">Voir plus -></a>
+            <a href="./news.php">Voir plus -></a>
         </div>
     </section>
 
