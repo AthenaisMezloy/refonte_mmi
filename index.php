@@ -49,15 +49,68 @@
         </div>
     </section>
 
-    <?php 
-        include("./intro.php")
-    ?>
+    <div class="intro-title">
+        <h2>Qu'est-ce que <br> MMI?</h2>
+    </div>
+
+    <section id="courses">
+
+        <div class="content">
+            <h3>01</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+
+            <a href="#">Découvrir la formation</a>
+
+        </div>
+
+        <div class="img-container">
+            <img src="#" alt="">
+        </div>
+
+    </section>
+
+    <section id="projects">
+
+        <div class="img-container">
+            <img src="#" alt="">
+        </div>
+
+        <div class="content">
+            <h3>02</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+
+            <a href="#">Projets étudiants</a>
+
+        </div>
+
+
+    </section>
+
+    <section id="after-mmi">
+        <div class="content">
+            <h3>03</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+
+            <a href="#">Après MMI ?</a>
+
+        </div>
+
+        <div class="img-container">
+            <img src="#" alt="">
+        </div>
+    </section>
 
     <section id="course-choice">
         <div class="title">
             <h3>04</h3>
             <svg width="23" height="1.5">
-                    <rect width="100%" height="100%" fill="#EAC083" />
+                <rect width="100%" height="100%" fill="#EAC083" />
             </svg>
             <p>Parcours</p>
         </div>
@@ -82,7 +135,7 @@
         <div class="title">
             <h2>Vie étudiante</h2>
             <svg width="80" height="2">
-                    <rect width="100%" height="100%" fill="#EAC083" />
+                <rect width="100%" height="100%" fill="#EAC083" />
             </svg>
             <p>"Citation"</p>
         </div>
@@ -92,7 +145,11 @@
             </div>
             <div class="school-content">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </div>
         </div>
@@ -104,27 +161,30 @@
         <div class="title">
             <h2>Dernières actualités</h2>
             <svg width="80" height="2">
-                    <rect width="100%" height="100%" fill="#EAC083" />
+                <rect width="100%" height="100%" fill="#EAC083" />
             </svg>
         </div>
         <div class="news-container">
             <ul>
                 <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua
                     <svg width="280" height="3">
-                    <rect width="100%" height="100%" fill="#FFD584" />
+                        <rect width="100%" height="100%" fill="#FFD584" />
                     </svg>
                 </li>
                 <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua
                     <svg width="280" height="3">
-                    <rect width="100%" height="100%" fill="#970009" />
+                        <rect width="100%" height="100%" fill="#970009" />
                     </svg>
                 </li>
                 <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua
                     <svg width="280" height="3">
-                    <rect width="100%" height="100%" fill="#FFD584" />
+                        <rect width="100%" height="100%" fill="#FFD584" />
                     </svg>
                 </li>
 
