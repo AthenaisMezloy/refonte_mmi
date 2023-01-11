@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -56,7 +55,7 @@
     <section id="courses">
 
         <div class="content">
-            <h3>01</h3>
+            <h3 class="pink">01</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat.</p>
@@ -78,7 +77,7 @@
         </div>
 
         <div class="content">
-            <h3>02</h3>
+            <h3 class="yellow">02</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat.</p>
@@ -92,7 +91,7 @@
 
     <section id="after-mmi">
         <div class="content">
-            <h3>03</h3>
+            <h3 class="blue">03</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat.</p>
@@ -108,7 +107,7 @@
 
     <section id="course-choice">
         <div class="title">
-            <h3>04</h3>
+            <h3 class="green">04</h3>
             <svg width="23" height="1.5">
                 <rect width="100%" height="100%" fill="#EAC083" />
             </svg>
