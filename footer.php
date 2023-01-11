@@ -14,7 +14,9 @@
                     Téléphone : 01 60 95 85 90
                 </li>
                 <li>
-                    Réseaux sociaux :
+                    Réseaux sociaux : 
+                    <br>Twitter <a href="https://twitter.com/MMI_Champs">@MMI_Champs</a>
+                    <br>Instagram <a href="https://www.instagram.com/mmi_champs/">@MMI_Champs</a> <a href="https://www.instagram.com/mmind_mmi/">@mmind_mmi</a>
                 </li>
             </ul>
         </div>
