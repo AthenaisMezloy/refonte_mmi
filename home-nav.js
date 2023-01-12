@@ -3,6 +3,6 @@ $(window).on("scroll",function() {
         console.log("test")
         $("nav").removeClass("bg-cream");
     } else {
-        $("nav").addClass("bg-cream");        
+        $("nav").addClass("bg-cream");
     }
 })

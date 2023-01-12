@@ -28,6 +28,10 @@
     background-color:  #FFFCF6;
 }
 
+.bg-cream a {
+    color: black;
+}
+
 nav {
     position: fixed;
     font-family: 'Poppins', sans-serif;
