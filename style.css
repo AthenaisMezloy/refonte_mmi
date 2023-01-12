@@ -333,6 +333,7 @@ h3 {
     align-items: center;
     justify-content: center;
     margin: 3em 0 3em 0;
+    font: 0.8em;
 }
 
 #news .title {
@@ -354,7 +355,7 @@ h3 {
 .news-list li {
     display: flex;
     margin: 1.5em 0 1.5em 0;
-    width: 75%;
+    width: 100%;
 }
 
 .news-list li div {
