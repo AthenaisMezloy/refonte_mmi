@@ -13,6 +13,7 @@ body {
     margin: 0;
     z-index: 0;
     background-color: #FFFCF6;
+    transition: all ease 1s;
 }
 
 h1,h2,h3,h4 {
@@ -79,7 +80,16 @@ section {
 #home {
     display: flex;
     justify-content: flex-end;
-    background-image: url(./img/home/bg-img.jpg);
+    background: radial-gradient(100% 75.37% at 0% 100%, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.5) 100%), url(./img/home/bg-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 0 2em 0;
+}
+
+.dark #home {
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(56.46deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 80.05%), url(./img/home/bg-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0 0 2em 0;
@@ -90,7 +100,6 @@ section {
     background-color: #FFFCF6;
     height: 100vh;
     width: 40vw;
-    z-index: 1;
 }
 
 .bg-img {
@@ -101,17 +110,15 @@ section {
 
 #home .title {
     position: relative;
-    z-index: 3;
     right: 24.5%;
     top: 35%;
     text-align: center;
-    mix-blend-mode: difference;
-    color: white;
-
 }
 
 #home h1 {
     font-size: 6em;
+    color: white;
+    mix-blend-mode: difference;
 }
 
 #home p {
