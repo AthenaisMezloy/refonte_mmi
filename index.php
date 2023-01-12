@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="home-page">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -179,5 +179,4 @@ Le BUT MMI vous ouvre la voie vers de nombreuses perspectives.</p>
     ?>
 
 </body>
-<script src="./home-nav.js"></script>
 </html>
