@@ -61,7 +61,7 @@
 Le BUT MMI compte 2600 heures d’enseignement partagées entre la communication, les langues, l’informatique, la culture graphique, la culture scientifique et les réseaux.
 </p>
 
-            <a href="#">Découvrir la formation</a>
+            <a href="#" class="btn-bubble">Découvrir la formation<img src="./img/icons/arrow.svg" alt=""></a>
 
         </div>
 
@@ -81,7 +81,7 @@ Le BUT MMI compte 2600 heures d’enseignement partagées entre la communication
             <h3 class="yellow">02</h3>
             <p>Le BUT MMI est une formation théorique mais surtout pratique ! De nombreux projets seront à réaliser dans de multiples domaines tout au long de ces 3 années de formations. Apprenez à vous organiser tout en exploitant les diverses compétences que vous allez acquérir et perfectionner afin de laisser cours à votre créativité ! Découvrez à travers ce site différents projets réalisés par d’anciens étudiants de la formation.</p>
 
-            <a href="#">Projets étudiants</a>
+            <a href="./project.php" class="btn-bubble">Projets étudiants <img src="./img/icons/arrow.svg" alt=""></a>
 
         </div>
 
@@ -94,7 +94,7 @@ Le BUT MMI compte 2600 heures d’enseignement partagées entre la communication
             <p>Cette formation vous permet d’acquérir un bagage suffisant pour entrer dans le monde professionnel ou poursuivre vos études en master.
 Le BUT MMI vous ouvre la voie vers de nombreuses perspectives.</p>
 
-            <a href="#">Après MMI ?</a>
+            <a href="#" class="btn-bubble">Après MMI ? <img src="./img/icons/arrow.svg" alt=""></a>
 
         </div>
 
@@ -169,7 +169,7 @@ Le BUT MMI vous ouvre la voie vers de nombreuses perspectives.</p>
             </ul>
         </div>
             
-            <a href="./news.php">Voir plus -></a>
+            <a href="./news.php" class="btn-bubble">Voir plus<img src="./img/icons/arrow.svg" alt=""></a>
 
     </section>
 

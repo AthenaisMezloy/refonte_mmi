@@ -159,7 +159,7 @@ section:not(#home) .content {
 
 section:not(#home) .content p {
     position: relative;
-    font-size: 1em;
+    font-size: 0.9em;
     width: 65%;
     text-align: center;
     margin: 0 0 1em 0;
@@ -181,14 +181,35 @@ section:not(#home) .content p {
 
 }
 
-section .content a {
+.btn-bubble {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
     color: black;
     border: 1px solid black;
     padding: 1em;
     border-radius: 5em;
 }
 
-.dark section .content a {
+.btn-bubble p {
+    display: inline;
+}
+
+.btn-bubble img {
+    display: none;
+    transform: rotate(-90deg);
+    transition: all ease 0.5s;
+}
+
+.btn-bubble:hover img {
+    display: flex;
+    mix-blend-mode: difference;
+    width: 16px;
+    transform: rotate(-90deg);
+    margin: 0 0.5em 0 0.5em;
+}
+
+.dark .btn-bubble {
     color: white;
     border: 1px solid white;
     padding: 1em;
@@ -236,13 +257,13 @@ h3 {
 #course-choice .title h3 {
     position: relative;
     left: 0.1%;
-    top: 12.5%;
+    top: 13.5%;
 }
 
 #course-choice .title svg {
     position: absolute;
     left: 20.5%;
-    bottom: 15%;
+    bottom: 27%;
 }
 
 .choices {
