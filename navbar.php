@@ -17,6 +17,10 @@
     .dark .block {
         background-color: black;
     }
+    
+    nav a:hover {
+        text-decoration: underline;
+    }
 
 </style>
 
@@ -31,8 +35,16 @@
         <li><a href="">Après MMI</a></li>
         <li><a href="./international.php">International</a></li>
         <li><a href="./about.php">À propos</a></li>
-        <li><button id="btn-theme">Jour</button>
-</li>
+        <li>
+            <button id="btn-theme">
+                <div class="day">
+                    <img src="./img/icons/moon.webp" alt=""><p>Nuit</p>
+                </div>
+                <div  class="night">
+                <img src="./img/icons/sun.webp" alt=""><p>Jour</p>
+                </div>
+            </button>
+        </li>
     </ul>
 </nav>
 <div class="display">

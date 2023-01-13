@@ -40,7 +40,7 @@ nav {
     align-items: center;
     width: 100%;
     height: 10vh;
-    padding: 0.2em 2em 0 1em;
+    padding: 0.2em 2.5em 0 1em;
     font-size: 0.8em;
     z-index: 2;
     transition: all ease 0.5s;
@@ -63,7 +63,37 @@ nav div img {
 nav ul {
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    align-items: center;
+    width: 65%;
+}
+
+#btn-theme {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 2em;
+    width: 120%;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    background: none;
+}
+
+#btn-theme img {
+    width: 24px;
+}
+
+#btn-theme p {
+    position: relative;
+    right: -5%;
+}
+
+#btn-theme div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 /* Fil d'ariane */

@@ -15,37 +15,77 @@ $('.list li a').on('click', function() {
     $('.display').html(
       $select.prepend('<a href="#syllabus">GeeksforGeeks</a>'));   
   })
-  
+
+//
 // Dark mode
-  
+    if(localStorage.getItem('dark')) {
+        $("body").addClass("dark");
+        $(".day").css("display","none");
+        $(".night").css("display","flex");
+    } else {
+        $(".night").css("display","none");
+        $(".day").css("display","flex");
+    }
+
   $( "#btn-theme" ).on("click", function() { 
               if( $( "body" ).hasClass( "dark" )) { 
                   $( "body" ).removeClass( "dark" ); 
+                  $(".night").css("display","none");
+                  $(".day").css("display","flex");
                   localStorage.removeItem('dark',this.clicked);
               } else { 
                   $( "body" ).addClass( "dark" ); 
+                  $(".day").css("display","none");
+                  $(".night").css("display","flex");
                   localStorage.setItem('dark',this.clicked);
               } 
           }); 
   
           
           
-  if(localStorage.getItem('dark')) {
-      $("body").addClass("dark");
-  }
-  
+
+//
 // Nav animation
 
 if (page == "index.php") {
+
+    $("#btn-theme").css("background","white");
+
     $(window).on("scroll",function() {
         if ($(window).scrollTop() == 0) {
             console.log("test")
             $("nav").removeClass("bg-cream");
+            if (localStorage.getItem('dark')) {
+                $("#btn-theme").css("background-color","white");
+            }
         } else {
             $("nav").addClass("bg-cream");
+            $("#btn-theme").css("background","none");
+
         }
     })
-} else {
-    $("nav").addClass("bg-cream");
+    } else {
+        $("nav").addClass("bg-cream");
+        $("#btn-theme").css("background","none");
 };
+
+//
+// Boutons de Sections
+
+$(document).ready(function() {
+    
+    $("#btn-1").addClass("bg-orange");
+    $(".icon").addClass("bg-grey");
+
+    $(".icon").on('click', function(event){
+        var id = $(event.target).attr('id');
+        console.log(id);
+        $(".icon").removeClass("bg-orange");
+        $(this).addClass("bg-orange");
+        
+      });
+
+});
+
+//
 

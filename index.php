@@ -16,33 +16,31 @@
     <div class="btn-section">
         <ul>
             <a href="#home">
-                <li></li>
+                <li class="icon" id="btn-1"></li>
             </a>
             <a href="#courses">
-                <li></li>
+                <li class="icon" id="btn-2"></li>
             </a>
             <a href="#projects">
-                <li></li>
+                <li class="icon" id="btn-3"></li>
             </a>
             <a href="#after-mmi">
-                <li></li>
+                <li class="icon" id="btn-4"></li>
             </a>
             <a href="#course-choice">
-                <li></li>
-            </a>
-            <a href="#school-life">
-                <li></li>
+                <li class="icon" id="btn-5"></li>
             </a>
             <a href="#news">
-                <li></li>
+                <li class="icon" id="btn-6"></li>
             </a>
         </ul>
     </div>
 
-    <section id="home">
-        <?php 
+<?php 
         include("./navbar.php")
         ?>
+
+    <section id="home">
         <div class="block">
         </div>
         <div class="title">
@@ -113,17 +111,18 @@ Le BUT MMI vous ouvre la voie vers de nombreuses perspectives.</p>
             </svg>
             <p>Parcours</p>
         </div>
-        <div class="choice-container">
-            <div class="dev-course">
-                <div>
+        <div class="choices">
+            <div class="container">
+                <div class="dev">
                     <h4>Développement Web</h4>
-                    <a href="#">Voir plus</a>
+                    <p>Le parcours développement web et dispositifs interactifs forme au développement de sites web et à l’intégration d’applications multimédia ou mobiles. Il aborde notamment les outils et langages informatiques nécessaires à la conception et à la gestion de ces outils numériques.
+                        <br>Il prépare notamment aux métiers d’intégrateur ; de développeur back, front, ou Full stack ; d’intégrateur de dispositifs de la réalité virtuelle.
+                        <br>Les débouchés se situent en agences de communication, en agences Web, dans des start-up ou des sociétés de services informatiques, dans des services de communication des grandes entreprises ou organisations.</p>
                 </div>
-            </div>
-            <div class="crea-course">
-                <div>
+                <div class="crea">
                     <h4>Création Numérique</h4>
-                    <a href="#">Voir plus</a>
+                    <p>Le parcours création numérique est consacré à l’expression d’un message sur différents médias, sous la forme de création graphique et d’écriture multimédia. II permet d’acquérir les techniques nécessaires à la création de ressources numériques, notamment de publications web.
+                        <br>Il prépare principalement aux métiers de designers, infographistes, game designers ou de techniciens audiovisuel. Les principaux débouchés se situent en agences de communication, en agences Web, en agences publicitaires, ou dans les services de communication des grandes entreprises.</p>
                 </div>
             </div>
         </div>
