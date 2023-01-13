@@ -115,14 +115,11 @@ Le BUT MMI vous ouvre la voie vers de nombreuses perspectives.</p>
             <div class="container">
                 <div class="dev">
                     <h4>Développement Web</h4>
-                    <p>Le parcours développement web et dispositifs interactifs forme au développement de sites web et à l’intégration d’applications multimédia ou mobiles. Il aborde notamment les outils et langages informatiques nécessaires à la conception et à la gestion de ces outils numériques.
-                        <br>Il prépare notamment aux métiers d’intégrateur ; de développeur back, front, ou Full stack ; d’intégrateur de dispositifs de la réalité virtuelle.
-                        <br>Les débouchés se situent en agences de communication, en agences Web, dans des start-up ou des sociétés de services informatiques, dans des services de communication des grandes entreprises ou organisations.</p>
+                    <p>Le parcours développement web et dispositifs interactifs forme au développement de sites web et à l’intégration d’applications multimédia ou mobiles. Il aborde notamment les outils et langages informatiques nécessaires à la conception et à la gestion de ces outils numériques.</p>
                 </div>
                 <div class="crea">
                     <h4>Création Numérique</h4>
-                    <p>Le parcours création numérique est consacré à l’expression d’un message sur différents médias, sous la forme de création graphique et d’écriture multimédia. II permet d’acquérir les techniques nécessaires à la création de ressources numériques, notamment de publications web.
-                        <br>Il prépare principalement aux métiers de designers, infographistes, game designers ou de techniciens audiovisuel. Les principaux débouchés se situent en agences de communication, en agences Web, en agences publicitaires, ou dans les services de communication des grandes entreprises.</p>
+                    <p>Le parcours création numérique est consacré à l’expression d’un message sur différents médias, sous la forme de création graphique et d’écriture multimédia. II permet d’acquérir les techniques nécessaires à la création de ressources numériques, notamment de publications web.</p>
                 </div>
             </div>
         </div>
