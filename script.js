@@ -40,8 +40,6 @@ $('.list li a').on('click', function() {
                   localStorage.setItem('dark',this.clicked);
               } 
           }); 
-  
-          
           
 
 //
@@ -49,18 +47,24 @@ $('.list li a').on('click', function() {
 
 if (page == "index.php") {
 
+    if ($(window).scrollTop() <= 1) {
+        if (localStorage.getItem('dark')) {
+            $("#btn-theme").css("background-color","white");
+        }
+      }
+
     $("#btn-theme").css("background","white");
 
     $(window).on("scroll",function() {
-        if ($(window).scrollTop() == 0) {
+        if ($(window).scrollTop() <= 1) {
             console.log("test")
-            $("nav").removeClass("bg-cream");
             if (localStorage.getItem('dark')) {
                 $("#btn-theme").css("background-color","white");
             }
+            $("nav").removeClass("bg-cream");
         } else {
-            $("nav").addClass("bg-cream");
             $("#btn-theme").css("background","none");
+            $("nav").addClass("bg-cream");
 
         }
     })
