@@ -1,3 +1,7 @@
+<?php 
+    require("./model.php");
+    $projets = getProjets();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -22,11 +26,11 @@
         <div class="filter">
             <h2>Filtrer par domaine :</h2>
             <ul>
-                <li>Tous les projets</li>
-                <li>Développement web</li>
-                <li>Design</li>
-                <li>Audiovisuel</li>
-                <li>Communication</li>
+                <li><img src="" alt=""> Tous les projets</li>
+                <li><img src="" alt="">Développement web</li>
+                <li><img src="" alt="">Design</li>
+                <li><img src="" alt="">Audiovisuel</li>
+                <li><img src="" alt="">Communication</li>
             </ul>
         </div>
 
@@ -34,15 +38,18 @@
 
     <section id="project-list">
         <ul>
-            <li><a href="./detail-project.php">test</a></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            
+        <?php foreach($projets as $projet): ?>
+        <li class="article_box">
+        <a href="detail-project.php?id=<?= $projet->id_project ?>">
+            <?php if (!empty($projet->photo_project)): ?>
+                <img src="data:image/webp;base64,<?= base64_encode($projet->photo_project) ?>" alt="<?= $projet->name_project ?>"/>
+            <?php else: ?>
+                <p>No image found.</p>
+            <?php endif; ?>
+        </a>
+        </li>
+    <?php endforeach; ?>
         </ul>
     </section>
 
