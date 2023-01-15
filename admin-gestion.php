@@ -138,7 +138,6 @@
         <h3>Gérer les étudiants</h3>
         <TABLE border=1>
             <tr><th>Titre</th><th>Étudiants</th><th>Description</th><th>Citation</th><th>Date</th></tr>
-
             <?php foreach ($projects as $project): ?>
             <tr>
             <td><?=$project->name_project?></td>

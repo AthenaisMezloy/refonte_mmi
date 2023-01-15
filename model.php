@@ -32,6 +32,7 @@
     } else {return 3;}
 };
 
+
 function getTeachers(){
   global $db;
   $requete = $db->prepare('SELECT * FROM teachers ORDER BY name_teacher ASC');
@@ -39,6 +40,7 @@ function getTeachers(){
   $data = $requete -> fetchALL(PDO::FETCH_OBJ);
   return $data;
 };
+
 
   function getProjets(){
     global $db;

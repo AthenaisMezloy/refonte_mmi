@@ -1,32 +1,12 @@
 <?php
-	session_start();
-	require("./model.php");
+    require("model.php");
 
-// Login
-    $session = $_GET["#session"];
-
-	if ($session == 1) {
-			
-		$result_login = traiteLogin();
-
-		if ($result_login == 1) {
-            header('Location: admin-gestion.php');
-            exit;
-		}
-		if ($result_login == 2) {
-			header ('Location:admin.php?err=mdp');
-		}
-		if ($result_login == 3) {
-			header ('Location:admin.php?err=login');
-		}
-	}
-
-	if(isset($_POST['save-news'])){
+    if(isset($_POST['save-news'])){
         $title = $_POST["title_news"];
         $content = $_POST["content_news"];
         $file = $_FILES["photo_news"];
         if ($file["error"] == UPLOAD_ERR_OK) {
-            $image = file_get_contents($file["tmp_name"]);
+            $image = file_get_contents($file["photo_news"]);
             // insert the image into the database
         } else {
             // handle the error
@@ -44,9 +24,4 @@
             header('Location: admin-gestion.php');
         }
 
-		if(isset($_POST['delete-project'])) {
-            $id_project = $_POST['id_project'];
-            deleteProject($id_project);
-            header('Location: admin-gestion.php');
-        }
 ?>
