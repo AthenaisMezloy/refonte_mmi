@@ -23,7 +23,7 @@
         <ul>
             <li>
                 <h2>Éditeur du site - TABL</h2>
-                <p>Département MMI, IUT de Marne-la-Vallée - Université Gustave Eiffel
+                <p>Département MMI, IUT de Marne-la-Vallée - Université Gustave Eiffel <br>
                     Contributeurs : Timothé BUREAU, Athénaïs MEZLOY, Bruno MARTINS DA COSTA, Lilian PEURON</p>
 
             </li>
@@ -65,7 +65,7 @@
                 disponible ici : <a href="https://automattic.com/privacy/">https://automattic.com/privacy/</a>. Après l’approbation de votre commentaire, votre photo
                 de profil est visible pour le public dans le contexte de votre commentaire. <br><br>
 
-                Les données confiées sont utilisées dans le strict cadre du fonctionnement de notre site. <br>
+                Les données confiées sont utilisées dans le strict cadre du fonctionnement de notre site. <br><br>
 
                 Ce site n’est pas concerné par le RGPD.
 
@@ -76,7 +76,7 @@
             <p>
                 Les pages de ce site peuvent inclure du contenu intégré (par exemple des vidéos, images, articles,
                 etc.). Le contenu intégré d’autres sites Web se comporte exactement de la même façon que si le visiteur
-                a visité l’autre site Web.
+                a visité l’autre site Web. <br>
                 Ces sites Web peuvent recueillir des données vous concernant, utiliser des cookies, intégrer un suivi
                 tiers supplémentaire et surveiller votre interaction avec ce contenu intégré, y compris le suivi de
                 votre interaction avec le contenu intégré si vous avez un compte et que vous êtes connecté à ce site
@@ -95,30 +95,23 @@
             <li>
             <h2>Source des images</h2>
             <p>
-                audiovisuel.webp : <a href="https://www.flaticon.com/free-icons/video" title="video icons">Video icons
-                    created by Freepik - Flaticon</a>
-                <br>
-                communication.webp : <a href="https://www.flaticon.com/free-icons/online-chat"
-                    title="online chat icons">Online chat icons created by Stockes Design - Flaticon</a>
-                <br>
+                        Images importées depuis <a href="https://www.flaticon.com">Flaticon.com</a> :<br>
+            - audiovisuel.webp : <a href="https://www.flaticon.com/free-icons/video" title="video icons">Video icons created by Freepik - Flaticon</a><br>
+            - communication.webp : <a href="https://www.flaticon.com/free-icons/online-chat" title="online chat icons">Online chat icons created by Stockes Design - Flaticon</a><br>
+            - design.webp : <a href="https://www.flaticon.com/free-icons/graphic-design" title="graphic design icons">Graphic design icons created by Freepik - Flaticon</a><br>
+            - developpement.webp : <a href="https://www.flaticon.com/free-icons/graphic-design" title="graphic design icons">Graphic design icons created by Freepik - Flaticon</a><br>
+            - sun.webp : <a href="https://www.flaticon.com/free-icons/weather" title="weather icons">Weather icons created by Freepik - Flaticon</a><br>
+            - moon.webp : <a href="https://www.flaticon.com/free-icons/moon" title="moon icons">Moon icons created by Good Ware - Flaticon</a><br><br>
 
-                design.webp : <a href="https://www.flaticon.com/free-icons/graphic-design"
-                    title="graphic design icons">Graphic design icons created by Freepik - Flaticon</a>
-                <br>
+            Images importées depuis Vecteezy.com puis modifiées par nos soins : alexandreleroy.webp, annetasso.webp, athe.webp, bilelbenbouzid.webp, bruno.webp, florencebister.webp, fredericpoisson.webp, gaellecharpentier.webp, hervelo.webp, kpc.webp, lahcensoussi.webp, leabosco.webp, leylajaoued.webp, lilian.webp, matthieuberthet.webp, melinaguyon.webp, nathaliecaclard.webp, odileniel.webp, philippegambette.webp, renaudeppstein.webp, timothe.webp<br><br>
 
-                developpement.webp : <a href="https://www.flaticon.com/free-icons/graphic-design"
-                    title="graphic design icons">Graphic design icons created by Freepik - Flaticon</a>
-                <br>
+            rentree2022.webp : © Pagnarith KOK SREY - LinkedIn<br>
+            ucaq.webp : © service des communications de l'UQAC<br>
+            cegepstefoy.webp : © Khayman<br>
+            aircanada.webp : © Sweet One<br>
+            iuteiffel.webp, projet.webp, after.webp, whatsmmi.webp, about.webp, nuitinfo.webp : © Athénaïs MEZLOY - LinkedIn<br><br>
 
-                sun.webp : <a href="https://www.flaticon.com/free-icons/weather" title="weather icons">Weather icons
-                    created by Freepik - Flaticon</a>
-                <br>
-
-                moon.webp : <a href="https://www.flaticon.com/free-icons/moon" title="moon icons">Moon icons created by
-                    Good Ware - Flaticon</a>
-                <br>
-
-                Pas fini !!!</p>
+            halloween2022.webp, jpo2023.webp, londres2022.webp, secretsanta2022.webp, dataviz.webp, campagne.webp, galactrip.webp, motiondesign.webp, portraitchinois.webp : © TABL
             </li>
         </ul>
     </section>

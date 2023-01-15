@@ -92,4 +92,20 @@ $(document).ready(function() {
 });
 
 //
+// filtre projets
 
+var filterButtons = document.querySelectorAll('.filter-button');
+filterButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        var filterValue = button.getAttribute('data-filter');
+        var articles = document.querySelectorAll('.article-box');
+        articles.forEach(function(article) {
+            if (!article.classList.contains(filterValue) && filterValue != 'all') {
+                article.style.display = 'none';
+            } else {
+                article.style.display = 'block';
+            }
+        });
+    });
+});
+``

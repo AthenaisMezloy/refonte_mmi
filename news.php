@@ -1,3 +1,7 @@
+<?php
+    require("model.php");
+    $news = getNews();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -19,37 +23,54 @@
             <h1>Actualités</h1>
         </section>
 
-        <section id="news-list">
-            <ul>
-                <li>
-                    <div class="img-container">
-                        <img src="#" alt="">
-                    </div>
-                    <div class="text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </div>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <div class="text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </div>
-                    <div class="img-container">
-                        <img src="#" alt="">
-                    </div>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <div class="img-container">
-                        <img src="#" alt="">
-                    </div>
-                    <div class="text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </div>
-                </li>
-            </ul>
+        <section id="news">
+            <div class="news-list">
+                <ul>
+                        <?php $i = 0; ?>
+                        <?php foreach($news as $article): ?>
+                            <li>
+        
+                                <?php if ($i % 2 == 0): ?>
+        
+                                    <?php if (!empty($article-> photo_news)): ?>
+                                        <img src="data:image/webp;base64,<?= base64_encode($article->photo_news) ?>" alt="<?= $article->name_news ?>"/>
+                                    <?php else: ?>
+                                        <div class="img_notfound">
+                                            <p>No image found.</p>
+                                        </div>
+                                    <?php endif; ?>
+                                    <div class="text">
+                                        <p>
+                                            <?= $article ->content_news ?> <br><br>
+                                            <?= $article ->date_news ?>
+                                        </p>
+                                    </div>
+        
+                                <?php else: ?>
+        
+                                    <div class="text">
+                                        <p>
+                                            <?= $article ->content_news ?> <br><br>
+                                            <?= $article ->date_news ?>
+                                        </p>
+                                    </div>
+                                    <?php if (!empty($article-> photo_news)): ?>
+                                        <img src="data:image/webp;base64,<?= base64_encode($article->photo_news) ?>" alt="<?= $article->name_news ?>"/>
+                                    <?php else: ?>
+                                        <div class="img_notfound">
+                                            <p>No image found.</p>
+                                        </div>
+                                    <?php endif; ?>
+        
+                                <?php endif; ?>
+        
+        
+                            </li>
+                            <?php $i++; ?>
+                        <?php endforeach; ?>              
+                    </ul>
+
+            </div>
         </section>
 
         <?php 

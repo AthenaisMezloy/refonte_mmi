@@ -1,3 +1,7 @@
+<?php
+    require ("./controleur-projets.php");
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -16,26 +20,31 @@
     ?>
     <section id="home">
         <div class="title">
-            <h1>Titre</h1>
-            <h2>Développement web</h2>
+            <h1><?=$this_projet -> name_project?></h1>
+            <h2><?=$this_projet -> name_icon?></h2>
         </div>
         <div class="content">
             <div class="img-container">
-                <img src="#" alt="">
+            <?php if (!empty($this_projet->photo_project)): ?>
+                <img src="data:image/webp;base64,<?= base64_encode($this_projet->photo_project) ?>" alt="<?= $this_projet->name_project ?>"/>
+            <?php else: ?>
+                <p>No image found.</p>
+            <?php endif; ?>
             </div>
             <div class="text-container">
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <?=$this_projet -> description_project?>
                 </p>
             </div>
         </div>
     </section>
     <section id="author">
         <p>
-            “ Citation - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ”
+            <?=$this_projet -> quote_project?>
         </p>
         <h3>
-            - Prénom Nom
+        <?=$this_projet -> name_author?>
+
         </h3>
     </section>
 

@@ -1,3 +1,8 @@
+<?php 
+    require("./model.php");
+    $projets = getProjets();
+    $icons = getIcons();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -22,11 +27,22 @@
         <div class="filter">
             <h2>Filtrer par domaine :</h2>
             <ul>
-                <li>Tous les projets</li>
-                <li>Développement web</li>
-                <li>Design</li>
-                <li>Audiovisuel</li>
-                <li>Communication</li>
+                <li>
+                    <button class="filter-button" data-filter="all"><p>Tous les projets</p></button>
+                </li>
+
+                <?php foreach($icons as $icon): ?>
+                    <li>
+                        <button class="filter-button" data-filter="<?= $icon->id_icon ?>">
+                        <?php if (!empty($icon-> image_icon)): ?>
+                            <img src="data:image/webp;base64,<?= base64_encode($icon->image_icon) ?>" alt="<?= $icon->name_icon ?>"/>
+                        <?php else: ?>
+                            <p>No image found.</p>
+                        <?php endif; ?>
+                        <?= $icon->name_icon ?>
+                        </button>
+                    </li>
+                <?php endforeach; ?>
             </ul>
         </div>
 
@@ -34,15 +50,18 @@
 
     <section id="project-list">
         <ul>
-            <li><a href="./detail-project.php">test</a></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            
+        <?php foreach($projets as $projet): ?>
+        <li class="article-box <?= $projet->ext_icon?>">
+        <a href="detail-project.php?id=<?= $projet->id_project ?>">
+            <?php if (!empty($projet->photo_project)): ?>
+                <img src="data:image/webp;base64,<?= base64_encode($projet->photo_project) ?>" alt="<?= $projet->name_project ?>"/>
+            <?php else: ?>
+                <p>No image found.</p>
+            <?php endif; ?>
+        </a>
+        </li>
+    <?php endforeach; ?>
         </ul>
     </section>
 

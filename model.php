@@ -13,7 +13,7 @@
   // }
 
   $db =new PDO("mysql:host=localhost;dbname=dbs9638858;port=3306;charset=utf8",'root','');
-$db-> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+  $db-> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
   function traiteLogin(){
     global $db;
@@ -40,13 +40,42 @@ function getTeachers(){
   return $data;
 }
 
-function getProjects(){
+  function getProjets(){
+    global $db;
+    $requete = $db->prepare('SELECT * FROM projects JOIN icons ON projects.ext_icon = icons.id_icon ORDER BY date_project DESC');
+    $requete -> execute();       
+    $data= $requete -> fetchALL(PDO::FETCH_OBJ);
+    return $data;
+}; 
+
+  function getProjet($id){
+    global $db;
+    $requete = $db->prepare('SELECT * FROM projects JOIN icons ON projects.ext_icon = icons.id_icon WHERE id_project = ? ');
+    $requete -> execute(array($id));
+    if($requete -> rowCount() == 1){
+        $data = $requete -> fetch(PDO :: FETCH_OBJ);
+        return $data;
+    }
+    else {
+        header('Location: index.php');
+    }
+  };
+
+  function getIcons(){
+    global $db;
+    $requete = $db->prepare('SELECT*FROM icons ORDER BY id_icon DESC');
+    $requete -> execute();       
+    $data= $requete -> fetchALL(PDO::FETCH_OBJ);
+    return $data;
+};
+
+function getIcon($id){
   global $db;
-  $requete = $db->prepare('SELECT * FROM projects ORDER BY date_project DESC');
-  $requete -> execute();       
-  $data = $requete -> fetchALL(PDO::FETCH_OBJ);
+  $requete = $db -> prepare('SELECT * FROM icons WHERE id_project = ?');
+  $requete -> execute(array($id));
+  $data = $requete -> fetch(PDO :: FETCH_OBJ);
   return $data;
-}
+};
 
 function getNews(){
   global $db;
@@ -54,7 +83,7 @@ function getNews(){
   $requete -> execute();       
   $data = $requete -> fetchALL(PDO::FETCH_OBJ);
   return $data;
-}
+};
 
 function insertNews($title, $content, $image, $desc_image, $date_envoie){
   global $db;
@@ -67,7 +96,7 @@ function insertNews($title, $content, $image, $desc_image, $date_envoie){
   $stmt->bindParam(':alt_news', $desc_image, PDO::PARAM_STR); 
   $stmt->execute();
   header('Location: admin-gestion.php');   
-}
+};
 
 function deleteNews($id){
   global $db;
@@ -75,5 +104,5 @@ function deleteNews($id){
   $stmt= $db->prepare($requete);
   $stmt->bindParam(1, $id, PDO::PARAM_INT); 
   $stmt->execute();
-}
+};
 ?>
