@@ -17,7 +17,7 @@
 
   function getProjets(){
     global $db;
-    $requete = $db->prepare('SELECT id_project,name_project, photo_project, ext_icon FROM projects ORDER BY date_project DESC');
+    $requete = $db->prepare('SELECT * FROM projects JOIN icons ON projects.ext_icon = icons.id_icon ORDER BY date_project DESC');
     $requete -> execute();       
     $data= $requete -> fetchALL(PDO::FETCH_OBJ);
     return $data;
@@ -25,7 +25,7 @@
 
   function getProjet($id){
     global $db;
-    $requete = $db -> prepare('SELECT * FROM projects WHERE id_project = ?');
+    $requete = $db->prepare('SELECT * FROM projects JOIN icons ON projects.ext_icon = icons.id_icon WHERE id_project = ? ');
     $requete -> execute(array($id));
     if($requete -> rowCount() == 1){
         $data = $requete -> fetch(PDO :: FETCH_OBJ);
@@ -35,4 +35,28 @@
         header('Location: index.php');
     }
   }
+
+  function getIcons(){
+    global $db;
+    $requete = $db->prepare('SELECT*FROM icons ORDER BY id_icon DESC');
+    $requete -> execute();       
+    $data= $requete -> fetchALL(PDO::FETCH_OBJ);
+    return $data;
+};
+
+function getIcon($id){
+  global $db;
+  $requete = $db -> prepare('SELECT * FROM icons WHERE id_project = ?');
+  $requete -> execute(array($id));
+  $data = $requete -> fetch(PDO :: FETCH_OBJ);
+  return $data;
+}
+
+function getNews(){
+  global $db;
+  $requete = $db->prepare('SELECT * FROM news ORDER BY date_news DESC');
+  $requete -> execute();       
+  $data= $requete -> fetchALL(PDO::FETCH_OBJ);
+  return $data;
+}; 
 ?>
