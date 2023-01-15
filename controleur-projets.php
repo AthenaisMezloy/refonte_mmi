@@ -7,6 +7,6 @@
     {
     extract($_GET);
     $id = strip_tags($id);
-    $this_projet = getProjet($id);
+    $this_projet = getProject($id);
     };
 ?>

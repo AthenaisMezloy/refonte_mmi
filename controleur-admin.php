@@ -31,22 +31,40 @@
         } else {
             // handle the error
         };
-        $desc_image = $_POST["info_photo_news"];
+        $desc_image = $_POST["alt_news"];
         $date_envoie = $_POST["date_news"];
         insertNews($title, $content, $image, $desc_image, $date_envoie);
-        echo "<script> alert('News a été créée avec succès !');</script>";
         header("Location: admin-gestion.php");
     }
 
-        if(isset($_POST['delete-news'])) {
-            $id_news = $_POST['id_news'];
-            deleteNews($id_news);
-            header('Location: admin-gestion.php');
-        }
+	if(isset($_POST['delete-news'])) {
+		$id_news = $_POST['id_news'];
+		deleteNews($id_news);
+		header('Location: admin-gestion.php');
+	}
 
-		if(isset($_POST['delete-project'])) {
-            $id_project = $_POST['id_project'];
-            deleteProject($id_project);
-            header('Location: admin-gestion.php');
-        }
+	if(isset($_POST['save-project'])){
+        $title = $_POST["name_project"];
+        $author = $_POST["name_author"];
+        $content = $_POST["description_project"];
+        $quote = $_POST["quote_project"];
+        $file = $_FILES["photo_project"];
+        if ($file["error"] == UPLOAD_ERR_OK) {
+            $image = file_get_contents($file["tmp_name"]);
+            // insert the image into the database
+        } else {
+            // handle the error
+        };
+        $desc_image = $_POST["alt_project"];
+        $date_envoie = $_POST["date_project"];
+		$ext_icon = $_POST["ext_icon"];
+        insertProject($title, $author, $content, $quote, $image, $desc_image, $date_envoie, $ext_icon);
+        header("Location: admin-gestion.php");
+    }
+
+	if(isset($_POST['delete-project'])) {
+		$id_project = $_POST['id_project'];
+		deleteProject($id_project);
+		header('Location: admin-gestion.php');
+	}
 ?>

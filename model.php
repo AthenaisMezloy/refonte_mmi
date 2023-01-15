@@ -42,7 +42,7 @@ function getTeachers(){
 };
 
 
-  function getProjets(){
+  function getProjects(){
     global $db;
     $requete = $db->prepare('SELECT * FROM projects JOIN icons ON projects.ext_icon = icons.id_icon ORDER BY date_project DESC');
     $requete -> execute();       
@@ -50,7 +50,7 @@ function getTeachers(){
     return $data;
 }; 
 
-  function getProjet($id){
+  function getProject($id){
     global $db;
     $requete = $db->prepare('SELECT * FROM projects JOIN icons ON projects.ext_icon = icons.id_icon WHERE id_project = ? ');
     $requete -> execute(array($id));
@@ -61,6 +61,22 @@ function getTeachers(){
     else {
         header('Location: index.php');
     }
+  };
+
+  function insertProject($title, $author, $content, $quote, $image, $desc_image, $date_envoie, $ext_icon){
+    global $db;
+    $requete= "INSERT INTO projects (name_project, name_author, description_project, quote_project, photo_project, date_project, ext_icon, alt_project) VALUES (:name_project, :name_author, :description_project, :quote_project, :photo_project, :date_project, :ext_icon, :alt_project)";
+    $stmt= $db->prepare($requete);
+    $stmt->bindParam(':name_project', $title, PDO::PARAM_STR); 
+    $stmt->bindParam(':name_author', $author, PDO::PARAM_STR); 
+    $stmt->bindParam(':description_project', $content, PDO::PARAM_STR); 
+    $stmt->bindParam(':quote_project', $quote, PDO::PARAM_STR); 
+    $stmt->bindParam(':photo_project', $image, PDO::PARAM_LOB); 
+    $stmt->bindParam(':date_project', $date_envoie, PDO::PARAM_STR); 
+    $stmt->bindParam(':ext_icon', $ext_icon, PDO::PARAM_INT); 
+    $stmt->bindParam(':alt_project', $desc_image, PDO::PARAM_STR); 
+    $stmt->execute();
+    header('Location: admin-gestion.php');   
   };
 
   function deleteProject($id){

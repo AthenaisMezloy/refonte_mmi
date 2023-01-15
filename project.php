@@ -1,6 +1,6 @@
 <?php 
     require("./model.php");
-    $projets = getProjets();
+    $projets = getProjects();
     $icons = getIcons();
 ?>
 <!DOCTYPE html>

@@ -1,7 +1,7 @@
 <?php
     require("./model.php");
     $teachers = getTeachers();
-    $projects = getProjets();
+    $projects = getProjects();
     $news = getNews();
 ?>
 <!DOCTYPE html>
@@ -45,8 +45,8 @@
             </div>
 
             <div>
-                <label for="info_photo_news">Description de l’image (pas plus de 100 caractères)</label>
-                <input type="text" name="info_photo_news">
+                <label for="alt_news">Description de l’image (pas plus de 100 caractères)</label>
+                <input type="text" name="alt_news">
             </div>
 
             <div>
@@ -84,46 +84,45 @@
     <section>
         <h2>Projets Étudiants</h2>
         <h3>Insérer un projet étudiant</h3>
-        <form action="">
+        <form action="./controleur-admin.php" method="post" enctype="multipart/form-data">
             <div>
-                <label for="title">Titre du projet</label>
-                <input type="text" name="title" id="">
+                <label for="name_project">Titre du projet</label>
+                <input type="text" name="name_project">
             </div>
 
             <div>
-                <label for="students">Étudiant(s) ayant participé</label>
-                <input type="text" name="students" id="">
+                <label for="name_author">Étudiant(s) ayant participé</label>
+                <input type="text" name="name_author">
             </div>
 
             <div>
-                <label for="content">Description du projet</label>
-                <input type="text" name="content" id="">
+                <label for="description_project">Description du projet</label>
+                <textarea name='description_project' cols='30' rows='10'></textarea>
             </div>
 
             <div>
-                <label for="content">Citation - témoignage final d'un étudiant</label>
-                <input type="text" name="content" id="">
+                <label for="quote_project">Citation - témoignage final d'un étudiant</label>
+                <textarea name='quote_project' cols='30' rows='10'></textarea>
             </div>
 
             <div>
-                <label for="image">Image</label>
-                <input type="file" name="image" id="">
+                <label for="photo_project">Image</label>
+                <input type="file" name="photo_project">
             </div>
 
             <div>
-                <label for="desc-image">Description de l’image (pas plus de 100 caractères)</label>
-                <input type="text" name="desc-image" id="">
+                <label for="alt_project">Description de l’image (pas plus de 100 caractères)</label>
+                <input type="text" name="alt_project">
             </div>
 
             <div>
-                <label for="date-projet">Date</label>
-                <input type="date" name="date-projet" id="">
+                <label for="date_project">Date</label>
+                <input type="date" name="date_project">
             </div>
 
             <div>
-                <label for="categorie">Catégorie</label>
-                <select name="categorie" id="">
-                    <option value="#">-- sélectionner un catégorie --</option>
+                <label for="ext_icon">Catégorie</label>
+                <select name="ext_icon">
                     <option value="1">Développement web</option>
                     <option value="2">Design</option>
                     <option value="3">Audiovisuel</option>
@@ -132,12 +131,12 @@
             </div>
 
             <div>
-                <input type="submit" value="Enregistrer">
+                <input type="submit" value="Enregistrer" name="save-project">
             </div>
         </form>
         <h3>Gérer les étudiants</h3>
         <TABLE border=1>
-            <tr><th>Titre</th><th>Étudiants</th><th>Description</th><th>Citation</th><th>Date</th></tr>
+            <tr><th>Titre</th><th>Étudiants</th><th>Description</th><th>Citation</th><th>Date</th><th>Action</th></tr>
             <?php foreach ($projects as $project): ?>
             <tr>
             <td><?=$project->name_project?></td>
@@ -158,7 +157,7 @@
     <section>
         <h2>Enseignant</h2>
         <h3>Insérer un enseignant</h3>
-        <form action="">
+        <form action="./controleur-admin.php" method="post" enctype="multipart/form-data">
             <div>
                 <label for="name">Prénom NOM</label>
                 <input type="text" name="name" id="">
