@@ -41,6 +41,13 @@ function getTeachers(){
   return $data;
 };
 
+function deleteTeacher($id){
+  global $db;
+  $requete= "DELETE FROM teachers WHERE id_teacher = ?";
+  $stmt= $db->prepare($requete);
+  $stmt->bindParam(1, $id, PDO::PARAM_INT); 
+  $stmt->execute();
+};
 
   function getProjects(){
     global $db;

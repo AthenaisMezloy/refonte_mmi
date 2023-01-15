@@ -159,23 +159,23 @@
         <h3>Insérer un enseignant</h3>
         <form action="./controleur-admin.php" method="post" enctype="multipart/form-data">
             <div>
-                <label for="name">Prénom NOM</label>
-                <input type="text" name="name" id="">
+                <label for="name_teacher">Prénom NOM</label>
+                <input type="text" name="name_teacher">
             </div>
 
             <div>
-                <label for="image">Image</label>
-                <input type="file" name="image" id="">
+                <label for="photo_teacher">Image</label>
+                <input type="file" name="photo_teacher">
             </div>
 
             <div>
                 <label for="desc-image">Description de l’image (pas plus de 100 caractères)</label>
-                <input type="text" name="desc-image" id="">
+                <input type="text" name="desc-image">
             </div>
 
             <div>
                 <label for="desc-image">Matière(s) enseignée(s)</label>
-                <input type="text" name="desc-image" id="">
+                <input type="text" name="desc-image">
             </div>
 
             <div>
@@ -184,16 +184,25 @@
         </form>
         <h3>Gérer les enseignant</h3>
 
-            <TABLE border=1>
-            <tr><th>Prénom NOM</th><th>Matière(s)</th></tr>
-
-            <?php
-                foreach ($teachers as $teacher){
-                    echo "<form action=\"\"><tr><td>{$teacher->name_teacher}</td><td>{$teacher->subject_teacher}</td><td><input type=\"submit\" value=\"Supprimer\"></td></tr>
-                    </form>";
-                }
-            ?>
-            </TABLE>
+        <table border=1>
+        <tr>
+            <th>Prénom NOM</th>
+            <th>Matière(s)</th>
+            <th>Action</th>
+        </tr>
+        <?php foreach ($teachers as $teacher): ?>
+            <tr>
+            <td><?=$teacher->name_teacher?></td>
+            <td><?=$teacher->subject_teacher?></td>
+            <td>
+                <form action="./controleur-admin.php" method="post">
+                <input type="hidden" name="id_teacher" value="<?=$teacher->id_teacher?>">
+                <input type="submit" value="Supprimer" name="delete-teacher" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet enregistrement ?');">
+                </form>
+            </td>
+            </tr>
+        <?php endforeach; ?>
+        </table>
     </section>
 
     <?php 

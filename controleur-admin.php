@@ -27,7 +27,6 @@
         $file = $_FILES["photo_news"];
         if ($file["error"] == UPLOAD_ERR_OK) {
             $image = file_get_contents($file["tmp_name"]);
-            // insert the image into the database
         } else {
             // handle the error
         };
@@ -51,7 +50,6 @@
         $file = $_FILES["photo_project"];
         if ($file["error"] == UPLOAD_ERR_OK) {
             $image = file_get_contents($file["tmp_name"]);
-            // insert the image into the database
         } else {
             // handle the error
         };
@@ -65,6 +63,13 @@
 	if(isset($_POST['delete-project'])) {
 		$id_project = $_POST['id_project'];
 		deleteProject($id_project);
+		header('Location: admin-gestion.php');
+	}
+
+
+	if(isset($_POST['delete-teacher'])) {
+		$id_teacher = $_POST['id_teacher'];
+		deleteTeacher($id_teacher);
 		header('Location: admin-gestion.php');
 	}
 ?>

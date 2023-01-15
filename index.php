@@ -147,7 +147,7 @@ Le BUT MMI vous ouvre la voie vers de nombreuses perspectives.</p>
                         <?php if ($i % 2 == 0): ?>
 
                             <?php if (!empty($article-> photo_news)): ?>
-                                <img src="data:image/webp;base64,<?= base64_encode($article->photo_news) ?>" alt="<?= $article->name_news ?>"/>
+                                <img src="data:image/webp;base64,<?= base64_encode($article->photo_news) ?>" alt="<?= $article->alt_news ?>"/>
                             <?php else: ?>
                                 <div class="img_notfound">
                                     <p>No image found.</p>
@@ -169,7 +169,7 @@ Le BUT MMI vous ouvre la voie vers de nombreuses perspectives.</p>
                                 </p>
                             </div>
                             <?php if (!empty($article-> photo_news)): ?>
-                                <img src="data:image/webp;base64,<?= base64_encode($article->photo_news) ?>" alt="<?= $article->name_news ?>"/>
+                                <img src="data:image/webp;base64,<?= base64_encode($article->photo_news) ?>" alt="<?= $article->alt_news ?>"/>
                             <?php else: ?>
                                 <div class="img_notfound">
                                     <p>No image found.</p>

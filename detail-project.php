@@ -26,7 +26,7 @@
         <div class="content">
             <div class="img-container">
             <?php if (!empty($this_projet->photo_project)): ?>
-                <img src="data:image/webp;base64,<?= base64_encode($this_projet->photo_project) ?>" alt="<?= $this_projet->name_project ?>"/>
+                <img src="data:image/webp;base64,<?= base64_encode($this_projet->photo_project) ?>" alt="<?= $this_projet->alt_project ?>"/>
             <?php else: ?>
                 <p>No image found.</p>
             <?php endif; ?>

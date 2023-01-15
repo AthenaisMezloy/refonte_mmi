@@ -55,7 +55,7 @@
         <li class="article-box <?= $projet->ext_icon?>">
         <a href="detail-project.php?id=<?= $projet->id_project ?>">
             <?php if (!empty($projet->photo_project)): ?>
-                <img src="data:image/webp;base64,<?= base64_encode($projet->photo_project) ?>" alt="<?= $projet->name_project ?>"/>
+                <img src="data:image/webp;base64,<?= base64_encode($projet->miniature_project) ?>" alt="<?= $projet->alt_project ?>"/>
             <?php else: ?>
                 <p>No image found.</p>
             <?php endif; ?>
