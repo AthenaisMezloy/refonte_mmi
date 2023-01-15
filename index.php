@@ -42,10 +42,10 @@
 
     <section id="home">
         <div class="block">
-        </div>
-        <div class="title">
-            <h1>BUT MMI</h1>
-            <p>Métiers du Multimédia et de l'Internet</p>
+            <div class="title">
+                <h1>BUT MMI</h1>
+                <p>Métiers du Multimédia et de l'Internet</p>
+            </div>
         </div>
     </section>
 
