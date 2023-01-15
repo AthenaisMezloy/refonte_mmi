@@ -16,7 +16,7 @@
         ?>
         <section id="log-page">
 
-			<form action="./controleur_session.php?action=log">
+			<form action="./controleur-admin.php">
                 <ul>
                     <li><h1>Entrez vos identifiants</h1></li>
                     <li>
