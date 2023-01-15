@@ -68,4 +68,12 @@ function insertNews($title, $content, $image, $desc_image, $date_envoie){
   $stmt->execute();
   header('Location: admin-gestion.php');   
 }
+
+function deleteNews($id){
+  global $db;
+  $requete= "DELETE FROM news WHERE id_news = ?";
+  $stmt= $db->prepare($requete);
+  $stmt->bindParam(1, $id, PDO::PARAM_INT); 
+  $stmt->execute();
+}
 ?>

@@ -55,20 +55,31 @@
             </div>
 
             <div>
-                <input type="submit" value="Enregistrer">
+                <input type="submit" value="Enregistrer" name="save-news">
             </div>
         </form>
         <h3>Gérer les actualités</h3>
-        <TABLE border=1>
-            <tr><th>Titre</th><th>Texte</th><th>Date</th></tr>
-
-            <?php
-                foreach ($news as $article){
-                    echo "<form action=\"\"><tr><td>{$article->title_news}</td><td>{$article->content_news}</td><td>{$article->date_news}</td><td><input type=\"submit\" value=\"Supprimer\"></td></tr>
-                    </form>";
-                }
-            ?>
-            </TABLE>
+        <table border=1>
+        <tr>
+            <th>Titre</th>
+            <th>Texte</th>
+            <th>Date</th>
+            <th>Action</th>
+        </tr>
+        <?php foreach ($news as $article): ?>
+            <tr>
+            <td><?=$article->title_news?></td>
+            <td><?=$article->content_news?></td>
+            <td><?=$article->date_news?></td>
+            <td>
+                <form action="./controleur-news.php" method="post">
+                <input type="hidden" name="id_news" value="<?=$article->id_news?>">
+                <input type="submit" value="Supprimer" name="delete-news" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet enregistrement ?');">
+                </form>
+            </td>
+            </tr>
+        <?php endforeach; ?>
+        </table>
     </section>
     <section>
         <h2>Projets Étudiants</h2>
