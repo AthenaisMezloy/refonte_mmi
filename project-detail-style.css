@@ -104,6 +104,10 @@ a {
     margin: 0.5em;
 }
 
+#home .content .text-container a {
+    text-decoration: underline;
+}
+
 /* Auteur */
 
 #author {

@@ -107,3 +107,7 @@ a {
     padding: 1em;
     border-radius: 5em;
 }
+
+.dark #log-page form {
+    border-color: white;
+}

@@ -368,6 +368,10 @@ h3 {
     text-decoration: underline;
 }
 
+.dark #news a {
+    color: white;
+}
+
 /* Palette de couleurs */
 
 .blue {

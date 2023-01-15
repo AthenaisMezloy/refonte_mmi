@@ -125,3 +125,7 @@ h1 {
     color: black;
     text-decoration: underline;
 }
+
+.dark #news a {
+    color: white;
+}
