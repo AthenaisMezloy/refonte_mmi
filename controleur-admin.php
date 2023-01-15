@@ -66,6 +66,18 @@
 		header('Location: admin-gestion.php');
 	}
 
+	if(isset($_POST['save-teacher'])){
+        $name = $_POST["name_teacher"];
+        $file = $_FILES["photo_teacher"];
+        if ($file["error"] == UPLOAD_ERR_OK) {
+            $image = file_get_contents($file["tmp_name"]);
+        } else {
+            // handle the error
+        };
+		$subject = $_POST["subject_teacher"];
+        insertTeacher($name, $image, $subject);
+        header("Location: admin-gestion.php");
+    }
 
 	if(isset($_POST['delete-teacher'])) {
 		$id_teacher = $_POST['id_teacher'];

@@ -41,6 +41,17 @@ function getTeachers(){
   return $data;
 };
 
+function insertTeacher($name, $image, $subject){
+  global $db;
+  $requete= "INSERT INTO teachers (name_teacher, photo_teacher, subject_teacher) VALUES (:name_teacher, :photo_teacher, :subject_teacher)";
+  $stmt= $db->prepare($requete);
+  $stmt->bindParam(':name_teacher', $name, PDO::PARAM_STR); 
+  $stmt->bindParam(':photo_teacher', $image, PDO::PARAM_LOB); 
+  $stmt->bindParam(':subject_teacher', $subject, PDO::PARAM_STR); 
+  $stmt->execute();
+  header('Location: admin-gestion.php');   
+};
+
 function deleteTeacher($id){
   global $db;
   $requete= "DELETE FROM teachers WHERE id_teacher = ?";

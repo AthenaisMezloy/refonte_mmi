@@ -169,17 +169,12 @@
             </div>
 
             <div>
-                <label for="desc-image">Description de l’image (pas plus de 100 caractères)</label>
-                <input type="text" name="desc-image">
+                <label for="subject_teacher">Matière(s) enseignée(s)</label>
+                <input type="text" name="subject_teacher">
             </div>
 
             <div>
-                <label for="desc-image">Matière(s) enseignée(s)</label>
-                <input type="text" name="desc-image">
-            </div>
-
-            <div>
-                <input type="submit" value="Enregistrer">
+                <input type="submit" value="Enregistrer" name="save-teacher">
             </div>
         </form>
         <h3>Gérer les enseignant</h3>
