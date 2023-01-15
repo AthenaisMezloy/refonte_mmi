@@ -30,9 +30,9 @@
     </div>
     <ul class="list">
         <li><a href="./index.php">Accueil</a></li>
-        <li><a href="">La Formation</a></li>
+        <li><a href="#">La Formation</a></li>
         <li><a href="./project.php">Projets</a></li>
-        <li><a href="">Après MMI</a></li>
+        <li><a href="./aftermmi.php">Après MMI</a></li>
         <li><a href="./international.php">International</a></li>
         <li><a href="./about.php">À propos</a></li>
         <li>

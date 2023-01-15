@@ -15,6 +15,31 @@
   $db =new PDO("mysql:host=localhost;dbname=dbs9638858;port=3306;charset=utf8",'root','');
   $db-> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
+  function traiteLogin(){
+    global $db;
+    $db->query('SET NAMES utf8');   
+    $requete="SELECT * FROM admin WHERE login=:login";
+    $stmt=$db->prepare($requete);
+    $stmt->bindParam(':login',$_GET["login"], PDO::PARAM_STR);
+    $stmt->execute();   
+    if ($stmt->rowcount()==1){
+        $result=$stmt->fetch(PDO::FETCH_ASSOC);
+        if (password_verify($_GET["pwd"],$result["password"])){
+            $_SESSION["login"]=$_GET["login"];
+            $_SESSION["id"] = $result["id_admin"];
+            return 1;
+        } else {return 2;}
+    } else {return 3;}
+};
+
+function getTeachers(){
+  global $db;
+  $requete = $db->prepare('SELECT * FROM teachers ORDER BY name_teacher ASC');
+  $requete -> execute();       
+  $data = $requete -> fetchALL(PDO::FETCH_OBJ);
+  return $data;
+};
+
   function getProjets(){
     global $db;
     $requete = $db->prepare('SELECT * FROM projects JOIN icons ON projects.ext_icon = icons.id_icon ORDER BY date_project DESC');
@@ -34,7 +59,15 @@
     else {
         header('Location: index.php');
     }
-  }
+  };
+
+  function deleteProject($id){
+    global $db;
+    $requete= "DELETE FROM projects WHERE id_project = ?";
+    $stmt= $db->prepare($requete);
+    $stmt->bindParam(1, $id, PDO::PARAM_INT); 
+    $stmt->execute();
+  };
 
   function getIcons(){
     global $db;
@@ -50,13 +83,34 @@ function getIcon($id){
   $requete -> execute(array($id));
   $data = $requete -> fetch(PDO :: FETCH_OBJ);
   return $data;
-}
+};
 
 function getNews(){
   global $db;
   $requete = $db->prepare('SELECT * FROM news ORDER BY date_news DESC');
   $requete -> execute();       
-  $data= $requete -> fetchALL(PDO::FETCH_OBJ);
+  $data = $requete -> fetchALL(PDO::FETCH_OBJ);
   return $data;
-}; 
+};
+
+function insertNews($title, $content, $image, $desc_image, $date_envoie){
+  global $db;
+  $requete= "INSERT INTO news (title_news, photo_news, content_news, date_news,alt_news) VALUES (:title_news, :photo_news, :content_news, :date_news, :alt_news)";
+  $stmt= $db->prepare($requete);
+  $stmt->bindParam(':title_news', $title, PDO::PARAM_STR); 
+  $stmt->bindParam(':photo_news', $image, PDO::PARAM_LOB); 
+  $stmt->bindParam(':content_news', $content, PDO::PARAM_STR); 
+  $stmt->bindParam(':date_news', $date_envoie, PDO::PARAM_STR); 
+  $stmt->bindParam(':alt_news', $desc_image, PDO::PARAM_STR); 
+  $stmt->execute();
+  header('Location: admin-gestion.php');   
+};
+
+function deleteNews($id){
+  global $db;
+  $requete= "DELETE FROM news WHERE id_news = ?";
+  $stmt= $db->prepare($requete);
+  $stmt->bindParam(1, $id, PDO::PARAM_INT); 
+  $stmt->execute();
+};
 ?>
