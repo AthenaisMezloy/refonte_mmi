@@ -54,6 +54,13 @@
             
         <?php foreach($projets as $projet): ?>
         <li class="article-box <?= $projet->ext_icon?>">
+        
+        <?php if (!empty($projet->photo_project)): ?>
+                <img src="data:image/webp;base64,<?= base64_encode($projet->image_icon) ?>" alt="<?= $projet->name_icon ?>" class="icon-box"/>
+            <?php else: ?>
+                <p>No image found.</p>
+            <?php endif; ?>
+
         <a href="detail-project.php?id=<?= $projet->id_project ?>">
             <?php if (!empty($projet->photo_project)): ?>
                 <img src="data:image/webp;base64,<?= base64_encode($projet->miniature_project) ?>" alt="<?= $projet->alt_project ?>"/>
