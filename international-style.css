@@ -157,9 +157,17 @@ section {
     overflow: hidden;
 }
 
+.dark .UQAC, .dark .CEGEP {
+    color: black;
+}
+
 .UQAC a, .CEGEP a {
     color: black;
     text-decoration: underline;
+}
+
+.dark .UQAC a, .dark .CEGEP a {
+    color: black;
 }
 
 .UQAC {
@@ -237,6 +245,10 @@ section {
     text-decoration: underline;
 }
 
+.dark #join-mmi a {
+    color: white;
+}
+
 #join-mmi p, #join-mmi li{
     font-size: 0.8em;
 }
@@ -261,6 +273,10 @@ section {
     border: 2px solid black;
     width: 80%;
 
+}
+
+.dark .content-join{
+    border: 2px solid white;
 }
 
 #join-mmi .container li ul {
