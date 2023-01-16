@@ -29,13 +29,7 @@ p {
     font-weight: 400;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-}
-
 li {
-    list-style: none;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -51,6 +45,7 @@ section{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    margin: 0 0 5em 0;
 }
 
 .box{
