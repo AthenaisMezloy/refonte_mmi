@@ -108,4 +108,3 @@ filterButtons.forEach(function(button) {
         });
     });
 });
-``
