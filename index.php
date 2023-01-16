@@ -27,6 +27,9 @@
                 <h1>BUT MMI</h1>
                 <p>Métiers du Multimédia et de l'Internet</p>
             </div>
+            <div class="btn-go">
+                <button id="scroll-button"><img src="./img/icons/arrow.svg" alt=""></button>
+            </div>
         </div>
     </section>
 

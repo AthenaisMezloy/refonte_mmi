@@ -32,9 +32,26 @@
         </li>
     </ul>
 </nav>
-<div class="display">
-    <div class="syllabus">
-      <a href="#">GeeksforGeeks / </a>
-    </div>
-  </div>
+<?php
+    $pages = array(
+        "Actualités" => "news.php",
+        "Formation" => "formation.php",
+        "International" => "international.php",
+        "À propos" => "about.php",
+        "Projets" => "project.php",
+        "Après mmi" => "aftermmi.php",
+        "Détails Projet" => "detail-project.php"
+    );
+
+    $current_page = basename($_SERVER['PHP_SELF']);
+
+    echo "<div class='breadcrumb'>";
+    foreach ($pages as $page => $url) {
+        if ($url == $current_page) {
+            echo "Accueil > " . $page;
+        }
+    }
+    echo "</div>";
+?>
+
 

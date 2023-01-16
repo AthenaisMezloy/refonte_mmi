@@ -198,3 +198,13 @@ footer a
     justify-content: space-between;
     width: 100%;
 }
+
+.breadcrumb{
+    position: absolute;
+    top: 12%;
+    left: 1%;
+    z-index: 1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+
+}

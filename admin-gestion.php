@@ -29,7 +29,7 @@
     <section id="actu">
         <h2>Actualités</h2>
         <h3>Insérer une actualité</h3>
-        <form action="./controleur-admin.php" method="post" enctype="multipart/form-data" class="form-save">
+        <form action="./controleur-admin.php" method="post" enctype="multipart/form-data" class="form-save" id="formulaire">
             <div>
                 <p>*Champs Obligatoires</p>
             </div>
@@ -88,7 +88,7 @@
     <section>
         <h2>Projets Étudiants</h2>
         <h3>Insérer un projet étudiant</h3>
-        <form action="./controleur-admin.php" method="post" enctype="multipart/form-data"  class="form-save">
+        <form action="./controleur-admin.php" method="post" enctype="multipart/form-data"  class="form-save" id="formulaire">
             <div>
                 <p>*Champs Obligatoires</p>
             </div>
@@ -164,7 +164,7 @@
     <section>
         <h2>Enseignant</h2>
         <h3>Insérer un enseignant</h3>
-        <form action="./controleur-admin.php" method="post" enctype="multipart/form-data"  class="form-save">
+        <form action="./controleur-admin.php" method="post" enctype="multipart/form-data"  class="form-save" id="formulaire">
            <div>
                 <p>*Champs Obligatoires</p>
             </div>
