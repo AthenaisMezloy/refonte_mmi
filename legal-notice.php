@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="legal-notice-style.css">
-    <title>MMI Champs - Mentions Légales</title>
+    <title>Mentions Légales - BUT MMI Champs</title>
 </head>
 
 <body>

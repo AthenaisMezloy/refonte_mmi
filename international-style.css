@@ -70,7 +70,9 @@ section {
     justify-content: center;
     align-items: center;
     width: 80%;
+    border: 2px solid black;
 }
+
 
 .content div {
     width: 100%;
@@ -85,6 +87,10 @@ section {
     padding: 1em;
     font-size: 0.9em;
 }
+
+.dark .content {
+    border: 2px solid white;
+} 
 
 #intro h2, #one-title h2, #quebec h2 {
     display: flex;

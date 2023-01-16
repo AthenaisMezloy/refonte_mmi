@@ -338,6 +338,10 @@ h3 {
     color: white;
 }
 
+.dark .news-list li {
+    border: 2px solid white;
+}
+
 /* Palette de couleurs */
 
 .blue {

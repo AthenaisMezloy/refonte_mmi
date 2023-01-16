@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="project-style.css">
-    <title>But MMI Champs - Projets</title>
+    <title>Projets étudiants - BUT MMI Champs</title>
 </head>
 <body>
         <?php 

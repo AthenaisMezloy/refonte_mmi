@@ -132,3 +132,7 @@ h1 {
 .dark #news a {
     color: white;
 }
+
+.dark .news-list li {
+    border: 2px solid white;
+}

@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="aftermmi-style.css">
-    <title>BUT MMI Champs-sur-Marne</title>
+    <title>Après MMI - BUT MMI Champs</title>
 </head>
 
 <body>

@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="international-style.css">
-    <title>BUT MMI Champs - International</title>
+    <title>International - BUT MMI Champs</title>
 </head>
 <body>
     <?php 
@@ -29,8 +29,8 @@
         <div class="content">
             <div class="text-container">
                 <p>
-                    Reformed since 2021 in a Bachelor, this 3 years degree deals with Multimedia and Internet Professions.
-                    At Champs-sur-Marne, from the fourth semester, you have to choose between two specialisations : Web development & Interactive device, or Digital creation/design.
+                This 3-year degree, which was the object of a reform plan in 2021, deals with Multimedia and Internet Professions.
+                At Champs-sur-Marne, at the beginning of the fourth semester, two study tracks are possible : Web development & Interactive device, or Digital creation/design.
                 </p>
             </div>
                 <img src="./img/international/whatsmmi.webp" alt="">
@@ -45,7 +45,7 @@
                 <p>
                 The training is organized around six semesters. The hourly volume is 2600 hours divided over three years, including 600 hours devoted to tutored projects, shared between communication, languages, IT, graphic culture, scientific culture and networks.
                 At least 42% of the hours are devoted to practical lessons and professional situations.
-                Lessons are given between lectures, seminar/tutorials, and practical works.                
+                Lessons are divided into lectures, seminars/tutorials, and practical works.               
                 </p>
             </div>
         </div>
@@ -56,8 +56,8 @@
         <div class="content">
             <div class="text-container">
                 <p>
-                During the fourth semester, you have the chance to study in Québec. It’s a way for the MMI’s students to have an unusual experience, to discover another culture.
-                The University is in partnership with two schools, the UQAC (Université du Québec à Chicoutimi) and the CÉGEP of Sainte-Foy (Collège d’Enseignement Général Et Professionnel).                
+                During the fourth semester, you have the chance to study in Quebec. It’s a way for the MMI students to have an unusual experience, to discover another culture.
+                The University is in partnership with two schools, the UQAC (Université du Québec à Chicoutimi) and the CÉGEP of Sainte-Foy (Collège d’Enseignement Général Et Professionnel).              
                 </p>
             </div>
                 <img src="./img/international/aircanada.webp" alt="">

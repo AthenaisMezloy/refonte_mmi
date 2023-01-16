@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="deconnexion-style.css">
-    <title>Déconnexion</title>
+    <title>Déconnexion - BUT MMI Champs</title>
 </head>
 <body>
     <?php
