@@ -1,0 +1,113 @@
+*,
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    margin: 0;
+    z-index: 0;
+    background-color: #FFFCF6;
+    transition: all ease 0.5s;
+}
+
+h1,h2,h3,h4 {
+    margin: 0;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+
+}
+
+p {
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    transition: all ease 0.5s;
+}
+
+#log-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+}
+
+#log-page form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    border: 2px solid black;
+}
+
+#log-page li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em 0 0.5em 0;
+    width: 100%;
+}
+
+.btn-bubble {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background: none;
+    color: black;
+    border: 1px solid black;
+    padding: 0.7em;
+    border-radius: 5em;
+}
+
+.btn-bubble p {
+    display: inline;
+}
+
+.btn-bubble img {
+    display: none;
+    transform: rotate(-90deg);
+    transition: all ease 0.5s;
+}
+
+.btn-bubble:hover img {
+    display: flex;
+    mix-blend-mode: difference;
+    width: 16px;
+    transform: rotate(-90deg);
+    margin: 0 0.5em 0 0.5em;
+}
+
+.dark .btn-bubble {
+    color: white;
+    border: 1px solid white;
+    padding: 1em;
+    border-radius: 5em;
+}
+
+.dark #log-page form {
+    border-color: white;
+}

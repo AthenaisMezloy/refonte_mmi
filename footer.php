@@ -1,87 +1,56 @@
+<link rel="stylesheet" href="footer-nav-style.css">
 <footer>
     <div class="info-container">
         <div class="contact-content">
-            <h2>Content</h2>
             <ul>
                 <li>
-                    Mail :
+                    Contact
+                </li>
+
+                <li>
+                    Mail : <a href="mailto:mmi-dir.iut@univ-eiffel.fr">mmi-dir.iut@univ-eiffel.fr</a>
                 </li>
                 <li>
-                    Téléphone :
+                    Téléphone : 01 60 95 85 90
                 </li>
                 <li>
-                    Réseaux sociaux :
+                    Réseaux sociaux : 
+                    <br>Twitter <a href="https://twitter.com/MMI_Champs">@MMI_Champs</a>
+                    <br>Instagram <a href="https://www.instagram.com/mmi_champs/">@MMI_Champs</a> <a href="https://www.instagram.com/mmind_mmi/">@mmind_mmi</a>
                 </li>
             </ul>
         </div>
-        <svg width="1" height="180">
-            <rect width="100%" height="100%" fill="black" />
+        <svg width="2" height="180">
+            <rect width="100%" height="100%" fill="white" />
         </svg>
         <div class="map-content">
-            <h2>Adresse</h2>       
             <ul>
                 <li>
+                    Adresse : 
+                    <br>2, rue Albert Einstein
+                    <br>77420 Champs-sur-Marne 
+                </li>
+                <li>
                     Transport :
+                    <br>RER A : station Noisy-Champs
+                    <br>Bus ligne 212 et 312 : arrêt Nobel
                 </li>
             </ul>
         </div>
     </div>
 
     <div class="law-content">
-        <p>Copyright La TABL Team</p>
-        <h2>Mentions légales</h2>
-        <a href="#home"><p>HAUT DE PAGE</p></a>
+        <ul>
+            <li>
+                Copyright La TABL Team
+            </li>
+            <li>
+                <a href="./legal-notice.php">Mentions légales</a>
+            </li>
+            <li>
+                <a href="#home">HAUT DE PAGE</a>
+            </li>
+        </ul>
     </div>
 </footer>
-<style>
-    footer {
-    background-color: white;
-    width: 100%;
-    height: 40vh;
-    padding: 0.5em 1em 0.5em 1em;
-}
-
-.info-container {
-    display: flex;
-    width: 100%;
-    height: 80%;
-}
-
-.info-container div {
-    width: 50%;
-}
-
-.info-container div h2 {
-    text-align: center;
-}
-
-.info-container ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    height: 70%;
-}
-
-.map-content {
-    padding: 0 0 0 1em;
-}
-
-.law-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 20%;
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.8em;
-}
-
-.law-content h2 {
-    font-size: 1.5em;
-}
-
-.law-content a {
-    color: black;
-}
-</style>
+<script src="./script.js"></script>

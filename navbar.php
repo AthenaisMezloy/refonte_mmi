@@ -1,49 +1,55 @@
+<script src=
+   "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+
+<link rel="stylesheet" href="footer-nav-style.css">
+
+<style>
+    .dark{ 
+    background-color: black; 
+    color: white; 
+    }
+
+    .dark a{
+        color: white;
+    }
+
+    .dark .block {
+        background-color: black;
+    }
+    
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+</style>
+
 <nav>
     <div>
         <img src="./img/assets/logo_img.svg" alt="">
     </div>
-    <ul>
-        <li><a href="">Accueil</a></li>
-        <li><a href="">La Formation</a></li>
+    <ul class="list">
+        <li><a href="./index.php">Accueil</a></li>
+        <li><a href="#">La Formation</a></li>
         <li><a href="./project.php">Projets</a></li>
-        <li><a href="">Après MMI</a></li>
-        <li><a href="">International</a></li>
-        <li><a href="">À propos</a></li>
+        <li><a href="./aftermmi.php">Après MMI</a></li>
+        <li><a href="./international.php">International</a></li>
+        <li><a href="./about.php">À propos</a></li>
+        <li>
+            <button id="btn-theme">
+                <div class="day">
+                    <img src="./img/icons/moon.webp" alt=""><p>Nuit</p>
+                </div>
+                <div  class="night">
+                <img src="./img/icons/sun.webp" alt=""><p>Jour</p>
+                </div>
+            </button>
+        </li>
     </ul>
 </nav>
-<style>
-    nav {
-        color: white;
-        position: absolute;
-        font-family: 'Poppins', sans-serif;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        height: 8vh;
-        padding: 0.2em 2em 0 1em;
-        font-size: 0.8em;
-        z-index: 2;
-        mix-blend-mode: difference;
-    }
+<div class="display">
+    <div class="syllabus">
+      <a href="#">GeeksforGeeks / </a>
+    </div>
+  </div>
 
-    nav a {
-        color: white;
-    }
-
-    nav div {
-        width: 30%;
-    }
-
-    nav div img {
-        width: 25%;
-        height: auto;
-        padding: 0.2em;
-    }
-
-    nav ul {
-        display: flex;
-        justify-content: space-between;
-        width: 60%;
-    }
-</style>
