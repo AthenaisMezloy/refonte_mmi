@@ -73,8 +73,8 @@
                             <p>
                             The UQAC is located in Saguenay-Lac-Saint-Jean, a French-speaking region of Canada, a 2h-drive from Quebec and 4h30min from Montréal.
                             Its strength? The diversity of the trainings. There are some 200 different training courses.
-                            As an MMI student, the training attributed is the Interdisciplinary Level in Arts, with a great variety of courses
-                            You want to know more ? Visit the UQAC’s website here.
+                            As an MMI student, the training attributed is the Interdisciplinary Level in Arts, with a great variety of courses <br>
+                            <a href="https://www.uqac.ca/">You want to know more ? Visit the UQAC’s website here.</a>
                             </p>
                     </div>
                     <div class="text">
@@ -85,8 +85,8 @@
                     <div class="hover-text">
                         <p>
                         Renowned for its programmes’ excellence, its 9 800 student’s performance and its teaching’s quality, the CÉGEP is very attractive.
-                        There is a great diversity of training, and as a MMI student, you will follow the TIM’s training (Technique d’Intégration Multimédia).
-                        Search for more informations on the CÉGEP’s website here.
+                        There is a great diversity of training, and as a MMI student, you will follow the TIM’s training (Technique d’Intégration Multimédia).<br>
+                        <a href="https://www.csfoy.ca/accueil/">Search for more informations on the CÉGEP’s website here.</a>
                         </p>
                     </div>
                     <div class="text">
@@ -123,22 +123,22 @@
                         <li>
                             <h5>1st step :</h5>
                                 <ul>
-                                    <li>For a registration in the 1st year of 3-year degree (Licence), you have to connect on the Parcoursup website.</li>
-                                    <li>For a registration in a 2nd or 3rd year of 3-year degree, master’s degree or in an engineer training, you have to use the eCandidat app, on the Gustave Eiffel University’s website. Most of our training from 2nd year of 3-year degree to master’s degree are offered with online application.</li>
+                                    <li>For a registration in the 1st year of 3-year degree (Licence), you have to connect on the <a href="https://www.parcoursup.fr/">Parcoursup</a> website.</li>
+                                    <li>For a registration in a 2nd or 3rd year of 3-year degree, master’s degree or in an engineer training, you have to use the <a href="https://candidatures.univ-eiffel.fr/ecandidat">eCandidat app</a>, on the Gustave Eiffel University’s website. Most of our training from 2nd year of 3-year degree to master’s degree are offered with <a href="https://candidatures.univ-eiffel.fr/ecandidat">online application</a>.</li>
                                 </ul>
                         </li>
                         <li>
                             <h5>2nd step :</h5>
-                            <p>If your application is accepted, you can follow the process pointed on the page Step of the Administrative Registration.</p>
+                            <p>If your application is accepted, you can follow the process pointed on the page Step of the <a href="https://candidatures.univ-eiffel.fr/ecandidat">Administrative Registration</a>.</p>
                         </li>
                         <li>
                             <h5>3rd step :</h5>
-                            <p>The educational registration is made online, with the student number and the date of birth (ddmmyyyy).</p>
+                            <p>The <a href="https://ip-web.univ-eiffel.fr/ipweb/">educational registration is made online</a>, with the student number and the date of birth (ddmmyyyy).</p>
                         </li> <br>
                     </ul>
                     <h4>International students out of European Union and European Economic Area students</h4>
                     <p>
-                        In that case, follow this link to know the registration process.
+                        In that case, follow <a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux/etudiants-hors-programme-dechange/procedure-dinscription">this link to know the registration process</a>.
                     </p>
                 </div>
             </li>
@@ -154,7 +154,7 @@
                 </div>
             </li>
 
-            <p class="search-more">Search for more information on the University Gustave Eiffel pages about that (Intertional Students) or on campusfrance.org (Warning : these websites are French-speaking).</p>
+            <p class="search-more">Search for more information on the University Gustave Eiffel pages about that (<a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux/etudiants-hors-programme-dechange/procedure-dinscription">Intertional Students</a>) or on <a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux/etudiants-hors-programme-dechange/procedure-dinscription">campusfrance.org</a> (Warning : these websites are French-speaking).</p>
 
         </ul>
 

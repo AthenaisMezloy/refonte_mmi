@@ -227,6 +227,11 @@ section {
     font-weight: bolder;
 }
 
+#join-mmi a {
+    color: black;
+    text-decoration: underline;
+}
+
 #join-mmi p, #join-mmi li{
     font-size: 0.8em;
 }
