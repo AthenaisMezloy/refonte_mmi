@@ -31,9 +31,10 @@
                     </li>
                     <li>
                         <label for="pwd">Mot de passe :</label>
-                        <div>
-                            <input type="password" name="pwd" id="myInput">
-                            <input type="checkbox" onclick="myFunction()">Show Password
+                        <input type="password" name="pwd" id="myInput">
+                        <div class="show-pwd">
+                            <label for="show_pwd">Montrer mot de passe</label>
+                            <input type="checkbox" onclick="myFunction()" name="show_pwd">
                         </div>
                         <?php 
                         if (isset($_GET["err"]) && $_GET["err"]=="mdp") { echo "ATTENTION MAUVAIS MOT DE PASSE";}
