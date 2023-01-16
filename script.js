@@ -76,20 +76,20 @@ if (page == "index.php") {
 //
 // Boutons de Sections
 
-$(document).ready(function() {
+// $(document).ready(function() {
     
-    $("#btn-1").addClass("bg-orange");
-    $(".icon").addClass("bg-grey");
+//     $("#btn-1").addClass("bg-orange");
+//     $(".icon").addClass("bg-grey");
 
-    $(".icon").on('click', function(event){
-        var id = $(event.target).attr('id');
-        console.log(id);
-        $(".icon").removeClass("bg-orange");
-        $(this).addClass("bg-orange");
+//     $(".icon").on('click', function(event){
+//         var id = $(event.target).attr('id');
+//         console.log(id);
+//         $(".icon").removeClass("bg-orange");
+//         $(this).addClass("bg-orange");
         
-      });
+//       });
 
-});
+// });
 
 //
 // filtre projets

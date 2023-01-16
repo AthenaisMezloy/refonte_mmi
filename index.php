@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require("model.php");
     $news = getNews();
 ?>
@@ -16,30 +17,6 @@
 </head>
 
 <body>
-
-    <div class="btn-section">
-        <ul>
-            <a href="#home">
-                <li class="icon" id="btn-1"></li>
-            </a>
-            <a href="#courses">
-                <li class="icon" id="btn-2"></li>
-            </a>
-            <a href="#projects">
-                <li class="icon" id="btn-3"></li>
-            </a>
-            <a href="#after-mmi">
-                <li class="icon" id="btn-4"></li>
-            </a>
-            <a href="#course-choice">
-                <li class="icon" id="btn-5"></li>
-            </a>
-            <a href="#news">
-                <li class="icon" id="btn-6"></li>
-            </a>
-        </ul>
-    </div>
-
 <?php 
         include("./navbar.php")
         ?>
@@ -155,6 +132,7 @@ Le BUT MMI vous ouvre la voie vers de nombreuses perspectives.</p>
                             <?php endif; ?>
                             <div class="text">
                                 <p>
+                                    <?= $article ->title_news ?> <br><br>
                                     <?= $article ->content_news ?> <br><br>
                                     <?= $article ->date_news ?>
                                 </p>
@@ -164,6 +142,7 @@ Le BUT MMI vous ouvre la voie vers de nombreuses perspectives.</p>
 
                             <div class="text">
                                 <p>
+                                    <?= $article ->title_news ?> <br><br>
                                     <?= $article ->content_news ?> <br><br>
                                     <?= $article ->date_news ?>
                                 </p>

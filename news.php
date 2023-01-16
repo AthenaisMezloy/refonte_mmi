@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require("model.php");
     $news = getNews();
 ?>
@@ -41,6 +42,7 @@
                                     <?php endif; ?>
                                     <div class="text">
                                         <p>
+                                            <?= $article ->title_news ?> <br><br>
                                             <?= $article ->content_news ?> <br><br>
                                             <?= $article ->date_news ?>
                                         </p>
@@ -50,6 +52,7 @@
         
                                     <div class="text">
                                         <p>
+                                            <?= $article ->title_news ?> <br><br>
                                             <?= $article ->content_news ?> <br><br>
                                             <?= $article ->date_news ?>
                                         </p>

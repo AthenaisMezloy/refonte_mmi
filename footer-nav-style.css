@@ -1,6 +1,23 @@
 
 /* Dark Mode */
 
+.dark{ 
+    background-color: black; 
+    color: white; 
+    }
+
+    .dark a{
+        color: white;
+    }
+
+    .dark .block {
+        background-color: black;
+    }
+    
+    nav a:hover {
+        text-decoration: underline;
+    }
+
 .dark footer{ 
     background-color: #FFFCF6;
      color: black;
@@ -64,7 +81,8 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 65%;
+    width: 60%;
+    flex-wrap: wrap;
 }
 
 #btn-theme {

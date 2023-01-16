@@ -3,40 +3,23 @@
 </script>
 
 <link rel="stylesheet" href="footer-nav-style.css">
-
-<style>
-    .dark{ 
-    background-color: black; 
-    color: white; 
-    }
-
-    .dark a{
-        color: white;
-    }
-
-    .dark .block {
-        background-color: black;
-    }
-    
-    nav a:hover {
-        text-decoration: underline;
-    }
-
-</style>
-
 <nav>
     <div>
         <a href="./index.php">
-        <img src="./img/assets/logo_img.svg" alt="">
+        <img src="./img/assets/logo_img.svg" alt="bouton de redirection vers la page d'accueil">
         </a>
     </div>
     <ul class="list">
-        <li><a href="./index.php">Accueil</a></li>
         <li><a href="./formation.php">La Formation</a></li>
         <li><a href="./project.php">Projets</a></li>
         <li><a href="./aftermmi.php">Après MMI</a></li>
         <li><a href="./international.php">International</a></li>
         <li><a href="./about.php">À propos</a></li>
+        <?php
+            if (isset($_SESSION['login'])) {
+                echo "<li><a href=\"./deconnexion.php\">Déconnexion</a></li>";
+            }
+        ?>
         <li>
             <button id="btn-theme">
                 <div class="day">

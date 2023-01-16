@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require ("./controleur-projets.php");
 ?>
 

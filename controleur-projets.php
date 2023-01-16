@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require("model.php");
 
     if(!isset($_GET['id']) OR !is_numeric($_GET['id']))
