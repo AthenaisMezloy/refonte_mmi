@@ -26,11 +26,13 @@
 
 <nav>
     <div>
+        <a href="./index.php">
         <img src="./img/assets/logo_img.svg" alt="">
+        </a>
     </div>
     <ul class="list">
         <li><a href="./index.php">Accueil</a></li>
-        <li><a href="#">La Formation</a></li>
+        <li><a href="./formation.php">La Formation</a></li>
         <li><a href="./project.php">Projets</a></li>
         <li><a href="./aftermmi.php">Après MMI</a></li>
         <li><a href="./international.php">International</a></li>
