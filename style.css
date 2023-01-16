@@ -304,6 +304,7 @@ h3 {
     display: flex;
     width: 85%;
     margin: 1.5em 0 0 0;
+    border: 2px solid black;
 }
 
 .news-list li div {
@@ -318,17 +319,13 @@ h3 {
 }
 
 .news-list li img {
-    width: 400px;
+    width: 50%;
 }
 
 
 .news-list li .text {
     padding: 2em 1em 2em 1em;
     font-size: 0.9em;
-}
-
-#news svg {
-    margin: 1em 0 0.2em 0;
 }
 
 #news a {

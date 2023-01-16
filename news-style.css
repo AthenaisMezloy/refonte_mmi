@@ -93,6 +93,8 @@ h1 {
     display: flex;
     width: 85%;
     margin: 1.5em 0 0 0;
+    border: 2px solid black;
+
     flex-wrap: wrap;
 }
 

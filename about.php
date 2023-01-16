@@ -19,7 +19,7 @@
     ?>
     <section id="home">
         <h1>La Team TABL</h1>
-        <p>Citation ? - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Ils sont sympas ! - Emy B.</p>
         <div class="slider">
             <button class="btn-left" onclick="slide(-1)"><img src="./img/about/arrow_img.svg" alt=""></button>
             <div class="slider-container">

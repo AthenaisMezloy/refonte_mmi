@@ -23,15 +23,18 @@
                 <ul>
                     <li><h1>Entrez vos identifiants</h1></li>
                     <li>
-                        <p>Login : </p>
+                        <label for="login">Login : </label>
                         <INPUT type=text name="login">
                         <?php 
                         if (isset($_GET["err"]) && $_GET["err"]=="login") { echo "ATTENTION MAUVAIS LOGIN";}
                         ?>
                     </li>
                     <li>
-                        <p>Mot de passe :</p>
-                        <input type="password" name="pwd">
+                        <label for="pwd">Mot de passe :</label>
+                        <div>
+                            <input type="password" name="pwd" id="myInput">
+                            <input type="checkbox" onclick="myFunction()">Show Password
+                        </div>
                         <?php 
                         if (isset($_GET["err"]) && $_GET["err"]=="mdp") { echo "ATTENTION MAUVAIS MOT DE PASSE";}
                         ?>

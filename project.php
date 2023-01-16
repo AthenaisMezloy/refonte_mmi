@@ -23,7 +23,7 @@
     <section id="home">
         <div class="title">
             <h1>Projets étudiants</h1>
-            <p>Citation - Des projets professionnalisants, une porte ouverte sur l’avenir.</p>
+            <p>De nombreux étudiants, de nombreux projets. - Nell A.</p>
         </div>
         <div class="filter">
             <h2>Filtrer par domaine :</h2>

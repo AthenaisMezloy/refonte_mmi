@@ -42,7 +42,7 @@
 Le BUT MMI compte 2600 heures d’enseignement partagées entre la communication, les langues, l’informatique, la culture graphique, la culture scientifique et les réseaux.
 </p>
 
-            <a href="#" class="btn-bubble">Découvrir la formation<img src="./img/icons/arrow.svg" alt=""></a>
+            <a href="./formation.php" class="btn-bubble">Découvrir la formation<img src="./img/icons/arrow.svg" alt=""></a>
 
         </div>
 
@@ -75,7 +75,7 @@ Le BUT MMI compte 2600 heures d’enseignement partagées entre la communication
             <p>Cette formation vous permet d’acquérir un bagage suffisant pour entrer dans le monde professionnel ou poursuivre vos études en master.
 Le BUT MMI vous ouvre la voie vers de nombreuses perspectives.</p>
 
-            <a href="#" class="btn-bubble">Après MMI ? <img src="./img/icons/arrow.svg" alt=""></a>
+            <a href="./aftermmi.php" class="btn-bubble">Après MMI ? <img src="./img/icons/arrow.svg" alt=""></a>
 
         </div>
 
@@ -113,6 +113,7 @@ Le BUT MMI vous ouvre la voie vers de nombreuses perspectives.</p>
             <svg width="80" height="2">
                 <rect width="100%" height="100%" fill="#EAC083" />
             </svg>
+            <p>MMI-Champs : de l’entraide, du travail, et du rire. - Emy B.</p>
         </div>
         <div class="news-list">
             <ul>

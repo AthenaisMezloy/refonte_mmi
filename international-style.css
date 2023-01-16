@@ -155,6 +155,7 @@ section {
     width: 100%;
     height: 100vh;
     padding: 2em;
+    margin: 0 0 5em 0;
 }
 
 #join-mmi h3 {
@@ -170,31 +171,6 @@ section {
 }
 
 #join-mmi li p:first-child {
-    font-size: 1.5em;
-    font-weight: bolder;
-}
-
-/* FAQ */
-
-#faq {
-    width: 100%;
-    padding: 2em 2em 5em 2em;
-}
-
-#faq h2{
-    font-size: 2.5em;
-    text-align: center;
-}
-
-#faq li{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1em 0 1em 0;
-}
-
-#faq li p:first-child {
     font-size: 1.5em;
     font-weight: bolder;
 }
