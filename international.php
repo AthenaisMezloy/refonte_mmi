@@ -69,16 +69,29 @@
             <h3>Partnerships</h3>
             <div>
                 <div class="UQAC">
-                    <h4>UQAC</h4>
-                    <p>
-                    Texte de présentation
-                    </p>
+                    <div class="hover-text">
+                            <p>
+                            The UQAC is located in Saguenay-Lac-Saint-Jean, a French-speaking region of Canada, a 2h-drive from Quebec and 4h30min from Montréal.
+                            Its strength? The diversity of the trainings. There are some 200 different training courses.
+                            As an MMI student, the training attributed is the Interdisciplinary Level in Arts, with a great variety of courses
+                            You want to know more ? Visit the UQAC’s website here.
+                            </p>
+                    </div>
+                    <div class="text">
+                        <h4>UQAC</h4>
+                    </div>
                 </div>
                 <div class="CEGEP">
-                    <h4>CÉGEP</h4>
-                    <p>
-                    Texte de présentation
-                    </p>
+                    <div class="hover-text">
+                        <p>
+                        Renowned for its programmes’ excellence, its 9 800 student’s performance and its teaching’s quality, the CÉGEP is very attractive.
+                        There is a great diversity of training, and as a MMI student, you will follow the TIM’s training (Technique d’Intégration Multimédia).
+                        Search for more informations on the CÉGEP’s website here.
+                        </p>
+                    </div>
+                    <div class="text">
+                        <h4>CÉGEP</h4>
+                    </div>
                 </div>
             </div>
 
