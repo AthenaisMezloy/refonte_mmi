@@ -47,37 +47,6 @@ a {
 }
 
 /* *** */
-
-/* Boutons sections */
-
-.btn-section {
-    position: fixed;
-    height: 100vh;
-    left: 95%;
-    top: 35%;
-    z-index: 4;
-}
-
-.btn-section ul {
-    padding: 0 1vw 0 0;
-}
-
-.btn-section li {
-    display: block;
-    width: 30px;
-    height: 8px;
-    margin: 1em;
-}
-
-.bg-grey {
-    background-color: grey;
-}
-
-.bg-orange {
-    background-color: orange;
-}
-
-/* *** */
 /* 1ère page accueil  */
 
 #home {
@@ -85,7 +54,7 @@ a {
     justify-content: flex-end;
     width: 100%;
     height: 100vh;
-    background: radial-gradient(100% 75.37% at 0% 100%, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.5) 100%), url(./img/home/bg-img.jpg);
+    background: radial-gradient(100% 75.37% at 0% 100%, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.5) 100%), url(./img/home/bg-img.webp);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0 0 2em 0;
@@ -94,7 +63,7 @@ a {
 .dark #home {
     display: flex;
     justify-content: flex-end;
-    background: linear-gradient(56.46deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 80.05%), url(./img/home/bg-img.jpg);
+    background: linear-gradient(56.46deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 80.05%), url(./img/home/bg-img.webp);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0 0 2em 0;
@@ -102,9 +71,14 @@ a {
 
 .block {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     background-color: #FFFCF6;
     height: 100vh;
-    width: 40vw;
+    width: 530px;
+    padding: 1.5em 1.5em 1.5em 3em;
     transition: all ease 0.5s;
 }
 
@@ -114,41 +88,73 @@ a {
     height: auto;
 }
 
-#home .title {
-    position: relative;
-    right: 24.5%;
-    top: 35%;
-    text-align: center;
-}
-
 #home h1 {
-    font-size: 6em;
-    color: white;
-    mix-blend-mode: difference;
+    font-size: 5em;
 }
 
 #home p {
     font-family: 'Abril Fatface', cursive;
-    font-size: 1.6em;
+    font-size: 1.3em;
 }
 
 /* Titre Qu'est-ce que MMI ? */
 
+.intro-title {
+    margin: 0 0 2em 0;
+}
+
 .intro-title h2 {
-    position: absolute;
-    font-size: 3.5em;
+    position: relative;
+    font-size: 3.25em;
     padding: 0 0 0 0.5em;
-    margin: 0.1em 0 0 0;
-    left: 5%;
+}
+
+.btn-go {
+    display: flex;
+    width: 80%;
+    height: 20vh;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.btn-go button {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border: 2px solid black;
+    padding: 1em;
+    border-radius: 3em;
+    background: none;
+    width: 2.5em;
+    height: 5em;
+    cursor: pointer;
+}
+
+.btn-go button img {
+    position: relative;
+    width: 1.25em;
+    mix-blend-mode: difference;
+    transition: all ease 0.5s;
+    top: -20%;
+}
+
+.btn-go button:hover img {
+    transform: translateY(200%);
+}
+
+.dark .btn-go button{
+    border-color: white;
 }
 
 /* Partie Introduction  */
 
 section:not(#home) {
     display: flex;
+    margin: 0 0 10em 0; 
 }
 
 section:not(#home) .content {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -161,24 +167,28 @@ section:not(#home) .content p {
     position: relative;
     font-size: 0.9em;
     width: 65%;
-    text-align: center;
     margin: 0 0 1em 0;
     z-index: 1;
 }
 
 .img-container {
+    position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 50%;
-    height: 100%;
+    top: 5%;
+}
+
+.left {
+    justify-content: flex-end;
+}
+
+.right {
+    justify-content: flex-start;
 }
 
 .img-container img {
-    width: 60%;
-    height: 60%;
-    border: 1px solid black;
-
+    width: 500px;
 }
 
 .btn-bubble {
@@ -189,6 +199,7 @@ section:not(#home) .content p {
     border: 1px solid black;
     padding: 1em;
     border-radius: 5em;
+    transition: all ease 0.5s;
 }
 
 .btn-bubble p {
@@ -196,19 +207,21 @@ section:not(#home) .content p {
 }
 
 .btn-bubble img {
-    display: none;
+    display: flex;
+    width: 0px;
     transform: rotate(-90deg);
+    opacity: 0%;
     transition: all ease 0.5s;
 }
 
 .btn-bubble:hover img {
-    display: flex;
     mix-blend-mode: difference;
     width: 16px;
     transform: rotate(-90deg);
-    margin: 0 0.5em 0 0.5em;
+    margin: 0 0 0 0.5em;
+    opacity: 100%;
 }
-
+  
 .dark .btn-bubble {
     color: white;
     border: 1px solid white;
@@ -226,7 +239,6 @@ h3 {
 /**/
 #courses,#after-mmi {
     width: 100%;
-    height: 100vh;
 }
 
 
@@ -267,11 +279,13 @@ h3 {
 }
 
 .choices {
+    display: flex;
+    justify-content: center;
     width: 100%;
 }
 
 .choices h4 {
-    font-size: 2.2em;
+    font-size: 1.5em;
     margin: 0 0 0.5em 0;
 }
 
@@ -281,32 +295,29 @@ h3 {
 
 .container {
     display: flex;
-    width: 100%;
+    width: 65%;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .container div {
-    width: 25%;
+    width: 260px;
 }
 
 .dev {
     position: relative;
-    left: 7%;
     padding: 1em;
-}
-
-.crea {
-    position: relative;
-    left: -7%;
-    padding: 1em;
-}
-
-.crea {
-    border: 0.5em solid #FFA4F0 ;
-}
-
-.dev {
     border: 0.5em solid #B2DAFF ;
+    margin: 0.5em;
+
+}
+
+.crea {
+    position: relative;
+    padding: 1em;
+    border: 0.5em solid #FFA4F0 ;
+    margin: 0.5em;
+
 }
 
 /* Partie Actualités */
@@ -330,38 +341,57 @@ h3 {
 
 .news-list ul {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin: 1em 0 2em 0;
 }
 
 .news-list li {
     display: flex;
-    margin: 1.5em 0 1.5em 0;
-    width: 100%;
+    width: 85%;
+    margin: 1.5em 0 0 0;
+    border: 2px solid black;
 }
 
 .news-list li div {
     width: 50%;
 }
 
-.news-list li .img-container {
-    background-color: gray;
+.img_notfound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
 }
+
+.news-list li img {
+    width: 50%;
+}
+
 
 .news-list li .text {
     padding: 2em 1em 2em 1em;
-    border: 2px solid black;
-}
-
-#news svg {
-    margin: 1em 0 0.2em 0;
+    font-size: 0.9em;
 }
 
 #news a {
     font-size: 0.9em;
     color: black;
     text-decoration: underline;
+}
+
+#news .no-under {
+    text-decoration: none;
+}
+
+.dark #news a {
+    color: white;
+}
+
+.dark .news-list li {
+    border: 2px solid white;
 }
 
 /* Palette de couleurs */
@@ -384,20 +414,62 @@ h3 {
 
 /* ** */
 
-/* Responsive */
-
-@media screen and (max-width: 710px) { 
-    section:not(#home){
+@media screen and (max-width: 960px) {
+    section:not(#home) {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin: 0 0 5em 0; 
     }
 
-    section:not(#home) .content p {
+    .img-container img {
+    width: 300px;
+
+    } 
+    .news-list li{
+        flex-direction: column;
+    }
+
+    .news-list li div{
         width: 100%;
     }
 
-    nav {
-        display: none;
+    .news-list li img {
+        width: 100%;
     }
- }
+}
+
+@media screen and (max-width: 426px) {
+
+    #home {
+        justify-content: center;
+        margin: 0;
+    }
+
+    .block {
+        align-items: center;
+        padding: 0;
+    }
+
+    section:not(#home,#projects){
+        flex-direction: column;
+    }
+
+    #projects {
+        flex-direction: column-reverse;
+    }
+
+    section:not(#home) .content {
+        width: 100%;
+        margin: 0 0 2em 0;
+    }
+
+    .img-container {
+        width: 100%;
+    }
+    .right,.left{
+        justify-content: center; 
+    }
+
+    .intro-title h2 {
+        position: relative;
+    }
+}

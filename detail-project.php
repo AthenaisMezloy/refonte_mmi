@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require ("./controleur-projets.php");
 ?>
 
@@ -8,11 +9,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/icons/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="project-detail-style.css">
-    <title>Projet ...</title>
+    <title><?=$this_projet -> name_project?> - BUT MMI Champs</title>
 </head>
 <body>
     <?php 
@@ -26,7 +28,7 @@
         <div class="content">
             <div class="img-container">
             <?php if (!empty($this_projet->photo_project)): ?>
-                <img src="data:image/webp;base64,<?= base64_encode($this_projet->photo_project) ?>" alt="<?= $this_projet->name_project ?>"/>
+                <img src="data:image/webp;base64,<?= base64_encode($this_projet->photo_project) ?>" alt="<?= $this_projet->alt_project ?>"/>
             <?php else: ?>
                 <p>No image found.</p>
             <?php endif; ?>

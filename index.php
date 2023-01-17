@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    require("model.php");
+    $news = getNews();
+?>
 <!DOCTYPE html>
 <html lang="fr" class="home-page">
 <head>
@@ -8,44 +13,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>BUT MMI Champs-sur-Marne</title>
+    <title>Accueil - BUT MMI Champs</title>
 </head>
-
 <body>
-
-    <div class="btn-section">
-        <ul>
-            <a href="#home">
-                <li class="icon" id="btn-1"></li>
-            </a>
-            <a href="#courses">
-                <li class="icon" id="btn-2"></li>
-            </a>
-            <a href="#projects">
-                <li class="icon" id="btn-3"></li>
-            </a>
-            <a href="#after-mmi">
-                <li class="icon" id="btn-4"></li>
-            </a>
-            <a href="#course-choice">
-                <li class="icon" id="btn-5"></li>
-            </a>
-            <a href="#news">
-                <li class="icon" id="btn-6"></li>
-            </a>
-        </ul>
-    </div>
-
 <?php 
         include("./navbar.php")
         ?>
 
     <section id="home">
         <div class="block">
-        </div>
-        <div class="title">
-            <h1>BUT MMI</h1>
-            <p>Métiers du Multimédia et de l'Internet</p>
+            <div class="title">
+                <h1>BUT MMI</h1>
+                <p>Métiers du Multimédia et de l'Internet</p>
+            </div>
+            <div class="btn-go">
+                <button id="scroll-button"><img src="./img/icons/arrow.svg" alt=""></button>
+            </div>
         </div>
     </section>
 
@@ -58,23 +41,23 @@
         <div class="content">
             <h3 class="pink">01</h3>
             <p>Le BUT MMI est une formation bac+3. Elle est accessible à de nombreux profils, notamment technologiques, et vous formera aux métiers du web, du développement back-end, à l’UX Design, en passant par le Webmarketing ou la réalisation de produits audiovisuels.
-Le BUT MMI compte 2600 heures d’enseignement partagées entre la communication, les langues, l’informatique, la culture graphique, la culture scientifique et les réseaux.
-</p>
+            À Champs-sur-Marne, deux parcours sont proposés à partir du quatrième semestre : Développement web & Dispositif interactifs, et Création Numérique.
+            </p>
 
-            <a href="#" class="btn-bubble">Découvrir la formation<img src="./img/icons/arrow.svg" alt=""></a>
+            <a href="./formation.php" class="btn-bubble">Découvrir la formation<img src="./img/icons/arrow.svg" alt=""></a>
 
         </div>
 
-        <div class="img-container">
-            <img src="#" alt="">
+        <div class="img-container right">
+            <img src="./img/home/iuteiffel.webp" alt="">
         </div>
 
     </section>
 
     <section id="projects">
 
-        <div class="img-container">
-            <img src="#" alt="">
+        <div class="img-container left">
+            <img src="./img/home/projet.webp" alt="" data-aos="fade-up" data-aos-duration="1000">
         </div>
 
         <div class="content">
@@ -91,15 +74,15 @@ Le BUT MMI compte 2600 heures d’enseignement partagées entre la communication
     <section id="after-mmi">
         <div class="content">
             <h3 class="blue">03</h3>
-            <p>Cette formation vous permet d’acquérir un bagage suffisant pour entrer dans le monde professionnel ou poursuivre vos études en master.
-Le BUT MMI vous ouvre la voie vers de nombreuses perspectives.</p>
+            <p>Cette formation vous permet d’acquérir un bagage suffisant pour entrer dans le monde professionnel ou poursuivre vos études en master.<br>
+            Le BUT MMI vous ouvre la voie vers de nombreuses perspectives.</p>
 
-            <a href="#" class="btn-bubble">Après MMI ? <img src="./img/icons/arrow.svg" alt=""></a>
+            <a href="./aftermmi.php" class="btn-bubble">Après MMI ? <img src="./img/icons/arrow.svg" alt=""></a>
 
         </div>
 
-        <div class="img-container">
-            <img src="#" alt="">
+        <div class="img-container right">
+            <img src="./img/home/after.webp" alt="">
         </div>
     </section>
 
@@ -132,41 +115,59 @@ Le BUT MMI vous ouvre la voie vers de nombreuses perspectives.</p>
             <svg width="80" height="2">
                 <rect width="100%" height="100%" fill="#EAC083" />
             </svg>
+            <p>MMI-Champs : de l’entraide, du travail, et du rire. - Emy B.</p>
         </div>
         <div class="news-list">
             <ul>
-                <li>
-                    <div class="img-container">
-                        <img src="#" alt="">
-                    </div>
-                    <div class="text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </div>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <div class="text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </div>
-                    <div class="img-container">
-                        <img src="#" alt="">
-                    </div>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <div class="img-container">
-                        <img src="#" alt="">
-                    </div>
-                    <div class="text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </div>
-                </li>
+                <?php $i = 0; ?>
+                <?php foreach($news as $article): ?>
+                    <?php if($i >= 3) break; ?>
+                    <li>
+
+                        <?php if ($i % 2 == 0): ?>
+
+                            <?php if (!empty($article-> photo_news)): ?>
+                                <img src="data:image/webp;base64,<?= base64_encode($article->photo_news) ?>" alt="<?= $article->alt_news ?>"/>
+                            <?php else: ?>
+                                <div class="img_notfound">
+                                    <p>No image found.</p>
+                                </div>
+                            <?php endif; ?>
+                            <div class="text">
+                                <p>
+                                    <?= $article ->title_news ?> <br><br>
+                                    <?= $article ->content_news ?> <br><br>
+                                    <?= $article ->date_news ?>
+                                </p>
+                            </div>
+
+                        <?php else: ?>
+
+                            <div class="text">
+                                <p>
+                                    <?= $article ->title_news ?> <br><br>
+                                    <?= $article ->content_news ?> <br><br>
+                                    <?= $article ->date_news ?>
+                                </p>
+                            </div>
+                            <?php if (!empty($article-> photo_news)): ?>
+                                <img src="data:image/webp;base64,<?= base64_encode($article->photo_news) ?>" alt="<?= $article->alt_news ?>"/>
+                            <?php else: ?>
+                                <div class="img_notfound">
+                                    <p>No image found.</p>
+                                </div>
+                            <?php endif; ?>
+
+                        <?php endif; ?>
+
+
+                    </li>
+                    <?php $i++; ?>
+                <?php endforeach; ?>              
             </ul>
         </div>
             
-            <a href="./news.php" class="btn-bubble">Voir plus<img src="./img/icons/arrow.svg" alt=""></a>
+            <a href="./news.php" class="btn-bubble no-under">Voir plus<img src="./img/icons/arrow.svg" alt=""></a>
 
     </section>
 

@@ -1,22 +1,6 @@
 var path = window.location.pathname;
 var page = path.split("/").pop();
-console.log( page );
 
-// Fil d'Ariane
-
-$('.list li a').on('click', function() {
-    //selecting the syllabus class
-      $select = $('<div class="syllabus"></div>');
-      $(this).parents('li').each(function(n, li) {
-         //Adding / to each anchor tag of li
-          $select.prepend(' / ',$(li).children('a').clone());
-      });
-    // Displaying the hierarchical order of pages.
-    $('.display').html(
-      $select.prepend('<a href="#syllabus">GeeksforGeeks</a>'));   
-  })
-
-//
 // Dark mode
     if(localStorage.getItem('dark')) {
         $("body").addClass("dark");
@@ -43,9 +27,17 @@ $('.list li a').on('click', function() {
           
 
 //
-// Nav animation
+// Nav 
 
 if (page == "index.php") {
+
+    document.getElementById("scroll-button").addEventListener("click", function() {
+        window.scroll({
+          top: 560, 
+          left: 0, 
+          behavior: 'smooth' 
+        });
+      });
 
     if ($(window).scrollTop() <= 1) {
         if (localStorage.getItem('dark')) {
@@ -74,22 +66,39 @@ if (page == "index.php") {
 };
 
 //
-// Boutons de Sections
+// filtre projets
 
-$(document).ready(function() {
-    
-    $("#btn-1").addClass("bg-orange");
-    $(".icon").addClass("bg-grey");
+if (page == "project.php") {
+    $('.filter-button').on('click', function() {
+        var filterValue = $(this).attr('data-filter');
+        var articles = $('.article-box');
+        articles.each(function() {
+        if (!$(this).hasClass(filterValue) && filterValue != 'all') {
+        $(this).hide();
+        } else {
+        $(this).show();
+        }
+        });
+        });
+    }
 
-    $(".icon").on('click', function(event){
-        var id = $(event.target).attr('id');
-        console.log(id);
-        $(".icon").removeClass("bg-orange");
-        $(this).addClass("bg-orange");
-        
-      });
+if (page == "admin.php") {
 
-});
+    $(document).ready(function(){
+        $("#myButton").click(function(){
+        var x = $("#myInput");
+        if (x.attr("type") === "password") {
+        x.attr("type", "text");
+        } else {
+        x.attr("type", "password");
+        }
+        });
+        });
+}
 
-//
+  if (page == "admin-gestion.php") {
+    $("#formulaire").submit(function(){
+        alert("Informations envoyées avec succès!");
+        });
 
+  }
