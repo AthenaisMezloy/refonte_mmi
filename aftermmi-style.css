@@ -16,6 +16,7 @@ body {
     margin: 0;
     z-index: 0;
     background-color: #FFFCF6;
+    transition: all ease 0.5s;
 }
 
 h1,
@@ -79,12 +80,11 @@ section {
 }
 
 #home .title h1 {
-    font-size: 8.75em;
+    font-size: 5em;
 }
 
 #home .title p {
-    font-weight: bolder;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 
@@ -109,26 +109,23 @@ section {
     padding: 0 0 0 2em;
 }
 
-#home .title h1 {
-    font-size: 8.75em;
-}
 
-#home .title p {
-    font-weight: bolder;
-    font-size: 2em;
-}
 
 /* 2nd section  */
 #jobs {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: -17vh;
+    margin-top: -60vh;
 
 }
-
+#jobs h1 {
+    font-size: em;
+    text-align: center;
+}
 #jobs h2 {
-    font-size: 2.75em;
+    padding-top: 1.5em;
+    font-size: 1em;
     text-align: center;
 }
 
@@ -156,11 +153,16 @@ section {
 
 }
 
-.filter {
-    padding-top: 5em;
+#jobs .filter {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 15%;
+    width: 100%;
 }
 
-#jobs .filter h2 {
+.filter h2 {
     position: relative;
     margin: 0 0 0.5em 0 ;
     bottom: 10%;
@@ -175,87 +177,59 @@ section {
     width: 100%;
 }
 
-
-.parent {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
-    margin-top: 5vh;
-    padding-bottom: 5em;
-
+.dark .filter li button {
+    background-color: white;
+    border-radius: 3em ;
 }
 
-.dev:hover {
-    border: 8px solid #B2DAFF;
-    transition-duration: 0.3s;
-}
-
-.dev {
+.filter li button{
     display: flex;
+    align-items: center;
     justify-content: center;
-    flex-direction: column;
-    position: relative;
-    border: 5px solid #B2DAFF;
-    text-align: center;
-    height: 20vh;
-    width: 25vw;
-    justify-self: center;
-
+    font-size: 1em;
+    width: 15em;
+    padding: 0.5em;
+    border: none;
+    background: none;
 }
 
-.design:hover {
-    border: 8px solid #FFA4F0;
-    transition-duration: 0.3s;
+.filter li img {
+    width: 10%;
+    margin: 0 0.5em 0 0;
 }
 
-.design {
+/* Liste de métiers */
+
+#job-list {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    border: 5px solid #FFA4F0;
-    text-align: center; 
-    height: 20vh;
-    width: 25vw;
-    justify-self: center;
-
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
 }
 
-.audio:hover {
-    border: 8px solid #BEFFD4;
-    transition-duration: 0.3s;
-}
-
-.audio {
+#job-list ul{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border: 5px solid #BEFFD4;
-    text-align: center;
-    height: 20vh;
-    width: 25vw;
-    justify-self: center;
-
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 0 3em 0;
 }
 
-.com:hover {
-    border: 8px solid #FFF597;
-    transition-duration: 0.3s;
+#job-list ul li {
+    background-color: gray;
+    width: 250px;
+    height: 250px;
+    margin: 0.5em;
+    overflow: hidden;
 }
 
-.com {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border: 5px solid #FFF597;
-    text-align: center;
-    height: 20vh;
-    width: 25vw;
-    justify-self: center;
+.article-box img {
+    width: 100%;
 
 }
-
 
 #post-mmi {
     display: flex;
@@ -279,7 +253,7 @@ section {
     padding-top: 0;
 }
 
-.list {
+#post-mmi .list {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: row wrap;
