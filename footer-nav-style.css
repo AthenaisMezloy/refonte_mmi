@@ -1,22 +1,79 @@
+
+/* Dark Mode */
+nav ul, footer ul{
+        margin: 0;
+        padding: 0;
+}
+
+nav li, footer li{
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dark{ 
+    background-color: black; 
+    color: white; 
+    }
+
+    .dark a{
+        color: white;
+    }
+
+    .dark .block {
+        background-color: black;
+    }
+    
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+.dark footer{ 
+    background-color: #FFFCF6;
+     color: black;
+}
+
+.dark footer svg rect {
+    fill: black;
+}
+
+.dark footer a{ 
+    color: black;
+}
+
+.dark a{
+    color: white;
+}
+
+.dark .block {
+    background-color: black;
+}
+
 /* NAV */
 
+.bg-cream {
+    background-color:  #FFFCF6;
+}
+
+.bg-cream a {
+    color: black;
+}
+
 nav {
-    color: white;
-    position: absolute;
+    position: fixed;
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 8vh;
-    padding: 0.2em 2em 0 1em;
+    height: 10vh;
+    padding: 0.2em 2.5em 0 1em;
     font-size: 0.8em;
     z-index: 2;
-    mix-blend-mode: difference;
+    transition: all ease 0.5s;
 }
 
 nav a {
-    color: white;
+    color: black;
 }
 
 nav div {
@@ -32,7 +89,39 @@ nav div img {
 nav ul {
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    align-items: center;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+#btn-theme {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 2em;
+    width: 120%;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    background: none;
+    cursor: pointer;
+}
+
+#btn-theme img {
+    width: 24px;
+}
+
+#btn-theme p {
+    position: relative;
+    right: -5%;
+}
+
+#btn-theme div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 /* Footer */
@@ -95,4 +184,14 @@ footer a
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+.breadcrumb{
+    position: absolute;
+    top: 12%;
+    left: 1%;
+    z-index: 1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+
 }

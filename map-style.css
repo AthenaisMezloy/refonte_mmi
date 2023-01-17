@@ -1,0 +1,84 @@
+*,
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    margin: 0;
+    z-index: 0;
+    background-color: #FFFCF6;
+    transition: all ease 0.5s;
+}
+
+h1,h2,h3,h4 {
+    margin: 0;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+
+}
+
+p {
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+li {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    transition: all ease 0.5s;
+}
+
+section{
+    width: 100%;
+    height: 110vh;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 0 5em 0;
+}
+
+.box{
+    border: solid 3px black;
+    padding: 2em;
+    width: 100%;    
+}
+
+.box a {
+    color: black;
+}
+
+.box a:hover {
+    text-decoration: underline;
+}
+
+.adresse{
+    margin-bottom: 5em;
+    margin-top: 13em;
+}
+.page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1em;
+
+}
+
+.dark .box{
+    border-color: white;
+
+}

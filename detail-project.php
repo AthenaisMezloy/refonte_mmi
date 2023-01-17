@@ -1,14 +1,20 @@
+<?php
+    session_start();
+    require ("./controleur-projets.php");
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/icons/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="project-detail-style.css">
-    <title>Projet ...</title>
+    <title><?=$this_projet -> name_project?> - BUT MMI Champs</title>
 </head>
 <body>
     <?php 
@@ -16,26 +22,31 @@
     ?>
     <section id="home">
         <div class="title">
-            <h1>Titre</h1>
-            <h2>Développement web</h2>
+            <h1><?=$this_projet -> name_project?></h1>
+            <h2><?=$this_projet -> name_icon?></h2>
         </div>
         <div class="content">
             <div class="img-container">
-                <img src="#" alt="">
+            <?php if (!empty($this_projet->photo_project)): ?>
+                <img src="data:image/webp;base64,<?= base64_encode($this_projet->photo_project) ?>" alt="<?= $this_projet->alt_project ?>"/>
+            <?php else: ?>
+                <p>No image found.</p>
+            <?php endif; ?>
             </div>
             <div class="text-container">
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <?=$this_projet -> description_project?>
                 </p>
             </div>
         </div>
     </section>
     <section id="author">
         <p>
-            “ Citation - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ”
+            <?=$this_projet -> quote_project?>
         </p>
         <h3>
-            - Prénom Nom
+        <?=$this_projet -> name_author?>
+
         </h3>
     </section>
 

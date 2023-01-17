@@ -14,7 +14,9 @@
                     Téléphone : 01 60 95 85 90
                 </li>
                 <li>
-                    Réseaux sociaux :
+                    Réseaux sociaux : 
+                    <br>Twitter <a href="https://twitter.com/MMI_Champs">@MMI_Champs</a>
+                    <br>Instagram <a href="https://www.instagram.com/mmi_champs/">@MMI_Champs</a> <a href="https://www.instagram.com/mmind_mmi/">@mmind_mmi</a>
                 </li>
             </ul>
         </div>
@@ -43,7 +45,10 @@
                 Copyright La TABL Team
             </li>
             <li>
-                Mentions légales
+                <a href="./legal-notice.php">Mentions légales</a>
+            </li>
+            <li>
+                <a href="./map.php">Plan du site</a>
             </li>
             <li>
                 <a href="#home">HAUT DE PAGE</a>
@@ -51,3 +56,8 @@
         </ul>
     </div>
 </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+<script src="./script.js"></script>
