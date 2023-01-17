@@ -49,7 +49,7 @@ Le BUT MMI compte 2600 heures d’enseignement partagées entre la communication
 
         </div>
 
-        <div class="img-container">
+        <div class="img-container right">
             <img src="./img/home/iuteiffel.webp" alt="">
         </div>
 
@@ -57,7 +57,7 @@ Le BUT MMI compte 2600 heures d’enseignement partagées entre la communication
 
     <section id="projects">
 
-        <div class="img-container">
+        <div class="img-container left">
             <img src="./img/home/projet.webp" alt="">
         </div>
 
@@ -82,7 +82,7 @@ Le BUT MMI vous ouvre la voie vers de nombreuses perspectives.</p>
 
         </div>
 
-        <div class="img-container">
+        <div class="img-container right">
             <img src="./img/home/after.webp" alt="">
         </div>
     </section>

@@ -77,8 +77,8 @@ a {
     align-items: flex-start;
     background-color: #FFFCF6;
     height: 100vh;
-    width: 40vw;
-    padding: 1.5em;
+    width: 530px;
+    padding: 1.5em 1.5em 1.5em 3em;
     transition: all ease 0.5s;
 }
 
@@ -101,7 +101,7 @@ a {
 
 .intro-title h2 {
     position: absolute;
-    font-size: 3.5em;
+    font-size: 3.25em;
     padding: 0 0 0 0.5em;
     margin: 0.1em 0 0 0;
     left: 5%;
@@ -163,7 +163,6 @@ section:not(#home) .content p {
     position: relative;
     font-size: 0.9em;
     width: 65%;
-    text-align: center;
     margin: 0 0 1em 0;
     z-index: 1;
 }
@@ -171,15 +170,21 @@ section:not(#home) .content p {
 .img-container {
     position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 50%;
-    height: 100%;
     top: 5%;
 }
 
+.left {
+    justify-content: flex-end;
+}
+
+.right {
+    justify-content: flex-start;
+}
+
 .img-container img {
-    width: 400px;
+    width: 500px;
 }
 
 .btn-bubble {
@@ -405,3 +410,17 @@ h3 {
 }
 
 /* ** */
+
+@media screen and (max-width: 768px) { 
+    .img-container img {
+    width: 300px;
+
+} 
+    .news-list li{
+        flex-direction: column;
+    }
+
+    .news-list li div{
+        width: 100%;
+    }
+}
