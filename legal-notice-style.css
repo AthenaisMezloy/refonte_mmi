@@ -93,7 +93,7 @@ h1 {
 }
 
 
-#notice-list a {
+.dark #notice-list a {
     color: white;
 }
 

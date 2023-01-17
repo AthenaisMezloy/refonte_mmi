@@ -103,13 +103,12 @@
                 <div class="content-join">
                     <h4>Application process</h4>
                     <p>
-                    The students who want to incorporate the Gustave Eiffel University during one or two semesters have to contact the coordinator of their University beforehand. The Gustave Eiffel University accepts only selected students in accordance with the agreement between the two Universities.<br>
+                    The students who want to be admitted into the Gustave Eiffel University during one or two semesters have to contact the coordinator of their University beforehand. The Gustave Eiffel University accepts only selected students in accordance with the agreement between the two Universities.<br>
                     After the student is designated, he/she will collect an email with the link toward the registration form that the student will have to complete and submit online before the deadline.
                     </p> <br>
                     <h4>Visa and residence permit</h4>
                     <p>
-                    The students who come from a country out of Europe will have to get a visa, and need a letter of acceptance from our service.
-                    If the sojourn is less than 3 months, the residence permit is not necessary, but if it’s taller than this duration, the residence permit is required.
+                    The students who come from a country out of Europe will have to get a visa, and need a letter of acceptance from our service. If the exchange lasts less than 3 months, the residence permit is not necessary, but if it’s taller than this duration, the residence permit is required.
                     </p>
                 </div>
             </li>
@@ -127,7 +126,7 @@
                         </li>
                         <li>
                             <h5>2nd step :</h5>
-                            <p>If your application is accepted, you can follow the process pointed on the page Step of the <a href="https://candidatures.univ-eiffel.fr/ecandidat">Administrative Registration</a>.</p>
+                            <p>If your application is accepted, you can follow the process pointed on the page <a href="https://candidatures.univ-eiffel.fr/ecandidat">Step of the Administrative Registration</a>.</p>
                         </li>
                         <li>
                             <h5>3rd step :</h5>
@@ -144,15 +143,14 @@
                 <h3>Intensive French courses<br>
                     Linguistics Accompanying Programme (PAL)</h3>
                 <div class="content-join">
-                    <h4>European Union and European Economic Area students</h4>
                     <p>
-                    Each year, at the beginning of September, the International Relationship Service (SRI) organise two weeks of French language courses. It’s the opportunity for the exchange programme students to quickly improve their French level with the goal of pursuing their training in the best conditions. Moreover, these international students can meet other students sharing the same experience.<br>
-                    The information about the registration will be supplied to the designated students.                    
+                    Each year, at the beginning of September, the International Relationship Service (SRI) organises two weeks of French language courses. It’s the opportunity for the exchange programme students to quickly improve their French level with the goal of pursuing their training in the best conditions. Moreover, these international students can meet other students sharing the same experience.<br>
+                    The information about the registration will be supplied to the designated students.
                     </p>
                 </div>
             </li>
 
-            <p class="search-more" data-aos="fade-up" data-aos-duration="900">Search for more information on the University Gustave Eiffel pages about that (<a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux/etudiants-hors-programme-dechange/procedure-dinscription">Intertional Students</a>) or on <a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux/etudiants-hors-programme-dechange/procedure-dinscription">campusfrance.org</a> (Warning : these websites are French-speaking).</p>
+            <p class="search-more" data-aos="fade-up" data-aos-duration="900">Search for more information on the University Gustave Eiffel about that : <a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux/etudiants-hors-programme-dechange/procedure-dinscription">Intertional Students</a> or on <a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux/etudiants-hors-programme-dechange/procedure-dinscription">campusfrance.org</a> (Warning : these websites are French-speaking).</p>
 
         </ul>
 

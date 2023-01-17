@@ -22,7 +22,7 @@
             }
         ?>
         <li>
-            <button id="btn-theme">
+            <button id="btn-theme" alt="Bouton mode Jour/Nuit">
                 <div class="day">
                     <img src="./img/icons/moon.webp" alt=""><p>Nuit</p>
                 </div>

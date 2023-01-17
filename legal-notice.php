@@ -36,8 +36,8 @@
             <li>
                 <h2>Hébergeur</h2>
                 <p>
-                    <a href="https://www.ionos.fr/">ionos.fr</a>  <br>
-                    7 Pl. de la Gare, 57200 Sarreguemines
+                    <a href="https://www.ionos.fr/">ionos.fr</a><br>
+                    7 Pl. de la Gare, 57200 Sarreguemines (FR)
                 </p>
             </li>
             <li>

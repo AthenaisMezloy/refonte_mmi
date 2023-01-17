@@ -27,7 +27,7 @@
                 <li>
                     Adresse : 
                     <br>2, rue Albert Einstein
-                    <br>77420 Champs-sur-Marne 
+                    <br>77420 Champs-sur-Marne, France
                 </li>
                 <li>
                     Transport :
