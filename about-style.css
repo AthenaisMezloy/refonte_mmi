@@ -136,3 +136,7 @@ section {
 :root {
     --swiper-theme-color: black;
 }
+
+.dark .team-content h4 {
+    color: black;
+}
