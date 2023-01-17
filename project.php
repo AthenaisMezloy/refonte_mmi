@@ -7,12 +7,18 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Le BUT MMI à Champs-sur-Marne, une formation qui forme aux métiers du web, accessible à de nombreux profils, technologiques, généraux, etc..." />
+    <meta name='date' content='Jan. 18, 2023'>
+    <meta name = "keywords" content = "Formation, Multimédia, Internet, Digital, Étudiant, MMI, Développement Web, Design, Audiovisuel, Communication" />
+    <meta name='copyright' content='BUT MMI Champs'> 
+    <link rel="icon" type="image/x-icon" href="./img/icons/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preload" href="project-style.css" as="style">
     <link rel="stylesheet" href="project-style.css">
     <title>Projets étudiants - BUT MMI Champs</title>
 </head>
