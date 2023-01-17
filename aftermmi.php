@@ -112,3 +112,4 @@ Voici quelques exemples de formations envisageable :
 include("./footer.php")
 ?> 
 </body>
+</html>
