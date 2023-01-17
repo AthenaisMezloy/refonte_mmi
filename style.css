@@ -154,6 +154,7 @@ section:not(#home) {
 }
 
 section:not(#home) .content {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;

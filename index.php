@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="style.css">
     <title>Accueil - BUT MMI Champs</title>
 </head>
-
 <body>
 <?php 
         include("./navbar.php")
@@ -58,7 +57,7 @@
     <section id="projects">
 
         <div class="img-container left">
-            <img src="./img/home/projet.webp" alt="">
+            <img src="./img/home/projet.webp" alt="" data-aos="fade-up" data-aos-duration="1000">
         </div>
 
         <div class="content">
