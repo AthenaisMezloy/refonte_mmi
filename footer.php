@@ -10,7 +10,7 @@
                     Mail : <a href="mailto:mmi-dir.iut@univ-eiffel.fr" title="lien externe" alt="lien mail">mmi-dir.iut@univ-eiffel.fr</a>
                 </li>
                 <li>
-                    Téléphone : 01 60 95 85 90
+                    Téléphone : <a href="tel:+33160958590" alt="numéro téléphone secrétariat pédagogique">+33 (0)1 60 95 85 90</a>
                 </li>
                 <li>
                     Réseaux sociaux : 
