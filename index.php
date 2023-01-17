@@ -42,8 +42,8 @@
         <div class="content">
             <h3 class="pink">01</h3>
             <p>Le BUT MMI est une formation bac+3. Elle est accessible à de nombreux profils, notamment technologiques, et vous formera aux métiers du web, du développement back-end, à l’UX Design, en passant par le Webmarketing ou la réalisation de produits audiovisuels.
-Le BUT MMI compte 2600 heures d’enseignement partagées entre la communication, les langues, l’informatique, la culture graphique, la culture scientifique et les réseaux.
-</p>
+            À Champs-sur-Marne, deux parcours sont proposés à partir du quatrième semestre : Développement web & Dispositif interactifs, et Création Numérique.
+            </p>
 
             <a href="./formation.php" class="btn-bubble">Découvrir la formation<img src="./img/icons/arrow.svg" alt=""></a>
 
@@ -75,8 +75,8 @@ Le BUT MMI compte 2600 heures d’enseignement partagées entre la communication
     <section id="after-mmi">
         <div class="content">
             <h3 class="blue">03</h3>
-            <p>Cette formation vous permet d’acquérir un bagage suffisant pour entrer dans le monde professionnel ou poursuivre vos études en master.
-Le BUT MMI vous ouvre la voie vers de nombreuses perspectives.</p>
+            <p>Cette formation vous permet d’acquérir un bagage suffisant pour entrer dans le monde professionnel ou poursuivre vos études en master.<br>
+            Le BUT MMI vous ouvre la voie vers de nombreuses perspectives.</p>
 
             <a href="./aftermmi.php" class="btn-bubble">Après MMI ? <img src="./img/icons/arrow.svg" alt=""></a>
 
