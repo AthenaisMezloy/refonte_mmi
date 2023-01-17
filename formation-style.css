@@ -15,6 +15,8 @@ body {
     margin: 0;
     z-index: 0;
     background-color: #FFFCF6;
+    transition: all ease 0.5s;
+
 }
 
 h1,
@@ -52,20 +54,18 @@ a {
 section {
     width: 100%;
     height: 100vh;
+    padding-top: 6.5em;
 }
 
 /* 1st section */
-
-.title {
+#home {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     width: 100%;
-    height: 85%;
-    padding: 0 0 0 2em;
+    height: 70vh;
 }
-
 
 #home .title {
     display: flex;
@@ -73,17 +73,18 @@ section {
     align-items: flex-start;
     justify-content: center;
     width: 100%;
-    height: 85%;
     padding: 0 0 0 2em;
+    height: 85%;
+
 }
 
 #home .title h1 {
-    font-size: 8.75em;
+    font-size: 5em;
 }
 
 #home .title p {
     font-weight: bolder;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 
@@ -135,7 +136,7 @@ section {
     justify-content: center;
     flex-direction: column;
     border: 5px solid #FFA4F0;
-    text-align: center; 
+    text-align: center;
     height: 20vh;
     width: 25vw;
     justify-self: center;
@@ -177,12 +178,86 @@ section {
 }
 
 
+.modal-window {
+    position: fixed;
+    background-color: rgba(133, 133, 133, 0.25);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+  .modal-window:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modal-window > div {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3em;
+    background: white;
+  }
+  
+  .modal-close {
+    color: #aaa;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+  }
+  .modal-close:hover {
+    color: black;
+  }
+
+  a.modal-close {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+  }
+
+  
+  .modal-window > div {
+    border-radius: 1rem;
+  }
+  
+  .modal-window div:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+  
+  .text-program {
+    font-family: 'Poppins', sans-serif;
+    margin: 1em;
+}
+  
+  .btn {
+    padding: 1em 1.5em;
+    text-decoration: none;
+  
+  }
+
+
+
+
+
 /* 2nd section */
 
 #general-program {
     display: flex;
     justify-content: center;
     flex-direction: column;
+
 }
 
 #general-program h2 {
@@ -220,6 +295,7 @@ section {
 #schooling {
     display: flex;
     flex-direction: column;
+
 }
 
 #schooling h2 {
@@ -260,21 +336,21 @@ section {
 }
 
 .schooling1 {
-    max-width: 25vw;
+    max-width: 30vw;
     border: 5px solid #B2DAFF;
     margin-right: 5em;
     padding: 1.5em;
     height: fit-content;
 }
 
-.schooling2{
-    max-width: 25vw;
+.schooling2 {
+    max-width: 30vw;
     border: 5px solid #FFA4F0;
     margin-left: 5em;
     padding: 1.5em;
     height: fit-content;
 
-} 
+}
 
 .bloc2 {
     display: flex;
@@ -320,9 +396,12 @@ section {
     text-align: center;
     padding: 16px;
 }
+
 .bloc3 {
     display: flex;
     justify-content: center;
+    padding-left: 5em;
+    padding-right: 5em;
 }
 
 #MMIday .bloc3 img {
@@ -332,12 +411,49 @@ section {
     padding: 5em;
     padding-top: 2em;
 }
+table {
+    border-spacing: 0;
+}
+th {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+}
+th, td {
+    border: solid #000000 1px;
+    padding: 0;
+    height: 6em;
+}
+td p {
+    height: 5em;
+    border-radius: 0.25em;
+}
+td p, th p {
+    font-size: 1em;
+}
+.bluebg {
+    background-color: #B2DAFF;
+}
+.pinkbg {
+    background-color: #FFA4F0;
+}
+.purplebg {
+    background-color: #DAC3FF;
+}
+.yellowbg {
+    background-color: #FFF597;
+}
+.greenbg {
+    background-color: #BEFFD4;
+}
 
 /* 5th section  */
 
 #team {
     display: flex;
     flex-direction: column;
+
 }
 
 #team h2 {
@@ -368,42 +484,56 @@ section {
     font-weight: 700;
     text-align: center;
     padding: 16px;
+    padding-bottom: 2.5em;
+
 }
 
-
-/* 6th section  */
-
-.slider {
-    width: 900px;
-    height: 350px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    margin-top: 4em;
+#team .item img {
+    height: 50px;
 }
 
-.slider .item {
-    height: 60%;
-    width: 350px;
-    position: absolute;
+.swiper {
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+.swiper-slide {
+    padding: 1em;
     background: #fff;
-    -webkit-box-shadow: 0px 0px 15px 5px rgba(92, 92, 92, 0.36); 
-    box-shadow: 0px 0px 15px 5px rgba(92, 92, 92, 0.36);     
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 50px;
-    transition: all ease 0.7s;
-    z-index: 1;
-    left: 0;
-    opacity: 0.7;
-    transform: scale(0.8);
-    right: 0;
-    margin: 0 auto;
+    transition: 0.5s linear;
+    -webkit-box-shadow: 0px 0px 6px 6px rgba(225, 225, 225, 0.21);
+    box-shadow: 0px 0px 6px 6px rgba(225, 225, 225, 0.21);
+    font-family: 'Press Start 2P', cursive;
 }
 
-.slider .item.active {
-    z-index: 2;
-    opacity: 1;
-    background: #fff;
-    transform: scale(1.1);
-    border: 8px solid #DAC3FF;   
+.swiper-button-next {
+    right: -100px;
+    left: auto;
 }
 
+.swiper-button-prev {
+    right: auto;
+    left: -100px;
+}
+
+.swiper-slide h4 {
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+.image {
+    height: 300px;
+    padding-bottom: 2em;
+}
+
+:root {
+    --swiper-theme-color: black;
+}
