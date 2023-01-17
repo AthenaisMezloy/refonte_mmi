@@ -7,15 +7,15 @@
                 </li>
 
                 <li>
-                    Mail : <a href="mailto:mmi-dir.iut@univ-eiffel.fr">mmi-dir.iut@univ-eiffel.fr</a>
+                    Mail : <a href="mailto:mmi-dir.iut@univ-eiffel.fr" title="lien externe" alt="lien mail">mmi-dir.iut@univ-eiffel.fr</a>
                 </li>
                 <li>
                     Téléphone : 01 60 95 85 90
                 </li>
                 <li>
                     Réseaux sociaux : 
-                    <br>Twitter <a href="https://twitter.com/MMI_Champs">@MMI_Champs</a>
-                    <br>Instagram <a href="https://www.instagram.com/mmi_champs/">@MMI_Champs</a> <a href="https://www.instagram.com/mmind_mmi/">@mmind_mmi</a>
+                    <br>Twitter <a href="https://twitter.com/MMI_Champs" title="lien externe" alt="lien twitter MMI Champs">@MMI_Champs</a>
+                    <br>Instagram <a href="https://www.instagram.com/mmi_champs/" title="lien externe" alt="lien instagram MMI Champs">@MMI_Champs</a> <a href="https://www.instagram.com/mmind_mmi/" title="lien externe" alt="lien instagram MMind">@mmind_mmi</a>
                 </li>
             </ul>
         </div>
@@ -44,13 +44,13 @@
                 Copyright La TABL Team
             </li>
             <li>
-                <a href="./legal-notice.php">Mentions légales</a>
+                <a href="./legal-notice.php" alt="lien mentions légales">Mentions légales</a>
             </li>
             <li>
-                <a href="./map.php">Plan du site</a>
+                <a href="./map.php" alt="lien plan du site">Plan du site</a>
             </li>
             <li>
-                <a href="#home">HAUT DE PAGE</a>
+                <a href="#home" alt="retour vers le haut de la page">HAUT DE PAGE</a>
             </li>
         </ul>
     </div>

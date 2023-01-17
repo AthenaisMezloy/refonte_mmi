@@ -36,7 +36,7 @@
             <li>
                 <h2>Hébergeur</h2>
                 <p>
-                    <a href="https://www.ionos.fr/">ionos.fr</a><br>
+                    <a href="https://www.ionos.fr/" title="lien externe" alt="lien vers site ionos">ionos.fr</a><br>
                     7 Pl. de la Gare, 57200 Sarreguemines (FR)
                 </p>
             </li>
@@ -62,7 +62,7 @@
                 navigateur pour aider à détecter les pourriels. <br>
                 Une chaîne anonyme créée à partir de votre adresse e-mail (également appelée hash) peut être fournie au
                 service Gravatar pour voir si vous l’utilisez. La politique de confidentialité du service Gravatar est
-                disponible ici : <a href="https://automattic.com/privacy/">https://automattic.com/privacy/</a>. Après l’approbation de votre commentaire, votre photo
+                disponible ici : <a href="https://automattic.com/privacy/" title="lien externe" alt="lien vers site automattic">https://automattic.com/privacy/</a>. Après l’approbation de votre commentaire, votre photo
                 de profil est visible pour le public dans le contexte de votre commentaire. <br><br>
 
                 Les données confiées sont utilisées dans le strict cadre du fonctionnement de notre site. <br><br>
@@ -95,21 +95,21 @@
             <li>
             <h2>Source des images</h2>
             <p>
-                        Images importées depuis <a href="https://www.flaticon.com">Flaticon.com</a> :<br>
-            - audiovisuel.webp : <a href="https://www.flaticon.com/free-icons/video" title="video icons">Video icons created by Freepik - Flaticon</a><br>
-            - communication.webp : <a href="https://www.flaticon.com/free-icons/online-chat" title="online chat icons">Online chat icons created by Stockes Design - Flaticon</a><br>
-            - design.webp : <a href="https://www.flaticon.com/free-icons/graphic-design" title="graphic design icons">Graphic design icons created by Freepik - Flaticon</a><br>
-            - developpement.webp : <a href="https://www.flaticon.com/free-icons/graphic-design" title="graphic design icons">Graphic design icons created by Freepik - Flaticon</a><br>
-            - sun.webp : <a href="https://www.flaticon.com/free-icons/weather" title="weather icons">Weather icons created by Freepik - Flaticon</a><br>
-            - moon.webp : <a href="https://www.flaticon.com/free-icons/moon" title="moon icons">Moon icons created by Good Ware - Flaticon</a><br><br>
+                        Images importées depuis <a href="https://www.flaticon.com" title="lien externe" alt="lien vers site flaticon">Flaticon.com</a> :<br>
+            - audiovisuel.webp : <a href="https://www.flaticon.com/free-icons/video" title="lien externe video icons" alt="lien vers site flaticon">Video icons created by Freepik - Flaticon</a><br>
+            - communication.webp : <a href="https://www.flaticon.com/free-icons/online-chat" title="lien externe online chat icons" alt="lien vers site flaticon">Online chat icons created by Stockes Design - Flaticon</a><br>
+            - design.webp : <a href="https://www.flaticon.com/free-icons/graphic-design" title="lien externe graphic design icons" alt="lien vers site flaticon">Graphic design icons created by Freepik - Flaticon</a><br>
+            - developpement.webp : <a href="https://www.flaticon.com/free-icons/graphic-design" title="lien externe graphic design icons" alt="lien vers site flaticon">Graphic design icons created by Freepik - Flaticon</a><br>
+            - sun.webp : <a href="https://www.flaticon.com/free-icons/weather" title="lien externe weather icons" alt="lien vers site flaticon">Weather icons created by Freepik - Flaticon</a><br>
+            - moon.webp : <a href="https://www.flaticon.com/free-icons/moon" title="lien externe moon icons" alt="lien vers site flaticon">Moon icons created by Good Ware - Flaticon</a><br><br>
 
-            Images importées depuis <a href="https://fr.vecteezy.com/">Vecteezy.com</a> puis modifiées par nos soins : alexandreleroy.webp, annetasso.webp, athe.webp, bilelbenbouzid.webp, bruno.webp, florencebister.webp, fredericpoisson.webp, gaellecharpentier.webp, hervelo.webp, kpc.webp, lahcensoussi.webp, leabosco.webp, leylajaoued.webp, lilian.webp, matthieuberthet.webp, melinaguyon.webp, nathaliecaclard.webp, odileniel.webp, philippegambette.webp, renaudeppstein.webp, timothe.webp<br><br>
+            Images importées depuis <a href="https://fr.vecteezy.com/" title="lien externe" alt="lien vers site vecteezy">Vecteezy.com</a> puis modifiées par nos soins : alexandreleroy.webp, annetasso.webp, athe.webp, bilelbenbouzid.webp, bruno.webp, florencebister.webp, fredericpoisson.webp, gaellecharpentier.webp, hervelo.webp, kpc.webp, lahcensoussi.webp, leabosco.webp, leylajaoued.webp, lilian.webp, matthieuberthet.webp, melinaguyon.webp, nathaliecaclard.webp, odileniel.webp, philippegambette.webp, renaudeppstein.webp, timothe.webp<br><br>
 
-            rentree2022.webp : © Pagnarith KOK SREY - <a href="https://www.linkedin.com/in/pagnarith-kok-srey-8b2861221/">LinkedIn</a><br>
+            rentree2022.webp : © Pagnarith KOK SREY - <a href="https://www.linkedin.com/in/pagnarith-kok-srey-8b2861221/" title="lien externe" alt="lien vers LinkedIn Pagnarith KOK SREY">LinkedIn</a><br>
             ucaq.webp : © service des communications de l'UQAC<br>
-            cegepstefoy.webp : © <a href="https://commons.wikimedia.org/wiki/User:Khayman">Khayman</a><br>
-            aircanada.webp : © <a href="https://www.flickr.com/photos/sweetone/">Sweet One</a><br>
-            iuteiffel.webp, projet.webp, after.webp, whatsmmi.webp, about.webp, nuitinfo.webp : © Athénaïs MEZLOY - <a href="https://www.linkedin.com/in/athenaismezloy/">LinkedIn</a><br><br>
+            cegepstefoy.webp : © <a href="https://commons.wikimedia.org/wiki/User:Khayman" title="lien externe" alt="lien vers site wikimedia Khayman">Khayman</a><br>
+            aircanada.webp : © <a href="https://www.flickr.com/photos/sweetone/" title="lien externe" alt="lien vers site flickr">Sweet One</a><br>
+            iuteiffel.webp, projet.webp, after.webp, whatsmmi.webp, about.webp, nuitinfo.webp : © Athénaïs MEZLOY - <a href="https://www.linkedin.com/in/athenaismezloy/" title="lien externe" alt="lien vers LinkedIn Athénaïs Mezloy">LinkedIn</a><br><br>
 
             halloween2022.webp, jpo2023.webp, londres2022.webp, secretsanta2022.webp, dataviz.webp, campagne.webp, galactrip.webp, motiondesign.webp, portraitchinois.webp : © TABL
             </li>

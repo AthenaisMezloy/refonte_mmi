@@ -59,7 +59,7 @@
                 <p>No image found.</p>
             <?php endif; ?>
 
-        <a href="detail-project.php?id=<?= $projet->id_project ?>" alt="redirection vers la page : <?= $projet->name_project ?>">
+        <a href="detail-project.php?id=<?= $projet->id_project ?>" alt="lein vers page <?= $projet->name_project ?>">
             <?php if (!empty($projet->photo_project)): ?>
                 <img src="data:image/webp;base64,<?= base64_encode($projet->miniature_project) ?>" alt="<?= $projet->alt_project ?>"/>
             <?php else: ?>

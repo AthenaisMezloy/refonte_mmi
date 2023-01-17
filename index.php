@@ -42,7 +42,7 @@
             À Champs-sur-Marne, deux parcours sont proposés à partir du quatrième semestre : Développement web & Dispositif interactifs, et Création Numérique.
             </p>
 
-            <a href="./formation.php" class="btn-bubble">Découvrir la formation<img src="./img/icons/arrow.svg" alt=""></a>
+            <a href="./formation.php" class="btn-bubble" alt="lien vers page formation">Découvrir la formation<img src="./img/icons/arrow.svg" alt=""></a>
 
         </div>
 
@@ -62,7 +62,7 @@
             <h3 class="yellow">02</h3>
             <p>Le BUT MMI est une formation théorique mais surtout pratique ! De nombreux projets seront à réaliser dans de multiples domaines tout au long de ces 3 années de formations. Apprenez à vous organiser tout en exploitant les diverses compétences que vous allez acquérir et perfectionner afin de laisser cours à votre créativité ! Découvrez à travers ce site différents projets réalisés par d’anciens étudiants de la formation.</p>
 
-            <a href="./project.php" class="btn-bubble">Projets étudiants <img src="./img/icons/arrow.svg" alt=""></a>
+            <a href="./project.php" class="btn-bubble" alt="lien vers page projets">Projets étudiants <img src="./img/icons/arrow.svg" alt=""></a>
 
         </div>
 
@@ -75,7 +75,7 @@
             <p>Cette formation vous permet d’acquérir un bagage suffisant pour entrer dans le monde professionnel ou poursuivre vos études en master.<br>
             Le BUT MMI vous ouvre la voie vers de nombreuses perspectives.</p>
 
-            <a href="./aftermmi.php" class="btn-bubble">Après MMI ? <img src="./img/icons/arrow.svg" alt=""></a>
+            <a href="./aftermmi.php" class="btn-bubble" alt="lien vers page après mmi">Après MMI ? <img src="./img/icons/arrow.svg" alt=""></a>
 
         </div>
 
@@ -165,7 +165,7 @@
             </ul>
         </div>
             
-            <a href="./news.php" class="btn-bubble no-under">Voir plus<img src="./img/icons/arrow.svg" alt=""></a>
+            <a href="./news.php" class="btn-bubble no-under" alt="lien vers page actualité">Voir plus<img src="./img/icons/arrow.svg" alt=""></a>
 
     </section>
 

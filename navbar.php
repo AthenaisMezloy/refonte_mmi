@@ -6,19 +6,19 @@
 <link rel="stylesheet" href="footer-nav-style.css">
 <nav>
     <div>
-        <a href="./index.php">
+        <a href="./index.php" alt="lien vers page d'accueil">
         <img src="./img/assets/logo_img.svg" alt="bouton de redirection vers la page d'accueil">
         </a>
     </div>
     <ul class="list">
-        <li><a href="./formation.php">La Formation</a></li>
-        <li><a href="./project.php">Projets</a></li>
-        <li><a href="./aftermmi.php">Après MMI</a></li>
-        <li><a href="./international.php">International</a></li>
-        <li><a href="./about.php">À propos</a></li>
+        <li><a href="./formation.php" alt="lien vers page formation">La Formation</a></li>
+        <li><a href="./project.php" alt="lien vers page projets étudiants">Projets</a></li>
+        <li><a href="./aftermmi.php" alt="lien vers page après MMI">Après MMI</a></li>
+        <li><a href="./international.php" alt="lien vers page international">International</a></li>
+        <li><a href="./about.php" alt="lien vers page à propos">À propos</a></li>
         <?php
             if (isset($_SESSION['login'])) {
-                echo "<li><a href=\"./deconnexion.php\">Déconnexion</a></li>";
+                echo "<li><a href=\"./deconnexion.php\" alt=\"lien vers page déconnexion\">Déconnexion</a></li>";
             }
         ?>
         <li>

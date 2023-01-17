@@ -65,7 +65,7 @@ include("./navbar.php")
         </div>
         <div id="open-modal" class="modal-window">
             <div>
-                <a href="#general-program" title="Close" class="modal-close">Fermer</a>
+                <a href="#general-program" title="Close" class="modal-close" alt="fermeture du pop-up">Fermer</a>
                 <div class="text-program"><?= $job->content_job ?></div>
             </div>
         </div>

@@ -46,13 +46,13 @@ include("./navbar.php")
             <?php foreach ($courses as $topic) : ?>
 
                 <div class="<?= $topic->namediv_course ?>">
-                    <a class="btn" href="#open-modal=<?= $topic->id_course ?>"><?= $topic->name_course ?></a>
+                    <a class="btn" href="#open-modal=<?= $topic->id_course ?>" alt="ouvrir pop-up"><?= $topic->name_course ?></a>
                 </div>
             <?php endforeach; ?>
 
                 <div id="open-modal" class="modal-window">
                     <div>
-                        <a href="#general-program" title="Close" class="modal-close">Fermer</a>
+                        <a href="#general-program" title="Close" class="modal-close" alt="fermer pop-up">Fermer</a>
                         <div class="text-program"><?= $topic->content_course ?></div>
                     </div>
                 </div>

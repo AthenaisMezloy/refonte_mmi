@@ -18,7 +18,7 @@
     ?>
     <section>
         <h1>Vous avez bien été déconnecté</h1>
-        <a href="./index.php">Retour à la page d'accueil</a>
+        <a href="./index.php" alt="lien page d'accueil">Retour à la page d'accueil</a>
     </section>
     <?php
     include("./footer.php")
