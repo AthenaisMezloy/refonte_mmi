@@ -1,5 +1,31 @@
 
 /* Dark Mode */
+nav ul, footer ul{
+        margin: 0;
+        padding: 0;
+}
+
+nav li, footer li{
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dark{ 
+    background-color: black; 
+    color: white; 
+    }
+
+    .dark a{
+        color: white;
+    }
+
+    .dark .block {
+        background-color: black;
+    }
+    
+    nav a:hover {
+        text-decoration: underline;
+    }
 
 .dark footer{ 
     background-color: #FFFCF6;
@@ -64,7 +90,8 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 65%;
+    width: 70%;
+    flex-wrap: wrap;
 }
 
 #btn-theme {
@@ -77,6 +104,7 @@ nav ul {
     width: 120%;
     padding: 0.5em 0.5em 0.5em 0.5em;
     background: none;
+    cursor: pointer;
 }
 
 #btn-theme img {
@@ -94,20 +122,6 @@ nav ul {
     align-items: center;
     width: 100%;
     height: 100%;
-}
-
-/* Fil d'ariane */
-
-.display {
-    position: absolute;
-    z-index: 3;
-    top: 10%;
-    right: 90%;
-}
-
-.syllabus {
-    display: flex;
-
 }
 
 /* Footer */
@@ -170,4 +184,14 @@ footer a
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+.breadcrumb{
+    position: absolute;
+    top: 12%;
+    left: 1%;
+    z-index: 1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+
 }

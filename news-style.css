@@ -93,6 +93,9 @@ h1 {
     display: flex;
     width: 85%;
     margin: 1.5em 0 0 0;
+    border: 2px solid black;
+
+    flex-wrap: wrap;
 }
 
 .news-list li div {
@@ -128,4 +131,34 @@ h1 {
 
 .dark #news a {
     color: white;
+}
+
+.dark .news-list li {
+    border: 2px solid white;
+}
+
+@media screen and (max-width: 960px) {
+
+    .news-list li{
+        flex-direction: column;
+    }
+
+    .news-list li div{
+        width: 100%;
+    }
+
+    .news-list li img {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 426px) {
+    h1 {
+        font-size: 3.5em;
+    }
+
+    #home {
+        height: 35vh;
+    }
 }

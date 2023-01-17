@@ -81,7 +81,7 @@ select, option {
     width: fit-content;
 }
 
-form {
+.form-save {
     display: flex;
     flex-direction: column;
     border: 2px solid black;
@@ -89,10 +89,19 @@ form {
     margin: 0.5em 0 0.5em 0;
 }
 
+.form-delete {
+    display: flex;
+    justify-content: center;
+}
+
 form div {
     display: flex;
     flex-direction: column;
     margin: 0.5em 0 0.5em 0;
+}
+
+form div p {
+    font-size: 0.8em;
 }
 
 .dark form {

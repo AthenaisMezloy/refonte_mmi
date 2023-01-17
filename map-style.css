@@ -29,13 +29,7 @@ p {
     font-weight: 400;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-}
-
 li {
-    list-style: none;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -43,61 +37,48 @@ a {
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    transition: all ease 0.5s;
 }
 
-section {
+section{
     width: 100%;
-}
-
-h1 {
-    position: relative;
-    font-size: 4em;
-    bottom: -10%;
-    left: 1.5%;
-}
-
-#home {
-    display: flex;
-    width: 100%;
-    height: 65vh;
-    align-items: center;
-    padding: 0 0 0 0.5em;
-}
-
-#notice-list a {
-    color: black;
-    text-decoration: underline;
-}
-
-#notice-list ul {
+    height: 110vh;
+    padding: 1em;
     display: flex;
     flex-direction: column;
-    margin: 0 0 3em 0;
-    padding: 0 1em 0 1em;
-
+    justify-content: flex-end;
+    margin: 0 0 5em 0;
 }
 
-#notice-list li {
-    margin: 3em 1em 3em 1em;    
+.box{
+    border: solid 3px black;
+    padding: 2em;
+    width: 100%;    
 }
 
-#notice-list li p {
-    border: solid 2px black;
-    padding: 1em;
-    font-size: 0.8em;
+.box a {
+    color: black;
 }
 
-.dark #notice-list li p {
-    border: solid 2px white;
-
-}
-
-
-#notice-list a {
-    color: white;
-}
-
-
-#notice-list li p a:hover {
+.box a:hover {
     text-decoration: underline;
+}
+
+.adresse{
+    margin-bottom: 5em;
+    margin-top: 13em;
+}
+.page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1em;
+
+}
+
+.dark .box{
+    border-color: white;
+
 }

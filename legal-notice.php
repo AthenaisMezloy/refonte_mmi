@@ -1,15 +1,18 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/icons/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="legal-notice-style.css">
-    <title>MMI Champs - Mentions Légales</title>
+    <title>Mentions Légales - BUT MMI Champs</title>
 </head>
 
 <body>
@@ -103,13 +106,13 @@
             - sun.webp : <a href="https://www.flaticon.com/free-icons/weather" title="weather icons">Weather icons created by Freepik - Flaticon</a><br>
             - moon.webp : <a href="https://www.flaticon.com/free-icons/moon" title="moon icons">Moon icons created by Good Ware - Flaticon</a><br><br>
 
-            Images importées depuis Vecteezy.com puis modifiées par nos soins : alexandreleroy.webp, annetasso.webp, athe.webp, bilelbenbouzid.webp, bruno.webp, florencebister.webp, fredericpoisson.webp, gaellecharpentier.webp, hervelo.webp, kpc.webp, lahcensoussi.webp, leabosco.webp, leylajaoued.webp, lilian.webp, matthieuberthet.webp, melinaguyon.webp, nathaliecaclard.webp, odileniel.webp, philippegambette.webp, renaudeppstein.webp, timothe.webp<br><br>
+            Images importées depuis <a href="https://fr.vecteezy.com/">Vecteezy.com</a> puis modifiées par nos soins : alexandreleroy.webp, annetasso.webp, athe.webp, bilelbenbouzid.webp, bruno.webp, florencebister.webp, fredericpoisson.webp, gaellecharpentier.webp, hervelo.webp, kpc.webp, lahcensoussi.webp, leabosco.webp, leylajaoued.webp, lilian.webp, matthieuberthet.webp, melinaguyon.webp, nathaliecaclard.webp, odileniel.webp, philippegambette.webp, renaudeppstein.webp, timothe.webp<br><br>
 
-            rentree2022.webp : © Pagnarith KOK SREY - LinkedIn<br>
+            rentree2022.webp : © Pagnarith KOK SREY - <a href="https://www.linkedin.com/in/pagnarith-kok-srey-8b2861221/">LinkedIn</a><br>
             ucaq.webp : © service des communications de l'UQAC<br>
-            cegepstefoy.webp : © Khayman<br>
-            aircanada.webp : © Sweet One<br>
-            iuteiffel.webp, projet.webp, after.webp, whatsmmi.webp, about.webp, nuitinfo.webp : © Athénaïs MEZLOY - LinkedIn<br><br>
+            cegepstefoy.webp : © <a href="https://commons.wikimedia.org/wiki/User:Khayman">Khayman</a><br>
+            aircanada.webp : © <a href="https://www.flickr.com/photos/sweetone/">Sweet One</a><br>
+            iuteiffel.webp, projet.webp, after.webp, whatsmmi.webp, about.webp, nuitinfo.webp : © Athénaïs MEZLOY - <a href="https://www.linkedin.com/in/athenaismezloy/">LinkedIn</a><br><br>
 
             halloween2022.webp, jpo2023.webp, londres2022.webp, secretsanta2022.webp, dataviz.webp, campagne.webp, galactrip.webp, motiondesign.webp, portraitchinois.webp : © TABL
             </li>

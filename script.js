@@ -1,116 +1,6 @@
-
-let sliderItem = $(".slider").children(".item.active");
-sliderItem.prev(".item").css({
-  "left":-400,
-  "transform": "rotate(-10deg)",
-  "height": "55%",
-
-});
-
-sliderItem.next(".item").css({
-  "right":-400,
-  "transform": "rotate(10deg)",
-  "height": "55%",
-
-});
-let i = $(".slider").children(".item");
-let ind=0;
-$(".slider").children('.item').each(function(){
-  $(this).attr('data-index',ind++);
-  
-})
-i.on('click',function(e){
-  const that = $(this);
-  let dataIndex = that.data('index');
-  $(".item").removeClass('active');
-  that.addClass('active');
-  i.each(function(){
-    if($(this).data('index')==dataIndex){
-      $(this).addClass('active');
-      $(this).css({
-        "left":0,
-        "right":0,
-        "z-index":3,
-        "transform": "rotate(0deg) scale(1.1)",
-        "height": "60%",
-
-
-      });
-      if(dataIndex=="1"){
-        $(".item[data-index=2]").css({
-          "left":0,
-          "right":-400,
-          "z-index":1,
-          "transform": "rotate(10deg) ",
-          "height": "55%",
-
-        })
-        $(".item[data-index=0]").css({
-          "left":-400,
-          "right":0,
-          "z-index":1,
-          "transform": "rotate(-10deg)",
-          "height": "55%",
-
-        })
-      }else if(dataIndex=="0"){
-        $(".item[data-index=2]").css({
-          "left":-400,
-          "right":0,
-          "z-index":1,
-          "transform": "rotate(-10deg)",
-          "height": "55%",
-
-
-        })
-        $(".item[data-index=1]").css({
-          "left":0,
-          "right":-400,
-          "z-index":1,
-          "transform": "rotate(10deg)",
-          "height": "55%",
-
-        })
-      }else if(dataIndex=="2"){
-        $(".item[data-index=1]").css({
-          "left":-400,
-          "right":0,
-          "z-index":1,
-          "transform": "rotate(-10deg)",
-          "height": "55%",
-
-        })
-        $(".item[data-index=0]").css({
-          "left":0,
-          "right":-400,
-          "z-index":1,
-          "transform": "rotate(10deg)",
-          "height": "55%",
-
-        })
-      }
-    }
-  })
-})
 var path = window.location.pathname;
 var page = path.split("/").pop();
-console.log( page );
 
-// Fil d'Ariane
-
-$('.list li a').on('click', function() {
-    //selecting the syllabus class
-      $select = $('<div class="syllabus"></div>');
-      $(this).parents('li').each(function(n, li) {
-         //Adding / to each anchor tag of li
-          $select.prepend(' / ',$(li).children('a').clone());
-      });
-    // Displaying the hierarchical order of pages.
-    $('.display').html(
-      $select.prepend('<a href="#syllabus">GeeksforGeeks</a>'));   
-  })
-
-//
 // Dark mode
     if(localStorage.getItem('dark')) {
         $("body").addClass("dark");
@@ -137,9 +27,17 @@ $('.list li a').on('click', function() {
           
 
 //
-// Nav animation
+// Nav 
 
 if (page == "index.php") {
+
+    document.getElementById("scroll-button").addEventListener("click", function() {
+        window.scroll({
+          top: 560, 
+          left: 0, 
+          behavior: 'smooth' 
+        });
+      });
 
     if ($(window).scrollTop() <= 1) {
         if (localStorage.getItem('dark')) {
@@ -168,39 +66,39 @@ if (page == "index.php") {
 };
 
 //
-// Boutons de Sections
-
-$(document).ready(function() {
-    
-    $("#btn-1").addClass("bg-orange");
-    $(".icon").addClass("bg-grey");
-
-    $(".icon").on('click', function(event){
-        var id = $(event.target).attr('id');
-        console.log(id);
-        $(".icon").removeClass("bg-orange");
-        $(this).addClass("bg-orange");
-        
-      });
-
-});
-
-//
 // filtre projets
 
-var filterButtons = document.querySelectorAll('.filter-button');
-filterButtons.forEach(function(button) {
-    button.addEventListener('click', function() {
-        var filterValue = button.getAttribute('data-filter');
-        var articles = document.querySelectorAll('.article-box');
-        articles.forEach(function(article) {
-            if (!article.classList.contains(filterValue) && filterValue != 'all') {
-                article.style.display = 'none';
-            } else {
-                article.style.display = 'block';
-            }
+if (page == "project.php") {
+    $('.filter-button').on('click', function() {
+        var filterValue = $(this).attr('data-filter');
+        var articles = $('.article-box');
+        articles.each(function() {
+        if (!$(this).hasClass(filterValue) && filterValue != 'all') {
+        $(this).hide();
+        } else {
+        $(this).show();
+        }
         });
-    });
-});
-``
+        });
+    }
 
+if (page == "admin.php") {
+
+    $(document).ready(function(){
+        $("#myButton").click(function(){
+        var x = $("#myInput");
+        if (x.attr("type") === "password") {
+        x.attr("type", "text");
+        } else {
+        x.attr("type", "password");
+        }
+        });
+        });
+}
+
+  if (page == "admin-gestion.php") {
+    $("#formulaire").submit(function(){
+        alert("Informations envoyées avec succès!");
+        });
+
+  }

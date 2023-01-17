@@ -1,11 +1,11 @@
 <?php
+session_start();
 require("model.php");
 $teachers = getTeachers();
 $courses = getCourses();
 ?>
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +16,7 @@ $courses = getCourses();
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="formation-style.css">
-    <title>BUT MMI Champs - International</title>
+    <title>La Formation - BUT MMI Champs</title>
 </head>
 
 <body>

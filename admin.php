@@ -1,14 +1,18 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/icons/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="admin-style.css">
-    <title>Identification admin</title>
+    <title>Identification admin - BUT MMI Champs</title>
 </head>
 <body>
         <?php 
@@ -20,15 +24,19 @@
                 <ul>
                     <li><h1>Entrez vos identifiants</h1></li>
                     <li>
-                        <p>Login : </p>
+                        <label for="login">Login : </label>
                         <INPUT type=text name="login">
                         <?php 
                         if (isset($_GET["err"]) && $_GET["err"]=="login") { echo "ATTENTION MAUVAIS LOGIN";}
                         ?>
                     </li>
                     <li>
-                        <p>Mot de passe :</p>
-                        <input type="password" name="pwd">
+                        <label for="pwd">Mot de passe :</label>
+                        <input type="password" name="pwd" id="myInput">
+                        <div class="show-pwd">
+                            <label for="show_pwd">Montrer mot de passe</label>
+                            <input type="checkbox" onclick="myFunction()" name="show_pwd" id="myButton">
+                        </div>
                         <?php 
                         if (isset($_GET["err"]) && $_GET["err"]=="mdp") { echo "ATTENTION MAUVAIS MOT DE PASSE";}
                         ?>

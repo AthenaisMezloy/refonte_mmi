@@ -1,40 +1,25 @@
 <script src=
    "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
 </script>
-
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="footer-nav-style.css">
-
-<style>
-    .dark{ 
-    background-color: black; 
-    color: white; 
-    }
-
-    .dark a{
-        color: white;
-    }
-
-    .dark .block {
-        background-color: black;
-    }
-    
-    nav a:hover {
-        text-decoration: underline;
-    }
-
-</style>
-
 <nav>
     <div>
-        <img src="./img/assets/logo_img.svg" alt="">
+        <a href="./index.php">
+        <img src="./img/assets/logo_img.svg" alt="bouton de redirection vers la page d'accueil">
+        </a>
     </div>
     <ul class="list">
-        <li><a href="./index.php">Accueil</a></li>
-        <li><a href="#">La Formation</a></li>
+        <li><a href="./formation.php">La Formation</a></li>
         <li><a href="./project.php">Projets</a></li>
         <li><a href="./aftermmi.php">Après MMI</a></li>
         <li><a href="./international.php">International</a></li>
         <li><a href="./about.php">À propos</a></li>
+        <?php
+            if (isset($_SESSION['login'])) {
+                echo "<li><a href=\"./deconnexion.php\">Déconnexion</a></li>";
+            }
+        ?>
         <li>
             <button id="btn-theme">
                 <div class="day">
@@ -47,9 +32,26 @@
         </li>
     </ul>
 </nav>
-<div class="display">
-    <div class="syllabus">
-      <a href="#">GeeksforGeeks / </a>
-    </div>
-  </div>
+<?php
+    $pages = array(
+        "Actualités" => "news.php",
+        "Formation" => "formation.php",
+        "International" => "international.php",
+        "À propos" => "about.php",
+        "Projets" => "project.php",
+        "Après mmi" => "aftermmi.php",
+        "Détails Projet" => "detail-project.php"
+    );
+
+    $current_page = basename($_SERVER['PHP_SELF']);
+
+    echo "<div class='breadcrumb'>";
+    foreach ($pages as $page => $url) {
+        if ($url == $current_page) {
+            echo "Accueil > " . $page;
+        }
+    }
+    echo "</div>";
+?>
+
 
