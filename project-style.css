@@ -140,7 +140,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 0 0 3em 0;
-    padding: 0 2em 0 2em;
+    padding: 0 10vw 0 10vw;
 }
 
 #project-list ul li {
