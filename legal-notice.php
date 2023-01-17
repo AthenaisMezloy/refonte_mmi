@@ -105,13 +105,13 @@
             - sun.webp : <a href="https://www.flaticon.com/free-icons/weather" title="weather icons">Weather icons created by Freepik - Flaticon</a><br>
             - moon.webp : <a href="https://www.flaticon.com/free-icons/moon" title="moon icons">Moon icons created by Good Ware - Flaticon</a><br><br>
 
-            Images importées depuis Vecteezy.com puis modifiées par nos soins : alexandreleroy.webp, annetasso.webp, athe.webp, bilelbenbouzid.webp, bruno.webp, florencebister.webp, fredericpoisson.webp, gaellecharpentier.webp, hervelo.webp, kpc.webp, lahcensoussi.webp, leabosco.webp, leylajaoued.webp, lilian.webp, matthieuberthet.webp, melinaguyon.webp, nathaliecaclard.webp, odileniel.webp, philippegambette.webp, renaudeppstein.webp, timothe.webp<br><br>
+            Images importées depuis <a href="https://fr.vecteezy.com/">Vecteezy.com</a> puis modifiées par nos soins : alexandreleroy.webp, annetasso.webp, athe.webp, bilelbenbouzid.webp, bruno.webp, florencebister.webp, fredericpoisson.webp, gaellecharpentier.webp, hervelo.webp, kpc.webp, lahcensoussi.webp, leabosco.webp, leylajaoued.webp, lilian.webp, matthieuberthet.webp, melinaguyon.webp, nathaliecaclard.webp, odileniel.webp, philippegambette.webp, renaudeppstein.webp, timothe.webp<br><br>
 
-            rentree2022.webp : © Pagnarith KOK SREY - LinkedIn<br>
+            rentree2022.webp : © Pagnarith KOK SREY - <a href="https://www.linkedin.com/in/pagnarith-kok-srey-8b2861221/">LinkedIn</a><br>
             ucaq.webp : © service des communications de l'UQAC<br>
-            cegepstefoy.webp : © Khayman<br>
-            aircanada.webp : © Sweet One<br>
-            iuteiffel.webp, projet.webp, after.webp, whatsmmi.webp, about.webp, nuitinfo.webp : © Athénaïs MEZLOY - LinkedIn<br><br>
+            cegepstefoy.webp : © <a href="https://commons.wikimedia.org/wiki/User:Khayman">Khayman</a><br>
+            aircanada.webp : © <a href="https://www.flickr.com/photos/sweetone/">Sweet One</a><br>
+            iuteiffel.webp, projet.webp, after.webp, whatsmmi.webp, about.webp, nuitinfo.webp : © Athénaïs MEZLOY - <a href="https://www.linkedin.com/in/athenaismezloy/">LinkedIn</a><br><br>
 
             halloween2022.webp, jpo2023.webp, londres2022.webp, secretsanta2022.webp, dataviz.webp, campagne.webp, galactrip.webp, motiondesign.webp, portraitchinois.webp : © TABL
             </li>

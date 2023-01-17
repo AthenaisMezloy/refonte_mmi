@@ -56,6 +56,14 @@ section{
     width: 100%;    
 }
 
+.box a {
+    color: black;
+}
+
+.box a:hover {
+    text-decoration: underline;
+}
+
 .adresse{
     margin-bottom: 5em;
     margin-top: 13em;
@@ -67,5 +75,10 @@ section{
     flex-direction: column;
     justify-content: flex-end;
     padding: 1em;
+
+}
+
+.dark .box{
+    border-color: white;
 
 }
