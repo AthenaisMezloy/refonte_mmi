@@ -2,6 +2,7 @@
    "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
 </script>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="preload" href="footer-nav-style.css" as="style">
 <link rel="stylesheet" href="footer-nav-style.css">
 <nav>
     <div>

@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="footer-nav-style.css">
 <footer>
     <div class="info-container">
         <div class="contact-content">
