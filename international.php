@@ -27,7 +27,7 @@
 
     <section id="intro">
         <h2>What’s MMI?</h2>
-        <div class="content-what">
+        <div class="content-what" data-aos="fade-up" data-aos-duration="900">
             <div class="text-container">
                 <p>
                 This 3-year degree, which was the object of a reform plan in 2021, deals with Multimedia and Internet Professions.
@@ -40,7 +40,7 @@
 
     <section id="one-title">
         <h2>About the programme</h2>
-        <div class="content-what">
+        <div class="content-what" data-aos="fade-up" data-aos-duration="900">
                 <img src="./img/international/about.webp" alt="">
             <div class="text-container">
                 <p>
@@ -54,7 +54,7 @@
 
     <section id="quebec">
         <h2>Québec’s travel</h2> 
-        <div class="content-what">
+        <div class="content-what" data-aos="fade-up" data-aos-duration="900">
             <div class="text-container">
                 <p>
                 During the fourth semester, you have the chance to study in Quebec. It’s a way for the MMI students to have an unusual experience, to discover another culture.
@@ -69,7 +69,7 @@
     <section id="partnerships">
             <h3>Partnerships</h3>
             <div>
-                <div class="UQAC">
+                <div class="UQAC" data-aos="fade-right" data-aos-duration="900">
                     <div class="hover-text">
                             <p>
                             The UQAC is located in Saguenay-Lac-Saint-Jean, a French-speaking region of Canada, a 2h-drive from Quebec and 4h30min from Montréal.
@@ -82,7 +82,7 @@
                         <h4>UQAC</h4>
                     </div>
                 </div>
-                <div class="CEGEP">
+                <div class="CEGEP" data-aos="fade-left" data-aos-duration="900">
                     <div class="hover-text">
                         <p>
                         Renowned for its programmes’ excellence, its 9 800 student’s performance and its teaching’s quality, the CÉGEP is very attractive.
@@ -101,7 +101,7 @@
     <section id="join-mmi">
         <h2>How to join MMI as an International Student ?</h2>
         <ul class="info-list">
-            <li class="container">
+            <li class="container" data-aos="fade-up" data-aos-duration="900">
                 <h3>Students with an exchange programme</h3>
                 <div class="content-join">
                     <h4>Application process</h4>
@@ -116,7 +116,7 @@
                     </p>
                 </div>
             </li>
-            <li class="container">
+            <li class="container" data-aos="fade-up" data-aos-duration="900">
                 <h3>Students out of an exchange programme</h3>
                 <div class="content-join">
                     <h4>European Union and European Economic Area students</h4>
@@ -143,7 +143,7 @@
                     </p>
                 </div>
             </li>
-            <li class="container">
+            <li class="container" data-aos="fade-up" data-aos-duration="900">
                 <h3>Intensive French courses<br>
                     Linguistics Accompanying Programme (PAL)</h3>
                 <div class="content-join">
@@ -155,7 +155,7 @@
                 </div>
             </li>
 
-            <p class="search-more">Search for more information on the University Gustave Eiffel pages about that (<a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux/etudiants-hors-programme-dechange/procedure-dinscription">Intertional Students</a>) or on <a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux/etudiants-hors-programme-dechange/procedure-dinscription">campusfrance.org</a> (Warning : these websites are French-speaking).</p>
+            <p class="search-more" data-aos="fade-up" data-aos-duration="900">Search for more information on the University Gustave Eiffel pages about that (<a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux/etudiants-hors-programme-dechange/procedure-dinscription">Intertional Students</a>) or on <a href="https://www.univ-gustave-eiffel.fr/international/etudiants-internationaux/etudiants-hors-programme-dechange/procedure-dinscription">campusfrance.org</a> (Warning : these websites are French-speaking).</p>
 
         </ul>
 

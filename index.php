@@ -49,7 +49,7 @@
         </div>
 
         <div class="img-container right">
-            <img src="./img/home/iuteiffel.webp" alt="">
+            <img src="./img/home/iuteiffel.webp" alt="" data-aos="fade-left" data-aos-duration="750">
         </div>
 
     </section>
@@ -57,7 +57,7 @@
     <section id="projects">
 
         <div class="img-container left">
-            <img src="./img/home/projet.webp" alt="" data-aos="fade-up" data-aos-duration="1000">
+            <img src="./img/home/projet.webp" alt="" data-aos="fade-right" data-aos-duration="750">
         </div>
 
         <div class="content">
@@ -82,7 +82,7 @@
         </div>
 
         <div class="img-container right">
-            <img src="./img/home/after.webp" alt="">
+            <img src="./img/home/after.webp" alt="" data-aos="fade-left" data-aos-duration="750">
         </div>
     </section>
 
@@ -96,11 +96,11 @@
         </div>
         <div class="choices">
             <div class="container">
-                <div class="dev">
+                <div class="dev" data-aos="fade-right" data-aos-duration="750">
                     <h4>Développement Web</h4>
                     <p>Le parcours développement web et dispositifs interactifs forme au développement de sites web et à l’intégration d’applications multimédia ou mobiles. Il aborde notamment les outils et langages informatiques nécessaires à la conception et à la gestion de ces outils numériques.</p>
                 </div>
-                <div class="crea">
+                <div class="crea" data-aos="fade-left" data-aos-duration="900">
                     <h4>Création Numérique</h4>
                     <p>Le parcours création numérique est consacré à l’expression d’un message sur différents médias, sous la forme de création graphique et d’écriture multimédia. II permet d’acquérir les techniques nécessaires à la création de ressources numériques, notamment de publications web.</p>
                 </div>
@@ -122,7 +122,7 @@
                 <?php $i = 0; ?>
                 <?php foreach($news as $article): ?>
                     <?php if($i >= 3) break; ?>
-                    <li>
+                    <li data-aos="fade-up" data-aos-duration="900">
 
                         <?php if ($i % 2 == 0): ?>
 

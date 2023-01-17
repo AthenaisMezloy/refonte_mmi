@@ -30,7 +30,7 @@
                 <ul>
                         <?php $i = 0; ?>
                         <?php foreach($news as $article): ?>
-                            <li>
+                            <li data-aos="fade-up" data-aos-duration="900">
         
                                 <?php if ($i % 2 == 0): ?>
         
