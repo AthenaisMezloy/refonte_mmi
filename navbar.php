@@ -7,10 +7,13 @@
 <nav>
     <div>
         <a href="./index.php" alt="lien vers page d'accueil">
-        <img src="./img/assets/logo_img.svg" alt="bouton de redirection vers la page d'accueil">
+            <img src="./img/assets/logo_img.svg" alt="bouton de redirection vers la page d'accueil">
         </a>
     </div>
-    <ul class="list">
+    <button id="btn-burger">
+        <img src="./img/icons/burgermenu.png" alt="Menu burger">
+    </button>
+    <ul class="nav-links">
         <li><a href="./formation.php" alt="lien vers page formation">La Formation</a></li>
         <li><a href="./project.php" alt="lien vers page projets étudiants">Projets</a></li>
         <li><a href="./aftermmi.php" alt="lien vers page après MMI">Après MMI</a></li>
@@ -33,6 +36,7 @@
         </li>
     </ul>
 </nav>
+
 <?php
     $pages = array(
         "Actualités" => "news.php",
