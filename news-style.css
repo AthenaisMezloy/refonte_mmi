@@ -136,3 +136,29 @@ h1 {
 .dark .news-list li {
     border: 2px solid white;
 }
+
+@media screen and (max-width: 960px) {
+
+    .news-list li{
+        flex-direction: column;
+    }
+
+    .news-list li div{
+        width: 100%;
+    }
+
+    .news-list li img {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 426px) {
+    h1 {
+        font-size: 3.5em;
+    }
+
+    #home {
+        height: 35vh;
+    }
+}
