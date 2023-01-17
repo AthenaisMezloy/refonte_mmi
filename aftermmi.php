@@ -1,5 +1,10 @@
+<?php 
+    require("./model.php");
+    $projets = getJobs();
+    $icons = getIcons();
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -27,38 +32,51 @@ include("./navbar.php")
     </section>
     <section id="jobs">
         <div class="intro">
-            <h2>Les métiers en vue</h2>
+            <h1>Les métiers en vue</h1>
         </div>
         <div class="filter">
             <h2>Filtrer par domaine :</h2>
             <ul>
-                <li>Tous les projets</li>
-                <li>Développement web</li>
-                <li>Design</li>
-                <li>Audiovisuel</li>
-                <li>Communication</li>
+                <li>
+                    <button class="filter-button" data-filter="all"><p>Tous les métiers</p></button>
+                </li>
+
+                <?php foreach($icons as $icon): ?>
+                    <li>
+                        <button class="filter-button" data-filter="<?= $icon->id_icon ?>">
+                        <?php if (!empty($icon-> image_icon)): ?>
+                            <img src="data:image/webp;base64,<?= base64_encode($icon->image_icon) ?>" alt="<?= $icon->name_icon ?>"/>
+                        <?php else: ?>
+                            <p>No image found.</p>
+                        <?php endif; ?>
+                        <?= $icon->name_icon ?>
+                        </button>
+                    </li>
+                <?php endforeach; ?>
             </ul>
         </div>
-        <div class="parent">
-            <div class="dev" >
-            <a href=""alt="Développement Web" >Intégrat.eur.rice</a></div>
-            <div class="design" >
-            <a href=""alt="Design" >Chef.fe de projet</a></div>
-            <div class="audio" >
-            <a href=""alt="Audiovisuel" >Direct.eur.rice artistique</a></div>
-            <div class="com" >
-            <a href=""alt="Communication" >Développeu.r.se web</a></div>
-            <div class="dev" >
-            <a href=""alt="Développement Web" >Graphiste</a></div>
-            <div class="design" >
-            <a href=""alt="Design" >Hébergeu.r.se</a></div>
-            <div class="audio" >
-            <a href=""alt="Audiovisuel" >Monteu.r.se vidéaste</a></div>
-            <div class="com" >
-            <a href=""alt="Communication" >Community Manager</a></div>
-            <div class="com" >
-            <a href=""alt="Communication" >Chargé.e de com</a></div>
+
+    </section>
+
+    <section id="job-list">
+        <ul>
+            
+        <?php foreach($job as $job): ?>
+        <li class="article-box <?= $job->ext_icon?>">
+        <div class="dev">
+            <a class="btn" href="#open-modal"  alt="<?= $job->name_job ?>"><?= $job->name_job ?></a>
         </div>
+        <div id="open-modal" class="modal-window">
+            <div>
+                <a href="#general-program" title="Close" class="modal-close">Fermer</a>
+                <div class="text-program"><?= $job->content_job ?></div>
+            </div>
+        </div>
+        
+        </a>
+        </li>
+    <?php endforeach; ?>
+        </ul>
     </section>
 
     <section id="post-mmi">
