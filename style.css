@@ -140,6 +140,10 @@ a {
     transform: translateY(200%);
 }
 
+.dark .btn-go button{
+    border-color: white;
+}
+
 /* Partie Introduction  */
 
 section:not(#home) {
@@ -186,6 +190,7 @@ section:not(#home) .content p {
     border: 1px solid black;
     padding: 1em;
     border-radius: 5em;
+    transition: all ease 0.5s;
 }
 
 .btn-bubble p {
@@ -193,20 +198,21 @@ section:not(#home) .content p {
 }
 
 .btn-bubble img {
-    display: none;
+    display: flex;
+    width: 0px;
     transform: rotate(-90deg);
+    opacity: 0%;
     transition: all ease 0.5s;
 }
 
 .btn-bubble:hover img {
-    display: flex;
     mix-blend-mode: difference;
     width: 16px;
     transform: rotate(-90deg);
-    margin: 0 0.5em 0 0.5em;
-    transition: all ease 0.5s;
+    margin: 0 0 0 0.5em;
+    opacity: 100%;
 }
-
+  
 .dark .btn-bubble {
     color: white;
     border: 1px solid white;
@@ -366,6 +372,10 @@ h3 {
     font-size: 0.9em;
     color: black;
     text-decoration: underline;
+}
+
+#news .no-under {
+    text-decoration: none;
 }
 
 .dark #news a {

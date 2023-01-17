@@ -168,7 +168,7 @@ Le BUT MMI vous ouvre la voie vers de nombreuses perspectives.</p>
             </ul>
         </div>
             
-            <a href="./news.php" class="btn-bubble">Voir plus<img src="./img/icons/arrow.svg" alt=""></a>
+            <a href="./news.php" class="btn-bubble no-under">Voir plus<img src="./img/icons/arrow.svg" alt=""></a>
 
     </section>
 
