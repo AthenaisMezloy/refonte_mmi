@@ -25,7 +25,7 @@
                 <p>Métiers du Multimédia et de l'Internet</p>
             </div>
             <div class="btn-go">
-                <button id="scroll-button"><img src="./img/icons/arrow.svg" alt=""></button>
+                <button id="scroll-button" aria-label="bouton scroll vers le bas"><img src="./img/icons/arrow.svg" alt=""></button>
             </div>
         </div>
     </section>
