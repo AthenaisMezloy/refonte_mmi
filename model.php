@@ -149,21 +149,6 @@ function deleteNews($id){
   $stmt->bindParam(1, $id, PDO::PARAM_INT); 
   $stmt->execute();
 };
-function getCourses(){
-  global $db;
-  $requete = $db->prepare('SELECT * FROM courses ORDER BY id_course LIMIT 4');
-  $requete -> execute();       
-  $data = $requete -> fetchALL(PDO::FETCH_OBJ);
-  return $data;
-};
-
-function getOneCourse($id){
-  global $db;
-  $requete = $db -> prepare('SELECT * FROM courses WHERE id_course = ?');
-  $requete -> execute(array($id));
-  $data = $requete -> fetch(PDO :: FETCH_OBJ);
-  return $data;
-};
 
 function getTeam(){
   global $db;
@@ -192,4 +177,12 @@ function getJob($id){
   else {
       header('Location: index.php');
   }
+};
+
+function getPostMMI(){
+  global $db;
+  $requete = $db->prepare('SELECT * FROM postmmi ORDER BY id_postmmi ASC');
+  $requete -> execute();       
+  $data = $requete -> fetchALL(PDO::FETCH_OBJ);
+  return $data;
 };
