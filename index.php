@@ -6,12 +6,10 @@
 <!DOCTYPE html>
 <html lang="fr" class="home-page">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
+    <?php
+        include("./meta.php");
+    ?>
+    <link rel="preload" href="style.css" as="style">
     <link rel="stylesheet" href="style.css">
     <title>Accueil - BUT MMI Champs</title>
 </head>
@@ -27,7 +25,7 @@
                 <p>Métiers du Multimédia et de l'Internet</p>
             </div>
             <div class="btn-go">
-                <button id="scroll-button"><img src="./img/icons/arrow.svg" alt=""></button>
+                <button id="scroll-button" aria-label="bouton scroll vers le bas"><img src="./img/icons/arrow.svg" alt=""></button>
             </div>
         </div>
     </section>
@@ -44,12 +42,12 @@
             À Champs-sur-Marne, deux parcours sont proposés à partir du quatrième semestre : Développement web & Dispositif interactifs, et Création Numérique.
             </p>
 
-            <a href="./formation.php" class="btn-bubble">Découvrir la formation<img src="./img/icons/arrow.svg" alt=""></a>
+            <a href="./formation.php" class="btn-bubble" alt="lien vers page formation">Découvrir la formation<img src="./img/icons/arrow.svg" alt=""></a>
 
         </div>
 
         <div class="img-container right">
-            <img src="./img/home/iuteiffel.webp" alt="">
+            <img src="./img/home/iuteiffel.webp" alt="" data-aos="fade-left" data-aos-duration="750">
         </div>
 
     </section>
@@ -57,14 +55,14 @@
     <section id="projects">
 
         <div class="img-container left">
-            <img src="./img/home/projet.webp" alt="" data-aos="fade-up" data-aos-duration="1000">
+            <img src="./img/home/projet.webp" alt="" data-aos="fade-right" data-aos-duration="750">
         </div>
 
         <div class="content">
             <h3 class="yellow">02</h3>
             <p>Le BUT MMI est une formation théorique mais surtout pratique ! De nombreux projets seront à réaliser dans de multiples domaines tout au long de ces 3 années de formations. Apprenez à vous organiser tout en exploitant les diverses compétences que vous allez acquérir et perfectionner afin de laisser cours à votre créativité ! Découvrez à travers ce site différents projets réalisés par d’anciens étudiants de la formation.</p>
 
-            <a href="./project.php" class="btn-bubble">Projets étudiants <img src="./img/icons/arrow.svg" alt=""></a>
+            <a href="./project.php" class="btn-bubble" alt="lien vers page projets">Projets étudiants <img src="./img/icons/arrow.svg" alt=""></a>
 
         </div>
 
@@ -77,12 +75,12 @@
             <p>Cette formation vous permet d’acquérir un bagage suffisant pour entrer dans le monde professionnel ou poursuivre vos études en master.<br>
             Le BUT MMI vous ouvre la voie vers de nombreuses perspectives.</p>
 
-            <a href="./aftermmi.php" class="btn-bubble">Après MMI ? <img src="./img/icons/arrow.svg" alt=""></a>
+            <a href="./aftermmi.php" class="btn-bubble" alt="lien vers page après mmi">Après MMI ? <img src="./img/icons/arrow.svg" alt=""></a>
 
         </div>
 
         <div class="img-container right">
-            <img src="./img/home/after.webp" alt="">
+            <img src="./img/home/after.webp" alt="" data-aos="fade-left" data-aos-duration="750">
         </div>
     </section>
 
@@ -96,11 +94,11 @@
         </div>
         <div class="choices">
             <div class="container">
-                <div class="dev">
+                <div class="dev" data-aos="fade-right" data-aos-duration="750">
                     <h4>Développement Web</h4>
                     <p>Le parcours développement web et dispositifs interactifs forme au développement de sites web et à l’intégration d’applications multimédia ou mobiles. Il aborde notamment les outils et langages informatiques nécessaires à la conception et à la gestion de ces outils numériques.</p>
                 </div>
-                <div class="crea">
+                <div class="crea" data-aos="fade-left" data-aos-duration="900">
                     <h4>Création Numérique</h4>
                     <p>Le parcours création numérique est consacré à l’expression d’un message sur différents médias, sous la forme de création graphique et d’écriture multimédia. II permet d’acquérir les techniques nécessaires à la création de ressources numériques, notamment de publications web.</p>
                 </div>
@@ -122,7 +120,7 @@
                 <?php $i = 0; ?>
                 <?php foreach($news as $article): ?>
                     <?php if($i >= 3) break; ?>
-                    <li>
+                    <li data-aos="fade-up" data-aos-duration="900">
 
                         <?php if ($i % 2 == 0): ?>
 
@@ -167,7 +165,7 @@
             </ul>
         </div>
             
-            <a href="./news.php" class="btn-bubble no-under">Voir plus<img src="./img/icons/arrow.svg" alt=""></a>
+            <a href="./news.php" class="btn-bubble no-under" alt="lien vers page actualité">Voir plus<img src="./img/icons/arrow.svg" alt=""></a>
 
     </section>
 

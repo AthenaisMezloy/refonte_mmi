@@ -195,3 +195,65 @@ footer a
     font-size: 0.8em;
 
 }
+
+#btn-burger {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+
+    #btn-burger {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 1;
+        background-color: #FFFCF6;
+        border-radius: 2em;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-active {
+        position:absolute;
+        left: 0%;
+        top: -10%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFCF6;
+        border: 1px solid black;
+        padding: 1em;
+    }
+
+    .nav-active li {
+        margin: 0.5em 0 0.5em 0;
+    }
+
+    .dark .nav-active li a{
+        color: black;
+    } 
+
+    #btn-theme {
+        width: 100%;
+        height: 50%;
+    }
+    
+    #btn-theme img {
+        width: 20px;
+    }
+    
+    #btn-theme p {
+        position: relative;
+        right: -5%;
+    }
+    
+    #btn-theme div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 80%;
+    }
+}

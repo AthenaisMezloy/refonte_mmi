@@ -1,4 +1,5 @@
 <?php
+session_start();
 require("model.php");
 $teachers = getTeachers();
 ?>
@@ -6,14 +7,10 @@ $teachers = getTeachers();
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <?php
+        include("./meta.php");
+    ?>
+    <link rel="preload" href="formation-style.css" as="style">
     <link rel="stylesheet" href="formation-style.css">
     <title>BUT MMI Champs - Formation</title>
 </head>
@@ -46,7 +43,6 @@ include("./navbar.php")
         </p>
     </div>
     <div class="bloc">
-
         <div class="dev">
             <a class="btn" href="#open-modal1">Développement </a>
         </div>

@@ -2,26 +2,30 @@
    "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
 </script>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="preload" href="footer-nav-style.css" as="style">
 <link rel="stylesheet" href="footer-nav-style.css">
 <nav>
     <div>
-        <a href="./index.php">
-        <img src="./img/assets/logo_img.svg" alt="bouton de redirection vers la page d'accueil">
+        <a href="./index.php" alt="lien vers page d'accueil">
+            <img src="./img/assets/logo_img.svg" alt="bouton de redirection vers la page d'accueil">
         </a>
     </div>
-    <ul class="list">
-        <li><a href="./formation.php">La Formation</a></li>
-        <li><a href="./project.php">Projets</a></li>
-        <li><a href="./aftermmi.php">Après MMI</a></li>
-        <li><a href="./international.php">International</a></li>
-        <li><a href="./about.php">À propos</a></li>
+    <button id="btn-burger">
+        <img src="./img/icons/burgermenu.png" alt="Menu burger">
+    </button>
+    <ul class="nav-links">
+        <li><a href="./formation.php" alt="lien vers page formation">La Formation</a></li>
+        <li><a href="./project.php" alt="lien vers page projets étudiants">Projets</a></li>
+        <li><a href="./aftermmi.php" alt="lien vers page après MMI">Après MMI</a></li>
+        <li><a href="./international.php" alt="lien vers page international">International</a></li>
+        <li><a href="./about.php" alt="lien vers page à propos">À propos</a></li>
         <?php
             if (isset($_SESSION['login'])) {
-                echo "<li><a href=\"./deconnexion.php\">Déconnexion</a></li>";
+                echo "<li><a href=\"./deconnexion.php\" alt=\"lien vers page déconnexion\">Déconnexion</a></li>";
             }
         ?>
         <li>
-            <button id="btn-theme">
+            <button id="btn-theme" alt="Bouton mode Jour/Nuit">
                 <div class="day">
                     <img src="./img/icons/moon.webp" alt=""><p>Nuit</p>
                 </div>
@@ -32,6 +36,7 @@
         </li>
     </ul>
 </nav>
+
 <?php
     $pages = array(
         "Actualités" => "news.php",
