@@ -1,4 +1,5 @@
 <?php
+session_start();
 require("./model.php");
 $jobs = getJobs();
 $icons = getIcons();

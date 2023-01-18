@@ -13,6 +13,7 @@
   // }
 
   $db =new PDO("mysql:host=localhost;dbname=dbs9638858;port=3306;charset=utf8",'root','');
+ // $db =new PDO("mysql:host=db5011423053.hosting-data.io;dbname=dbs9638858;port=3306;charset=utf8",'dbu2941595','ionostablmmichamps77420');
   $db-> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
   function traiteLogin(){

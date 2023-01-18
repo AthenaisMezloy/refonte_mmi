@@ -1,6 +1,14 @@
 var path = window.location.pathname;
 var page = path.split("/").pop();
 
+const burger = document.getElementById("btn-burger");
+const navLinks = document.querySelector(".nav-links");
+
+burger.addEventListener("click", function(){
+    navLinks.classList.toggle("nav-active");
+});
+
+
 // Dark mode
     if(localStorage.getItem('dark')) {
         $("body").addClass("dark");

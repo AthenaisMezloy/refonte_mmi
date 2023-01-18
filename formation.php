@@ -7,14 +7,10 @@ $courses = getCourses();
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <?php
+        include("./meta.php");
+    ?>
+    <link rel="preload" href="formation-style.css" as="style">
     <link rel="stylesheet" href="formation-style.css">
     <title>La Formation - BUT MMI Champs</title>
 </head>
@@ -50,13 +46,13 @@ include("./navbar.php")
             <?php foreach ($courses as $topic) : ?>
 
                 <div class="<?= $topic->namediv_course ?>">
-                    <a class="btn" href="#open-modal=<?= $topic->id_course ?>"><?= $topic->name_course ?></a>
+                    <a class="btn" href="#open-modal=<?= $topic->id_course ?>" alt="ouvrir pop-up"><?= $topic->name_course ?></a>
                 </div>
             <?php endforeach; ?>
 
                 <div id="open-modal" class="modal-window">
                     <div>
-                        <a href="#general-program" title="Close" class="modal-close">Fermer</a>
+                        <a href="#general-program" title="Close" class="modal-close" alt="fermer pop-up">Fermer</a>
                         <div class="text-program"><?= $topic->content_course ?></div>
                     </div>
                 </div>
