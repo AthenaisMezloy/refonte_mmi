@@ -1,11 +1,10 @@
 <?php
-session_start();
 require("model.php");
 $teachers = getTeachers();
-$courses = getCourses();
 ?>
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +15,7 @@ $courses = getCourses();
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="formation-style.css">
-    <title>La Formation - BUT MMI Champs</title>
+    <title>BUT MMI Champs - Formation</title>
 </head>
 
 <body>
@@ -46,25 +45,86 @@ include("./navbar.php")
             magistraux (CM), Travaux Dirigés (TD) et Travaux Pratiques (TP).
         </p>
     </div>
-        <div class="bloc">
-            <?php foreach ($courses as $topic) : ?>
+    <div class="bloc">
 
-                <div class="<?= $topic->namediv_course ?>">
-                    <a class="btn" href="#open-modal=<?= $topic->id_course ?>"><?= $topic->name_course ?></a>
+        <div class="dev">
+            <a class="btn" href="#open-modal1">Développement </a>
+        </div>
+        <div id="open-modal1" class="modal-window1">
+            <div>
+                <a href="#general-program" title="Close" class="modal-close">Fermer</a>
+                <div class="text-program">
+                    <p>Le développement web réunit toutes les matières liées à la réalisation d’un site web. Les matières qui y correspondent sont :</p>
+                    <ul>
+                        <li>Développement & Intégration web (front et/ou back)</li>
+                        <li>Hébergement et Déploiement de service</li>
+                        <li>Gestion de contenu</li>
+                        <li>Référencement</li>
+                        <li>Système d’information</li>
+                    </ul>
                 </div>
-            <?php endforeach; ?>
+            </div>
+        </div>
 
-                <div id="open-modal" class="modal-window">
-                    <div>
-                        <a href="#general-program" title="Close" class="modal-close">Fermer</a>
-                        <div class="text-program"><?= $topic->content_course ?></div>
-                    </div>
+        <div class="design">
+            <a class="btn" href="#open-modal2">Design </a>
+        </div>
+        <div id="open-modal2" class="modal-window2">
+            <div>
+                <a href="#general-program" title="Close" class="modal-close">Fermer</a>
+                <div class="text-program">
+                    <p>Le Design va concerner plusieurs pôles et va être en lien autant avec le développement web qu’avec la communication, voir peut être lié à l’audiovisuel.<br>
+                        Les matières qu’il regroupe sont :</p>
+                    <ul>
+                        <li>Production Graphique</li>
+                        <li>UX/UI Design</li>
+                        <li>Culture Artistique & Numérique</li>
+                        <li>Ergonomie & Accessibilité</li>
+                        <li>Création & Design Intéractif</li>
+                    </ul>
                 </div>
+            </div>
+        </div>
 
+        <div class="audio">
+            <a class="btn" href="#open-modal3">Audiovisuel </a>
+        </div>
+        <div id="open-modal3" class="modal-window3">
+            <div>
+                <a href="#general-program" title="Close" class="modal-close">Fermer</a>
+                <div class="text-program">
+                    <p>L’audiovisuel réunit autant des matières initiant aux métiers plutôt sur le terrain que des matières de post production :</p>
+                    <ul>
+                        <li>Tournage (maniement des caméras, mises en places d’un environnement de lumière)</li>
+                        <li>Montage</li>
+                        <li>Motion Design</li>
+                        <li>Sound Design</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
 
+        <div class="com">
+            <a class="btn" href="#open-modal4">Communication </a>
+        </div>
+        <div id="open-modal4" class="modal-window4">
+            <div>
+                <a href="#general-program" title="Close" class="modal-close">Fermer</a>
+                <div class="text-program">
+                    <p>La communication réunit différents objectifs : communiquer en équipe, pour l’entreprise, communiquer sur soi et se mettre en valeur, communiquer à l’international :</p>
+                    <ul>
+                        <li>Stratégie de Communication</li>
+                        <li>Écriture Multimédia & Narration</li>
+                        <li>Expression Communication & Rhétorique</li>
+                        <li>Anglais & Anglais pour le web</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
+
+    
 </section>
 <section id="schooling">
     <div class="intro">
@@ -232,4 +292,3 @@ include("./footer.php")
 </body>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="app.js"></script>
-
