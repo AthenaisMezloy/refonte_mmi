@@ -178,7 +178,7 @@ section {
 }
 
 
-.modal-window {
+.modal-window1 {
     position: fixed;
     background-color: rgba(133, 133, 133, 0.25);
     top: 0;
@@ -191,12 +191,55 @@ section {
     pointer-events: none;
     transition: all 0.3s;
   }
-  .modal-window:target {
+
+  .modal-window2 {
+    position: fixed;
+    background-color: rgba(133, 133, 133, 0.25);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+
+  .modal-window3 {
+    position: fixed;
+    background-color: rgba(133, 133, 133, 0.25);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+
+  .modal-window4 {
+    position: fixed;
+    background-color: rgba(133, 133, 133, 0.25);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+
+  .modal-window1:target {
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
   }
-  .modal-window > div {
+  .modal-window1 > div {
     width: 400px;
     position: absolute;
     top: 50%;
@@ -205,7 +248,46 @@ section {
     padding: 3em;
     background: white;
   }
-  
+  .modal-window2:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modal-window2 > div {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3em;
+    background: white;
+  }  .modal-window3:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modal-window3 > div {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3em;
+    background: white;
+  }  .modal-window4:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modal-window4 > div {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3em;
+    background: white;
+  }
   .modal-close {
     color: #aaa;
     line-height: 50px;
@@ -497,7 +579,7 @@ td p, th p {
     height: 500px;
     text-align: center;
     font-family: 'Press Start 2P', cursive;
-
+padding-bottom: 3em;
 }
 
 .swiper-slide {
